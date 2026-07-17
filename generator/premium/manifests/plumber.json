@@ -1,0 +1,57 @@
+{
+  "niche": "plumber",
+  "templateDir": "01-plumber",
+  "file": "layout.html",
+  "assetDirs": ["img"],
+  "imageStrategy": "self-hosted",
+  "galleryImageDir": "img",
+  "_note": "Tokens verified against templates/01-plumber/layout.html. Short brand 'FP' is a 2-letter MONOGRAM (favicon data-URI + two mono spans; verified no other 'FP' in file) -> shortIsMonogram uses the lead's initials. Region phrases ordered longest-first so combined OC+LA forms swap before bare 'Orange County'/'Los Angeles'. 3 self-hosted gallery cards. KNOWN GAP: demo owner names Josh/Mike/Rick appear in the About monogram cards and reviews; the combined prose forms are swapped to 'our team', but the 3 About cards still name them and need real owner data (from deep-extract) to fully personalize — fine for electrical-first launch, revisit for real plumber leads.",
+
+  "brand": {
+    "full": "The Family Plumber",
+    "fullAliases": ["Family Plumber"],
+    "short": "FP",
+    "shortIsMonogram": true,
+    "domain": "thefamilyplumber.com",
+    "email": "info@thefamilyplumber.com"
+  },
+
+  "phones": { "display": "(562) 431-1960", "href": "+15624311960", "formPlaceholder": "(562) 000-0000" },
+
+  "geo": {
+    "city": "Los Alamitos",
+    "stateAbbr": "CA",
+    "regionPhrases": [
+      "Orange County &amp; Los Angeles County",
+      "Orange County and Los Angeles County",
+      "Orange County and Los Angeles",
+      "Orange County &amp; LA",
+      "OC &amp; LA",
+      "Los Angeles County",
+      "Los Angeles"
+    ],
+    "countyPhrase": "Orange County",
+    "areasMultiWord": ["Long Beach", "Seal Beach", "Huntington Beach"],
+    "areas": ["Irvine", "Cypress"]
+  },
+
+  "license": { "sources": ["Licensed, bonded &amp; insured", "CA License #[SWAP PER CLIENT]", "Licensed &amp; insured"] },
+
+  "facts": { "sinceAnchor": "on every call." },
+
+  "extraReplacements": [
+    { "from": "Josh, Mike &amp; Rick", "to": "our team" },
+    { "from": "Josh, Mike and Rick", "to": "our team" },
+    { "from": "Rick talked me out of a repipe", "to": "Our plumber talked me out of a repipe" },
+    { "from": "<b>Josh</b>", "to": "<b>Founder</b>" },
+    { "from": "<b>Mike</b>", "to": "<b>Co-owner</b>" },
+    { "from": "<b>Rick</b>", "to": "<b>Co-owner</b>" },
+    { "from": "[SWAP PER CLIENT]", "to": "{city}" }
+  ],
+
+  "gallerySlots": [
+    { "imgTag": "<img src=\"img/bathroom-result.jpg\" alt=\"Finished walk-in shower rebuild\" width=\"600\" height=\"750\" loading=\"lazy\" />", "caption": "Walk-in shower rebuild" },
+    { "imgTag": "<img src=\"img/water-heater.jpg\" alt=\"New tankless water heater installed\" width=\"600\" height=\"750\" loading=\"lazy\" />", "caption": "Tankless water heater install" },
+    { "imgTag": "<img src=\"img/hero.jpg\" alt=\"Completed master bathroom remodel\" width=\"600\" height=\"750\" loading=\"lazy\" />", "caption": "Master bath remodel" }
+  ]
+}

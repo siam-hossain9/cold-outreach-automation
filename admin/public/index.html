@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Rebuild Ops · Dashboard</title>
+<style>
+  :root{
+    --bg:#f7f8fa; --panel:#ffffff; --panel2:#f3f5f8; --line:#e4e8ee;
+    --ink:#111827; --muted:#5b6472; --faint:#9aa3b0;
+    --accent:#65a30d; --blue:#2563eb; --green:#16a34a; --amber:#d97706; --red:#dc2626; --purple:#7c3aed; --cyan:#0891b2;
+    --mono:ui-monospace,"SFMono-Regular","Cascadia Code",Menlo,Consolas,monospace;
+    --sans:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    --shadow:0 1px 2px rgba(16,24,40,.04), 0 4px 14px rgba(16,24,40,.05);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;background:linear-gradient(180deg,#fdfdfe 0%,var(--bg) 240px);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}
+  a{color:var(--blue)}
+  .wrap{max-width:1280px;margin:0 auto;padding:24px 22px 70px}
+  header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;padding:4px 0 20px}
+  header .brand{font-size:22px;font-weight:800;letter-spacing:-.02em}
+  header .brand span{color:var(--accent)}
+  header .subtitle{font-size:12.5px;color:var(--muted);margin-top:3px}
+  .spacer{flex:1}
+  .pills{display:inline-flex;background:var(--panel);border:1px solid var(--line);border-radius:999px;padding:3px;gap:2px;box-shadow:var(--shadow)}
+  .pill{font-size:12.5px;font-weight:600;padding:6px 15px;border-radius:999px;border:0;background:transparent;color:var(--muted);cursor:pointer}
+  .pill:hover{color:var(--ink)}
+  .pill.on{background:var(--ink);color:#fff}
+  .badge{font-size:11.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:6px 13px;border-radius:999px;border:1px solid;display:inline-flex;align-items:center;gap:7px}
+  .badge .dot{width:8px;height:8px;border-radius:50%;animation:pulse 1.6s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .live{color:#137a3c;border-color:#bfe6cd;background:#ebf9f0}
+  .live .dot{background:#16a34a}
+  .paused{color:#b42318;border-color:#f4c7c1;background:#fdf0ee}
+  .paused .dot{background:#dc2626}
+  .upd{font-size:11.5px;color:var(--faint)}
+  .killbtn{font-weight:700;font-size:13px;padding:10px 17px;border-radius:10px;border:1px solid var(--line);cursor:pointer;background:var(--panel);color:var(--ink);box-shadow:var(--shadow)}
+  .killbtn.stop{background:#fdf0ee;border-color:#f4c7c1;color:#b42318}
+  .killbtn.go{background:#ebf9f0;border-color:#bfe6cd;color:#137a3c}
+  .killbtn:hover{filter:brightness(.98)}
+  /* KPI cards */
+  .kpis{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-bottom:18px}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:15px 16px;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+  .kpi::before{content:"";position:absolute;inset:0 auto 0 0;width:4px;background:var(--c,var(--accent));border-radius:4px 0 0 4px}
+  .kpi .k{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted)}
+  .kpi .v{font-size:31px;font-weight:800;letter-spacing:-.03em;margin-top:6px;font-variant-numeric:tabular-nums;line-height:1}
+  .kpi .s{font-size:11.5px;color:var(--faint);margin-top:6px}
+  /* panels */
+  .grid{display:grid;grid-template-columns:1.5fr 1fr;gap:16px}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:19px 20px;margin-bottom:16px;box-shadow:var(--shadow)}
+  .grid .panel{margin-bottom:0}
+  .panel h2{margin:0;font-size:15px;font-weight:750;letter-spacing:-.01em;display:flex;align-items:center;gap:9px}
+  .panel h2 .tag{margin-left:auto;font-size:11px;color:var(--faint);font-weight:500}
+  .panel h2 .big{margin-left:auto;font-size:24px;font-weight:800;font-variant-numeric:tabular-nums}
+  .panel .desc{margin:3px 0 15px;font-size:12.5px;color:var(--muted)}
+  .stack{display:flex;flex-direction:column;gap:16px}
+  /* funnel */
+  .funnel{display:flex;flex-direction:column;gap:10px}
+  .fstep{display:grid;grid-template-columns:150px 1fr 52px;align-items:center;gap:12px}
+  .fstep .fl{font-size:13px;color:var(--muted)}
+  .fstep .fbar{height:26px;border-radius:8px;background:var(--panel2);overflow:hidden;position:relative}
+  .fstep .fbar i{position:absolute;inset:0 auto 0 0;border-radius:8px;background:linear-gradient(90deg,#3b82f6,#06b6d4);min-width:3px;transition:width .5s}
+  .fstep .fv{font-size:13.5px;font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+  /* bar rows */
+  .rows{display:flex;flex-direction:column;gap:9px}
+  .row{display:grid;grid-template-columns:170px 1fr 46px;align-items:center;gap:11px}
+  .row .rl{font-size:12.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .row .rbar{height:9px;border-radius:999px;background:var(--panel2);overflow:hidden}
+  .row .rbar i{display:block;height:100%;border-radius:999px;background:var(--c,var(--accent));min-width:3px;transition:width .5s}
+  .row .rv{font-size:12.5px;font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+  .row .rl.zero,.row .rv.zero{color:#c2c9d2}
+  /* mini stats */
+  .mini{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+  .mini4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .mstat{background:var(--panel2);border:1px solid var(--line);border-radius:11px;padding:12px 14px}
+  .mstat .k{font-size:10.5px;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+  .mstat .v{font-size:22px;font-weight:800;margin-top:3px;font-variant-numeric:tabular-nums}
+  .mstat .v small{font-size:12px;color:var(--faint);font-weight:500}
+  .mstat.good{background:#ebf9f0;border-color:#d3efdd} .mstat.good .v{color:#137a3c}
+  .mstat.bad{background:#fdf0ee;border-color:#f7d8d3} .mstat.bad .v{color:#b42318}
+  .mstat.warn{background:#fdf6ec;border-color:#f5e3c8} .mstat.warn .v{color:#b25e09}
+  /* reply / sequence cards */
+  .cards4{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+  .rcard{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
+  .rcard .e{font-size:24px}
+  .rcard .k{font-size:10.5px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);margin-top:5px}
+  .rcard .v{font-size:28px;font-weight:800;margin-top:4px;font-variant-numeric:tabular-nums}
+  .rcard .p{font-size:11.5px;color:var(--faint);margin-top:3px}
+  .errline{border:1px solid #f4c7c1;background:#fdf0ee;border-radius:9px;padding:9px 13px;font-size:12.5px;color:#8a2016;display:flex;justify-content:space-between;gap:10px;margin-top:9px}
+  .errline b{font-variant-numeric:tabular-nums}
+  /* tables */
+  .tblwrap{overflow-x:auto}
+  table.tbl{width:100%;border-collapse:collapse;font-size:13px}
+  .tbl th{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);text-align:left;padding:8px 11px;border-bottom:1px solid var(--line);white-space:nowrap}
+  .tbl td{padding:10px 11px;border-bottom:1px solid #eef1f5;vertical-align:top;white-space:nowrap}
+  .tbl tr:last-child td{border-bottom:0}
+  .tbl tr:hover td{background:#f8fafc}
+  .tbl .b{font-weight:650}
+  .tbl .sub{display:block;font-size:11.5px;color:var(--muted);font-style:italic;white-space:normal;max-width:360px;margin-top:2px}
+  .tbl a{text-decoration:none;font-size:12px;font-weight:600}
+  .tbl a:hover{text-decoration:underline}
+  .chip{display:inline-block;font-size:11px;font-weight:600;padding:3px 10px;border-radius:999px;border:1px solid}
+  .c-green{color:#137a3c;border-color:#bfe6cd;background:#ebf9f0}
+  .c-red{color:#b42318;border-color:#f4c7c1;background:#fdf0ee}
+  .c-amber{color:#b25e09;border-color:#f0d9b5;background:#fdf6ec}
+  .c-blue{color:#1d4ed8;border-color:#c7d7fb;background:#eff4fe}
+  .c-purple{color:#6d28d9;border-color:#ddd0f9;background:#f5f1fe}
+  .c-slate{color:var(--muted);border-color:var(--line);background:var(--panel2)}
+  .err{border-top:1px solid #eef1f5;padding:10px 0;font-size:12.5px}
+  .err:first-of-type{border-top:0}
+  .err .w{font-size:11px;font-weight:700;color:#b25e09}
+  .err .m{color:var(--muted);margin-top:2px;line-height:1.45}
+  .empty{color:var(--faint);font-size:13px;padding:14px 0;text-align:center}
+  .empty .big{font-size:26px;display:block;margin-bottom:6px;opacity:.5}
+  footer{margin-top:24px;text-align:center;font-size:11.5px;color:var(--faint)}
+  @media (max-width:980px){ .kpis{grid-template-columns:repeat(3,1fr)} .grid{grid-template-columns:1fr} .cards4,.mini4{grid-template-columns:repeat(2,1fr)} }
+  @media (max-width:560px){ .kpis{grid-template-columns:repeat(2,1fr)} .fstep{grid-template-columns:104px 1fr 44px} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div>
+      <div class="brand">Rebuild <span>Ops</span></div>
+      <div class="subtitle">Everything about your outreach in one place · updates every 10 seconds</div>
+    </div>
+    <div class="pills" id="pills">
+      <button type="button" class="pill" data-p="24h">Today</button>
+      <button type="button" class="pill" data-p="7d">Last 7 days</button>
+      <button type="button" class="pill on" data-p="all">All time</button>
+    </div>
+    <div class="spacer"></div>
+    <span id="statusBadge" class="badge live"><span class="dot"></span>SENDING ON</span>
+    <span class="upd" id="upd">—</span>
+    <button type="button" id="killBtn" class="killbtn" onclick="toggleKill()">⏸ Pause all texting</button>
+  </header>
+
+  <div class="kpis" id="kpis"></div>
+
+  <!-- Delivery health -->
+  <div class="panel">
+    <h2>📬 Did our texts arrive? <span class="tag" id="syncTag">—</span><span class="big" id="delRate">—</span></h2>
+    <p class="desc">Every send is re-checked against Close every 15 minutes — a text can be accepted but still bounce (landlines, filters). Errors show up here automatically.</p>
+    <div class="mini4" id="deliveryMini"></div>
+  </div>
+
+  <!-- Why texts bounced (separated) -->
+  <div class="panel">
+    <h2>🚫 Why texts bounced <span class="tag" id="bounceTag"></span></h2>
+    <p class="desc">Every failed text, grouped by reason. On a scraped list, most failures are business <b>landlines</b> that simply can't receive SMS — worth scrubbing the list mobile-only.</p>
+    <div class="rows" id="bounceRows"></div>
+    <div id="bounceRaw"></div>
+  </div>
+
+  <!-- Capacity & compliance -->
+  <div class="panel">
+    <h2>🚦 Capacity &amp; compliance <span class="tag">carrier limits &amp; TCPA, checked automatically</span></h2>
+    <p class="desc">T-Mobile's daily cap is shared by <b>all</b> your numbers (per brand). Quiet hours: no texts before 8am / after 9pm in the lead's timezone — the system defers those automatically.</p>
+    <div class="mini4" id="capMini"></div>
+  </div>
+
+  <!-- SMS sequence -->
+  <div class="panel">
+    <h2>📨 Text sequence <span class="tag" id="seqTag"></span></h2>
+    <p class="desc">How many texts went out at each step — the first message, then each follow-up. A healthy drip narrows step by step.</p>
+    <div class="cards4" id="seqCards"></div>
+  </div>
+
+  <!-- Reply classification -->
+  <div class="panel">
+    <h2>💬 What people replied <span class="tag" id="replyTag"></span></h2>
+    <p class="desc">Every reply is sorted automatically the moment it arrives.</p>
+    <div class="cards4" id="replyCards"></div>
+  </div>
+
+  <!-- Hot leads -->
+  <div class="panel">
+    <h2>🔥 Interested leads <span class="tag" id="hotTag"></span></h2>
+    <p class="desc">These people replied positively — <b>follow up with them first.</b> Click a name to open them in Close.</p>
+    <div class="tblwrap" id="hotTable"></div>
+  </div>
+
+  <!-- Campaign per-lead table -->
+  <div class="panel">
+    <h2>📋 Everyone we've texted <span class="tag" id="campTag"></span></h2>
+    <p class="desc">One row per contacted business, newest first — what we sent, whether it arrived, and what they did.</p>
+    <div class="tblwrap" id="campTable"></div>
+  </div>
+
+  <div class="grid">
+    <div class="stack">
+      <div class="panel">
+        <h2>🧭 The big picture <span class="tag">from scraping to demo</span></h2>
+        <p class="desc">Where all leads are in the journey, end to end.</p>
+        <div class="funnel" id="funnel"></div>
+      </div>
+      <div class="panel">
+        <h2>Leads by stage <span class="tag" id="leadTotal"></span></h2>
+        <div class="rows" id="statusRows"></div>
+      </div>
+      <div class="panel">
+        <h2>📱 Number health <span class="tag">last 7 days vs the 7 before</span></h2>
+        <p class="desc">Per sending number: how much it sent and whether its delivery rate is slipping — a sudden drop is the first sign of carrier filtering.</p>
+        <div class="tblwrap" id="numberRows"></div>
+      </div>
+    </div>
+    <div class="stack">
+      <div class="panel">
+        <h2>👀 Demo engagement</h2>
+        <p class="desc">Are leads opening and looking at their demo sites?</p>
+        <div class="mini" id="engagement"></div>
+      </div>
+      <div class="panel">
+        <h2>Leads by trade</h2>
+        <div class="rows" id="nicheRows"></div>
+      </div>
+      <div class="panel">
+        <h2>Sends by type <span class="tag" id="sms24">—</span></h2>
+        <div class="rows" id="smsStageRows"></div>
+      </div>
+      <div class="panel">
+        <h2>⚠️ Recent system errors <span class="tag" id="errTotal"></span></h2>
+        <div id="errors"></div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="foot">connecting…</footer>
+</div>
+
+<script>
+const NICHE_C = { electrician:'#65a30d', hvac:'#2563eb', plumber:'#ea580c', roofing:'#dc2626' };
+const STATUS_C = {
+  new:'#9aa3b0', opener_sent:'#2563eb', replied:'#16a34a', demo_ready:'#0891b2',
+  demo_sent:'#7c3aed', opted_in:'#16a34a', queued_call:'#d97706', called:'#d97706',
+  closed_won:'#16a34a', closed_lost:'#9aa3b0', dnc:'#dc2626', duplicate:'#d97706',
+};
+const STATUS_LABEL = {
+  new:'New', opener_sent:'Texted — awaiting reply', replied:'Replied', demo_ready:'Demo ready',
+  demo_sent:'Demo sent', opted_in:'Opted in', queued_call:'Call instead (can’t text)', called:'Called',
+  closed_won:'Won 🎉', closed_lost:'Passed', dnc:'Opted out', duplicate:'Duplicate (blocked)',
+};
+const STATUS_CHIPCLS = {
+  new:'c-slate', opener_sent:'c-blue', replied:'c-green', demo_ready:'c-blue', demo_sent:'c-purple',
+  opted_in:'c-green', queued_call:'c-amber', called:'c-amber', closed_won:'c-green',
+  closed_lost:'c-slate', dnc:'c-red', duplicate:'c-amber',
+};
+const STAGE_LABEL = { opener:'Opener (1st text)', opener_nudge_1:'Nudge 1 (day 2)', opener_nudge_2:'Nudge 2 (day 5)', opener_breakup:'Breakup (day 7)', demo_send:'Demo link', followup_a:'Follow-up A (+3h)', followup_b:'Follow-up B (after open)', followup_c:'Follow-up C (+48h)', owner_notification:'Owner alert' };
+const INTENT_CHIP = { hot:['🔥 Interested','c-green'], not_interested:['Not interested','c-amber'], dnc:['Opted out','c-red'], generic:['Question / other','c-slate'] };
+const el = id => document.getElementById(id);
+const num = n => (n==null?'—':Number(n).toLocaleString());
+const esc = s => String(s==null?'':s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let paused = false, period = 'all';
+
+function relTime(ms){ if(!ms)return '—'; const m=Math.floor((Date.now()-ms)/60000); if(m<1)return 'just now'; if(m<60)return m+' min ago'; const h=Math.floor(m/60); if(h<24)return h+'h ago'; return Math.floor(h/24)+'d ago'; }
+function kpi(k,v,s,c){ return `<div class="kpi" style="--c:${c}"><div class="k">${k}</div><div class="v">${num(v)}</div><div class="s">${s}</div></div>`; }
+function barRows(obj, container, colorFn, order, labelFn){
+  const keys = order || Object.keys(obj);
+  const max = Math.max(1, ...keys.map(k=>obj[k]||0));
+  el(container).innerHTML = keys.map(k=>{
+    const v = obj[k]||0, z = v===0?' zero':'';
+    const label = labelFn ? labelFn(k) : k;
+    return `<div class="row"><span class="rl${z}" title="${esc(k)}">${esc(label)}</span><span class="rbar"><i style="width:${(v/max*100).toFixed(1)}%;--c:${colorFn(k)}"></i></span><span class="rv${z}">${num(v)}</span></div>`;
+  }).join('');
+}
+function sendChip(st){
+  if(!st) return '<span class="chip c-slate">nothing sent</span>';
+  if(st==='error') return '<span class="chip c-red">✖ didn’t arrive</span>';
+  if(['sent','delivered','completed'].includes(st)) return '<span class="chip c-green">✔ delivered</span>';
+  if(['outbox','scheduled','queued','sending'].includes(st)) return '<span class="chip c-amber">⏳ sending…</span>';
+  return '<span class="chip c-slate">'+esc(st)+'</span>';
+}
+function closeUrl(id){ return 'https://app.close.com/lead/'+id+'/'; }
+
+async function load(){
+  let d;
+  // /api/stats is now behind the admin token (it returns every lead's phone + reply
+  // text — it was previously served to anyone who could reach the port).
+  try {
+    const h = {};
+    if(adminTok()) h['x-admin-token'] = adminTok();
+    const r = await fetch('/api/stats?period='+period, {headers:h});
+    if(r.status===401){
+      const t = prompt('This server needs an admin token to show lead data.\nPaste ADMIN_TOKEN:');
+      if(t){ localStorage.setItem('admin_token', t.trim()); return load(); }
+      el('foot').textContent='locked — admin token required'; return;
+    }
+    d = await r.json();
+    if(d.error){ el('foot').textContent='stats error: '+d.error+(d.hint?' — '+d.hint:''); return; }
+  }
+  catch(e){ el('foot').textContent='cannot reach server: '+e.message; return; }
+
+  paused = !!(d.kill_switch && d.kill_switch.outbound_paused);
+  const badge = el('statusBadge'), btn = el('killBtn');
+  badge.className = 'badge ' + (paused?'paused':'live');
+  badge.innerHTML = '<span class="dot"></span>' + (paused?'PAUSED — nothing sends':'SENDING ON');
+  btn.className = 'killbtn ' + (paused?'go':'stop');
+  btn.textContent = paused ? '▶ Resume texting' : '⏸ Pause all texting';
+  el('upd').textContent = 'updated ' + new Date(d.generated_at).toLocaleTimeString();
+
+  el('kpis').innerHTML =
+    kpi('Total leads', d.leads.total, ((d.sms&&d.sms.leads_texted)||0)+' actually texted so far', '#2563eb') +
+    kpi('Openers sent', (d.sms&&d.sms.openers_sent)||0, ((d.sms&&d.sms.queued)||0)+' still queued to send', '#65a30d') +
+    kpi('Replied', (d.replies&&d.replies.total)||d.funnel.replied, 'in this period', '#16a34a') +
+    kpi('Duplicates caught', d.duplicates, 'never double-texted', '#d97706') +
+    kpi('Couldn\'t check their site', d.review_website, 'site down or blocking us — worth a look', '#7c3aed') +
+    kpi('Opted out', d.dnc, 'will never be texted', '#dc2626');
+
+  // delivery
+  const dl = d.delivery || {};
+  el('delRate').textContent = dl.rate==null ? '—' : dl.rate+'%';
+  el('delRate').style.color = dl.rate==null ? 'var(--faint)' : dl.rate>=95 ? '#137a3c' : dl.rate>=80 ? '#b25e09' : '#b42318';
+  el('syncTag').textContent = 'last checked '+relTime(dl.last_synced);
+  el('deliveryMini').innerHTML =
+    `<div class="mstat good"><div class="k">Delivered</div><div class="v">${num(dl.delivered)}</div></div>`+
+    `<div class="mstat bad"><div class="k">Didn’t arrive</div><div class="v">${num(dl.errored)}</div></div>`+
+    `<div class="mstat warn"><div class="k">Still sending</div><div class="v">${num(dl.queued)}</div></div>`+
+    `<div class="mstat"><div class="k">Replies received</div><div class="v">${num(dl.inbound)}</div></div>`;
+  // bounce reasons — separated panel, grouped by cause + exact carrier messages below
+  const eb = dl.error_breakdown||[];
+  const et = dl.error_types||{};
+  el('bounceTag').textContent = num(dl.errored)+' failed'+(dl.rate!=null?' · '+(100-dl.rate).toFixed(1)+'% of sent':'');
+  const ebMax = Math.max(1, ...eb.map(e=>e.count||0));
+  el('bounceRows').innerHTML = eb.length
+    ? eb.map(e=>`<div class="row"><span class="rl" title="${esc(e.label)}">${esc(e.label)}</span><span class="rbar"><i style="width:${(e.count/ebMax*100).toFixed(1)}%;--c:#dc2626"></i></span><span class="rv">${num(e.count)} · ${e.pct}%</span></div>`).join('')
+    : '<div class="empty"><span class="big">✅</span>No bounces yet.</div>';
+  el('bounceRaw').innerHTML = Object.keys(et).length
+    ? '<div style="margin-top:13px;font-size:10.5px;color:var(--faint);font-weight:700;text-transform:uppercase;letter-spacing:.05em">Exact carrier messages</div>'
+      + Object.entries(et).sort((a,b)=>b[1]-a[1]).map(([t,c])=>`<div class="errline"><span>${esc(t)}</span><b>×${num(c)}</b></div>`).join('')
+    : '';
+
+  // capacity & compliance
+  const cap = d.capacity||{}, qh = d.quiet_hours||{};
+  const capPct = cap.brand_daily_cap ? Math.round((cap.today_sends/cap.brand_daily_cap)*100) : 0;
+  el('capMini').innerHTML =
+    `<div class="mstat ${capPct>=80?'bad':capPct>=50?'warn':'good'}"><div class="k">Today’s sends (all numbers)</div><div class="v">${num(cap.today_sends)} <small>/ ${num(cap.brand_daily_cap)} cap · ${capPct}%</small></div></div>`+
+    `<div class="mstat ${cap.peak_per_minute>=60?'bad':'good'}"><div class="k">Fastest minute today</div><div class="v">${num(cap.peak_per_minute)} <small>/ ${cap.att_tpm_limit}/min limit</small></div></div>`+
+    `<div class="mstat ${qh.violations>0?'bad':'good'}"><div class="k">Quiet-hours violations</div><div class="v">${qh.violations>0?num(qh.violations):'0 ✓'} <small>of ${num(qh.audited)} sends</small></div></div>`+
+    `<div class="mstat good"><div class="k">Opt-out handling</div><div class="v">Instant ✓ <small>7 keywords + phrases</small></div></div>`;
+
+  // sequence
+  const sq = d.sequence || { total: 0, touches: [] };
+  el('seqTag').textContent = num(sq.total)+' texts sent in this period';
+  el('seqCards').innerHTML = (sq.touches||[]).map((t,i)=>
+    `<div class="rcard"><div class="e">${['1️⃣','2️⃣','3️⃣','4️⃣'][i]||'🔁'}</div><div class="k">${esc(t.label)}</div><div class="v">${num(t.count)}</div><div class="p">${t.pct}% of all sends</div></div>`
+  ).join('');
+
+  // replies
+  const rp = d.replies||{};
+  el('replyTag').textContent = num(rp.total)+' replies in this period';
+  const card = (key,emoji,label,color,hint)=>`<div class="rcard"><div class="e">${emoji}</div><div class="k">${label}</div><div class="v" style="color:${color}">${num(rp[key]||0)}</div><div class="p">${hint}</div></div>`;
+  el('replyCards').innerHTML =
+    card('hot','🔥','Interested','#137a3c','“yes”, “send it”, “how much”')+
+    card('not_interested','😐','Not interested','#b25e09','“no thanks”, “we’re good”')+
+    card('dnc','🛑','Opted out','#b42318','“stop” — never texted again')+
+    card('generic','💬','Question / other','#1d4ed8','“who is this?”, everything else');
+
+  // hot leads (+ speed-to-lead timer: green ≤5min, amber ≤1h, red beyond)
+  function speedChip(l){
+    if(l.responded_in_ms!=null){const m=Math.round(l.responded_in_ms/60000);return `<span class="chip ${m<=5?'c-green':m<=60?'c-amber':'c-slate'}">answered in ${m<60?m+'m':Math.round(m/60)+'h'}</span>`;}
+    if(l.waiting_ms!=null){const m=Math.round(l.waiting_ms/60000);return `<span class="chip ${m<=5?'c-green':m<=60?'c-amber':'c-red'}">⏱ waiting ${m<60?m+'m':Math.round(m/60)+'h'}</span>`;}
+    return '—';
+  }
+  const hot = d.hot_leads||[];
+  const med = d.median_response_ms;
+  el('hotTag').textContent = (hot.length ? hot.length+' to answer' : '') + (med!=null?' · median response '+Math.round(med/60000)+'m':'');
+  el('hotTable').innerHTML = hot.length ? `<table class="tbl"><thead><tr><th>Business</th><th>Trade</th><th>Location</th><th>Phone</th><th>Replied</th><th>Your response</th><th></th></tr></thead><tbody>`+
+    hot.map(l=>`<tr><td class="b">${l.close_lead_id?`<a href="${closeUrl(l.close_lead_id)}" target="_blank" rel="noopener" style="color:var(--ink)">${esc(l.name)}</a>`:esc(l.name)}${l.last_reply_text?`<span class="sub">“${esc(l.last_reply_text.slice(0,90))}”</span>`:''}</td><td><span class="chip c-slate">${esc(l.niche)}</span></td><td>${esc(l.city)}${l.state?', '+esc(l.state):''}</td><td style="font-family:var(--mono);font-size:12px">${esc(l.phone)}</td><td>${relTime(l.replied_at)}</td><td>${speedChip(l)}</td><td>${l.close_lead_id?`<a href="${closeUrl(l.close_lead_id)}" target="_blank" rel="noopener">Open in Close →</a>`:'—'}</td></tr>`).join('')+`</tbody></table>`
+    : '<div class="empty"><span class="big">🌱</span>No interested replies yet. The moment someone texts back “yes”, they appear here — and you get a Slack ping instantly.</div>';
+
+  // campaign
+  const camp = d.campaign||[];
+  el('campTag').textContent = camp.length+' businesses';
+  el('campTable').innerHTML = camp.length ? `<table class="tbl"><thead><tr><th>Business</th><th>Trade</th><th>Location</th><th>Stage</th><th>Last text</th><th>Their reply</th><th>Opened demo</th><th>Links</th></tr></thead><tbody>`+
+    camp.map(l=>{
+      const ic = l.reply_intent ? INTENT_CHIP[l.reply_intent]||[esc(l.reply_intent),'c-slate'] : null;
+      return `<tr><td class="b">${esc(l.name)}${l.last_send_error?`<span class="sub" style="color:#b42318">${esc(l.last_send_error)}</span>`:''}</td>`+
+        `<td><span class="chip c-slate">${esc(l.niche)}</span></td><td>${esc(l.city)}${l.state?', '+esc(l.state):''}</td>`+
+        `<td><span class="chip ${STATUS_CHIPCLS[l.status]||'c-slate'}">${STATUS_LABEL[l.status]||esc(l.status)}</span></td>`+
+        `<td>${sendChip(l.last_send_status)}</td>`+
+        `<td>${ic?`<span class="chip ${ic[1]}">${ic[0]}</span>`:'<span style="color:var(--faint)">—</span>'}</td>`+
+        `<td>${l.clicks>0?`<span class="chip c-green">✔ ${num(l.views||l.clicks)} view${(l.views||l.clicks)>1?'s':''}</span>`:'<span style="color:var(--faint)">not yet</span>'}</td>`+
+        `<td>${l.close_lead_id?`<a href="${closeUrl(l.close_lead_id)}" target="_blank" rel="noopener">Close</a>`:''}${l.demo_url?` · <a href="${esc(l.demo_url)}" target="_blank" rel="noopener">Demo</a>`:''}</td></tr>`;
+    }).join('')+`</tbody></table>`
+    : '<div class="empty"><span class="big">📭</span>No one has been texted yet.</div>';
+
+  // pipeline funnel
+  const P = d.pipeline || {};
+  const steps = [
+    ['Leads scraped','scraped'],['Pushed to Close','pushed_to_close'],['Got the 1st text','first_sms'],
+    ['Got a follow-up','followup_1'],['Replied','replied'],['Interested 🔥','hot'],['Demos built','demos_built'],
+  ];
+  const fmax = Math.max(1, ...steps.map(([,k])=>P[k]||0));
+  el('funnel').innerHTML = steps.map(([label,key])=>{
+    const v = P[key]||0;
+    const pctOf = P.scraped ? Math.round((v/P.scraped)*1000)/10 : 0;
+    return `<div class="fstep"><span class="fl">${label}</span><span class="fbar"><i style="width:${(v/fmax*100).toFixed(1)}%"></i></span><span class="fv" title="${pctOf}% of scraped">${num(v)}</span></div>`;
+  }).join('');
+
+  el('leadTotal').textContent = num(d.leads.total)+' leads';
+  barRows(d.leads.by_status, 'statusRows', k=>STATUS_C[k]||'#65a30d',
+    Object.keys(d.leads.by_status).sort((a,b)=>(d.leads.by_status[b]||0)-(d.leads.by_status[a]||0)),
+    k=>STATUS_LABEL[k]||k);
+  barRows(d.leads.by_niche, 'nicheRows', k=>NICHE_C[k]||'#0891b2',
+    Object.keys(d.leads.by_niche).sort((a,b)=>(d.leads.by_niche[b]||0)-(d.leads.by_niche[a]||0)));
+  const nh = d.number_health||[];
+  el('numberRows').innerHTML = nh.length ? `<table class="tbl"><thead><tr><th>Number</th><th>Sent (7d)</th><th>Delivery</th><th>Errors</th><th>Trend</th></tr></thead><tbody>`+
+    nh.map(n=>{
+      const trend = n.delta==null ? '<span style="color:var(--faint)">new</span>'
+        : n.delta<=-20 ? `<span class="chip c-red">▼ ${n.delta} pts</span>`
+        : n.delta<0 ? `<span class="chip c-amber">▼ ${n.delta} pts</span>`
+        : `<span class="chip c-green">${n.delta>0?'▲ +'+n.delta+' pts':'steady'}</span>`;
+      return `<tr><td style="font-family:var(--mono);font-size:12px">${esc(n.number)}</td><td>${num(n.sends_7d)}</td><td class="b" style="color:${n.rate_7d==null?'var(--faint)':n.rate_7d>=95?'#137a3c':n.rate_7d>=80?'#b25e09':'#b42318'}">${n.rate_7d==null?'—':n.rate_7d+'%'}</td><td>${num(n.errors_7d)}</td><td>${trend}</td></tr>`;
+    }).join('')+`</tbody></table>`
+    : '<div class="empty">No sends tracked yet.</div>';
+  el('sms24').textContent = num(d.sms.last_24h)+' in last 24h';
+  barRows(d.sms.by_stage, 'smsStageRows', ()=>'#7c3aed', undefined, k=>STAGE_LABEL[k]||k);
+
+  const e = d.engagement;
+  el('engagement').innerHTML =
+    `<div class="mstat"><div class="k">Demo opens</div><div class="v">${num(e.clicks)} <small>by ${num(e.unique_clicked)} lead${e.unique_clicked===1?'':'s'}</small></div></div>`+
+    `<div class="mstat"><div class="k">Real looks (30s+)</div><div class="v">${num(e.views)} <small>by ${num(e.unique_viewed)}</small></div></div>`+
+    `<div class="mstat"><div class="k">Open rate</div><div class="v">${e.click_rate}<small>%</small></div></div>`+
+    `<div class="mstat"><div class="k">Leads captured by AI</div><div class="v">${num(e.captured_leads)}</div></div>`;
+
+  el('errTotal').textContent = num(d.errors.total)+' total';
+  el('errors').innerHTML = d.errors.recent.length
+    ? d.errors.recent.map(x=>`<div class="err"><div class="w">${esc(x.workflow)} · ${x.created_at?new Date(x.created_at).toLocaleTimeString():''}</div><div class="m">${esc(String(x.error).slice(0,140))}</div></div>`).join('')
+    : '<div class="empty"><span class="big">✅</span>No system errors.</div>';
+
+  el('foot').textContent = 'Live from your pipeline · '+num(d.leads.total)+' leads · '+num((d.delivery||{}).mirrored_total)+' texts tracked · '+num(d.review_website)+' sites we could not check';
+}
+
+document.querySelectorAll('.pill').forEach(b=>b.addEventListener('click',()=>{
+  period=b.dataset.p;
+  document.querySelectorAll('.pill').forEach(x=>x.classList.toggle('on',x===b));
+  load();
+}));
+
+// Optional admin token (only needed if ADMIN_TOKEN is set / the server is exposed).
+// Stored locally so the operator isn't retyping it; loopback-only servers need none.
+const adminTok = () => localStorage.getItem('admin_token') || '';
+
+async function toggleKill(){
+  const want = !paused;
+  if(!confirm(want ? 'Pause ALL outgoing texts? Nothing will send until you resume.' : 'Resume sending texts?')) return;
+  // fetch() does NOT reject on 401/502 — only on a network failure. The old code
+  // caught just the throw, so a REJECTED kill looked like a success: the operator
+  // confirmed "Pause ALL outgoing texts", got no error, and texting kept running.
+  try {
+    const h = {'content-type':'application/json'};
+    if(adminTok()) h['x-admin-token'] = adminTok();
+    const res = await fetch('/kill',{method:'POST',headers:h,body:JSON.stringify({paused:want})});
+    if(!res.ok){
+      if(res.status===401){
+        const t = prompt('This server needs an admin token to change the kill switch.\nPaste ADMIN_TOKEN:');
+        if(t){ localStorage.setItem('admin_token', t.trim()); alert('Token saved — press the button again.'); }
+        else { alert('NOT paused — no token given. Texting is still running.'); }
+      } else {
+        const body = await res.json().catch(()=>({}));
+        alert('NOT paused — server rejected it ('+res.status+'). '+(body.error||'')+'\nTexting is still running.');
+      }
+    }
+  }
+  catch(err){ alert('NOT paused — could not reach the server: '+err.message+'\nTexting may still be running.'); }
+  load();
+}
+
+load(); setInterval(load, 10000);
+</script>
+</body>
+</html>

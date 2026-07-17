@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>TrueComfort Heating &amp; Air | Kansas City HVAC · 24/7 Service · 4.9★</title>
+<meta name="description" content="TrueComfort Heating & Air keeps Kansas City comfortable year-round. AC and furnace repair, installation, and tune-ups. NATE-certified techs, 24/7 emergency service, upfront pricing, and financing. 4.9★ on 320+ Google reviews. Call (816) 555-0142." />
+<meta name="theme-color" content="#0A2236" />
+<link rel="canonical" href="https://truecomfortkc.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="TrueComfort Heating &amp; Air | KC's 4.9★ AC &amp; Heating" />
+<meta property="og:description" content="AC & heating repair, installs, and tune-ups across Kansas City. NATE-certified, 24/7 emergency service, upfront pricing. Call (816) 555-0142." />
+<meta property="og:image" content="https://images.pexels.com/photos/5463575/pexels-photo-5463575.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230A2236'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%2337A0E6' stroke-width='3'/%3E%3Cpath d='M16 7a9 9 0 0 1 0 18' fill='none' stroke='%23EE7A2B' stroke-width='3'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#ffffff; --bg2:#EEF5FB; --card:#ffffff; --line:#DCE6EF; --line2:#C7D5E1;
+  --ink:#15232E; --muted:#5A6B79;
+  --blue:#1B83C9; --blue2:#0F6FB8; --blue-ink:#0A2236; --blue-soft:#E3F0FA;
+  --cool:#37A0E6; --heat:#EE7A2B; --heat2:#D5611A; --heat-soft:#FDEBDD;
+  --star:#F4A91F; --ok:#34C77B;
+  --maxw:1180px; --r:18px;
+  --sh:0 22px 50px -26px rgba(10,34,54,.5);
+  --sh-sm:0 8px 22px -12px rgba(10,34,54,.3);
+  --fhead:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --fbody:'Open Sans',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:var(--fbody);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:var(--fhead);font-weight:700;line-height:1.12;letter-spacing:-.015em;color:var(--blue-ink)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;font-family:var(--fhead);font-size:.74rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--heat)}
+.eyebrow::before{content:"";width:24px;height:2px;background:var(--heat);border-radius:2px}
+.muted{color:var(--muted)}
+.sec{padding:90px 0}
+.shead{max-width:680px;margin-bottom:48px}
+.shead.center{margin:0 auto 50px;text-align:center}
+.shead.center .eyebrow{justify-content:center}
+.shead.center .eyebrow::before{display:none}
+.shead h2{font-size:clamp(2rem,3.8vw,2.9rem);margin-top:14px}
+.shead p{color:var(--muted);margin-top:14px;font-size:1.08rem}
+.stars{color:var(--star);letter-spacing:1px}
+
+/* buttons (pill) */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 28px;border-radius:999px;font-family:var(--fhead);font-weight:600;font-size:1rem;white-space:nowrap;cursor:pointer;border:2px solid transparent;transition:transform .15s,background .2s,box-shadow .2s,color .2s,border-color .2s}
+a:focus-visible,button:focus-visible,.btn:focus-visible{outline:3px solid var(--heat);outline-offset:3px}
+.btn svg{width:18px;height:18px}
+.btn-cta{background:var(--heat);color:#fff;box-shadow:0 12px 26px -12px rgba(238,122,43,.7)}
+.btn-cta:hover{background:var(--heat2);transform:translateY(-2px)}
+.btn-blue{background:var(--blue2);color:#fff}
+.btn-blue:hover{background:var(--blue-ink);transform:translateY(-2px)}
+.btn-ghost{background:rgba(255,255,255,.08);color:#fff;border-color:rgba(255,255,255,.32)}
+.btn-ghost:hover{background:rgba(255,255,255,.16);transform:translateY(-2px)}
+.btn-out{background:#fff;color:var(--blue2);border-color:var(--line2)}
+.btn-out:hover{border-color:var(--blue2);transform:translateY(-2px)}
+
+/* utility bar */
+.ubar{background:#06192a;color:#fff;font-size:.86rem;position:relative;z-index:51}
+.ubar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;height:42px}
+.ubar .u-left{display:flex;align-items:center;gap:18px;flex-wrap:wrap;color:#9FC2DD}
+.ubar .u-left span{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
+.ubar svg{width:15px;height:15px}
+.ubar .u-star{color:var(--star)}
+.ubar .u-phone{display:inline-flex;align-items:center;gap:8px;font-family:var(--fhead);font-weight:700;color:#fff}
+@media(max-width:760px){.ubar .u-left span:not(.keep){display:none}}
+
+/* header, transparent over dark hero, solid on scroll */
+.hdr{position:absolute;left:0;right:0;z-index:50;transition:background .3s,box-shadow .25s,transform .35s cubic-bezier(.16,1,.3,1);will-change:transform}
+.hdr.scrolled{position:fixed;top:0;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);box-shadow:0 6px 20px -12px rgba(10,34,54,.35)}
+.hdr.hide{transform:translateY(-100%)}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;height:84px}
+.brand{display:flex;align-items:center;gap:11px}
+.brand .logo{width:44px;height:44px;border-radius:13px;flex:none;background:linear-gradient(135deg,var(--cool),var(--heat));display:grid;place-items:center;box-shadow:0 8px 20px -8px rgba(238,122,43,.5)}
+.brand .logo svg{width:25px;height:25px}
+.brand b{font-family:var(--fhead);font-weight:800;font-size:1.14rem;display:block;line-height:1.05;color:#fff}
+.brand small{font-size:.64rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;white-space:nowrap;color:rgba(255,255,255,.66)}
+.hdr.scrolled .brand b{color:var(--blue-ink)}
+.hdr.scrolled .brand small{color:var(--muted)}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{padding:9px 13px;border-radius:999px;font-size:.93rem;font-weight:600;color:rgba(255,255,255,.82);white-space:nowrap;transition:color .2s,background .2s}
+.nav-links a:hover{color:#fff;background:rgba(255,255,255,.12)}
+.hdr.scrolled .nav-links a{color:var(--ink)}
+.hdr.scrolled .nav-links a:hover{color:var(--blue2);background:var(--bg2)}
+.hdr-right{display:flex;align-items:center;gap:14px}
+.hdr-phone{display:flex;flex-direction:column;align-items:flex-end;line-height:1.06}
+.hdr-phone .em{font-size:.62rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--heat)}
+.hdr-phone a{font-family:var(--fhead);font-weight:800;font-size:1.05rem;white-space:nowrap;display:inline-flex;align-items:center;gap:7px;color:#fff}
+.hdr.scrolled .hdr-phone a{color:var(--blue-ink)}
+.hdr-phone a svg{width:16px;height:16px;color:var(--heat)}
+.navcta{padding:11px 22px;font-size:.94rem}
+.burger{display:none;width:46px;height:46px;border:1px solid rgba(255,255,255,.4);border-radius:12px;background:rgba(255,255,255,.08);cursor:pointer;color:#fff}
+.hdr.scrolled .burger{border-color:var(--line2);background:#fff;color:var(--blue-ink)}
+.burger svg{width:22px;height:22px;margin:auto}
+
+/* mobile menu */
+.mmenu{position:fixed;inset:0;z-index:60;background:rgba(8,26,42,.98);display:none;flex-direction:column;padding:90px 26px 26px;gap:4px}
+.mmenu.open{display:flex}
+.mmenu a{font-family:var(--fhead);font-weight:700;font-size:1.3rem;color:#fff;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.12)}
+.mmenu .btn{margin-top:18px}
+.mclose{position:absolute;top:22px;right:22px;width:46px;height:46px;border:1px solid rgba(255,255,255,.3);border-radius:12px;background:rgba(255,255,255,.08);cursor:pointer;color:#fff}
+.mclose svg{width:22px;height:22px;margin:auto}
+
+/* HERO, dark, thermostat-dial centerpiece */
+.hero{position:relative;background:radial-gradient(120% 90% at 80% 0%,#114b76 0%,#0A2236 55%,#06192a 100%);color:#fff;padding:150px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;left:-10%;top:-20%;width:55%;height:90%;background:radial-gradient(circle,rgba(55,160,230,.22),transparent 65%);filter:blur(20px);pointer-events:none}
+.hero::after{content:"";position:absolute;right:-8%;bottom:-25%;width:50%;height:90%;background:radial-gradient(circle,rgba(238,122,43,.18),transparent 65%);filter:blur(20px);pointer-events:none}
+.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}
+.hero .eyebrow{color:#7FD3F2}
+.hero .eyebrow::before{background:#7FD3F2}
+.hero h1{font-size:clamp(2.4rem,5vw,3.7rem);margin:18px 0 0;color:#fff}
+.hero h1 .cool{color:#67C0F5}
+.hero h1 .warm{color:#FF9E52}
+.hero .lead{font-size:1.16rem;color:#B7CBDC;margin:20px 0 0;max-width:46ch}
+.cta-row{display:flex;flex-wrap:wrap;gap:13px;margin-top:30px}
+.hero-chips{display:flex;flex-wrap:wrap;gap:9px 10px;margin-top:26px}
+.hero-chips span{display:inline-flex;align-items:center;gap:8px;font-size:.88rem;font-weight:600;color:#DCE9F4;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.16);padding:8px 14px;border-radius:999px}
+.hero-chips svg{width:15px;height:15px;color:var(--ok);flex:none}
+/* dial */
+.dial-wrap{position:relative;display:grid;place-items:center}
+.dial{width:min(100%,400px);height:auto;filter:drop-shadow(0 30px 60px rgba(0,0,0,.5))}
+.dial .dnum{font-family:var(--fhead);font-weight:800}
+.dial-tag{position:absolute;font-family:var(--fhead);font-weight:700;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;display:flex;align-items:center;gap:7px;background:rgba(8,26,42,.7);border:1px solid rgba(255,255,255,.14);padding:8px 13px;border-radius:999px;backdrop-filter:blur(4px)}
+.dial-tag .d{width:9px;height:9px;border-radius:50%}
+.dial-tag.cool{left:-4px;top:34%;color:#9AD7FB}
+.dial-tag.cool .d{background:var(--cool)}
+.dial-tag.heat{right:-4px;top:34%;color:#FFC79A}
+.dial-tag.heat .d{background:var(--heat)}
+
+/* stat strip */
+.stats{background:var(--blue-ink);color:#fff;border-top:1px solid rgba(255,255,255,.08)}
+.stats .row{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:30px 0}
+.stat{text-align:center;border-right:1px solid rgba(255,255,255,.1)}
+.stat:last-child{border-right:0}
+.stat b{font-family:var(--fhead);font-weight:800;font-size:2rem;display:block;line-height:1;background:linear-gradient(120deg,#67C0F5,#FF9E52);-webkit-background-clip:text;background-clip:text;color:transparent}
+.stat span{font-size:.82rem;color:#9FC2DD;margin-top:6px;display:block}
+@media(max-width:620px){.stats .row{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-right:0}}
+
+/* services, cooling | heating split */
+.svc-split{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.svc-col{border-radius:22px;padding:34px 32px;border:1px solid var(--line)}
+.svc-col.cool{background:linear-gradient(180deg,#F0F8FE,#fff)}
+.svc-col.heat{background:linear-gradient(180deg,#FFF5EE,#fff)}
+.svc-col .ch{display:flex;align-items:center;gap:13px;margin-bottom:20px}
+.svc-col .ch .ci{width:50px;height:50px;border-radius:14px;display:grid;place-items:center;flex:none}
+.svc-col.cool .ch .ci{background:linear-gradient(135deg,var(--cool),var(--blue2));color:#fff}
+.svc-col.heat .ch .ci{background:linear-gradient(135deg,var(--heat),var(--heat2));color:#fff}
+.svc-col .ch .ci svg{width:26px;height:26px}
+.svc-col .ch h3{font-size:1.4rem}
+.svc-col .ch small{display:block;font-size:.82rem;color:var(--muted);font-weight:600;font-family:var(--fbody)}
+.svc-row{display:flex;gap:13px;padding:15px 0;border-top:1px solid var(--line)}
+.svc-row:first-of-type{border-top:0}
+.svc-row .si{width:22px;height:22px;flex:none;margin-top:2px}
+.svc-col.cool .si{color:var(--blue2)}
+.svc-col.heat .si{color:var(--heat2)}
+.svc-row b{font-family:var(--fhead);font-weight:600;color:var(--blue-ink);font-size:1.02rem;display:block}
+.svc-row p{color:var(--muted);font-size:.92rem;margin-top:2px}
+.svc-extra{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin-top:26px}
+.svc-extra span{display:inline-flex;align-items:center;gap:8px;font-family:var(--fhead);font-weight:600;font-size:.92rem;color:var(--blue-ink);background:var(--bg2);border:1px solid var(--line);padding:11px 18px;border-radius:999px}
+.svc-extra svg{width:17px;height:17px;color:var(--heat)}
+
+/* why, image left, reasons as bordered panel */
+.why{background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.why-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:50px;align-items:center}
+.why-media{position:relative;border-radius:22px;overflow:hidden;box-shadow:var(--sh);aspect-ratio:5/6}
+.why-media img{width:100%;height:100%;object-fit:cover}
+.why-media .wm-badge{position:absolute;left:18px;bottom:18px;right:18px;background:rgba(8,26,42,.82);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:14px 16px;color:#fff;display:flex;align-items:center;gap:12px}
+.why-media .wm-badge svg{width:30px;height:30px;color:#67C0F5;flex:none}
+.why-media .wm-badge b{font-family:var(--fhead);font-size:1rem;display:block}
+.why-media .wm-badge span{font-size:.82rem;color:#9FC2DD}
+.why-panel{background:#fff;border:1px solid var(--line);border-radius:22px;box-shadow:var(--sh-sm);overflow:hidden}
+.why-row{display:flex;gap:16px;padding:22px 26px;border-top:1px solid var(--line)}
+.why-row:first-child{border-top:0}
+.why-row .wn{font-family:var(--fhead);font-weight:800;font-size:1.05rem;color:var(--heat);width:34px;flex:none}
+.why-row h4{font-family:var(--fhead);font-size:1.08rem;color:var(--blue-ink);font-weight:700}
+.why-row p{color:var(--muted);font-size:.95rem;margin-top:3px}
+
+/* comfort club, wide banner */
+.club{background:linear-gradient(135deg,var(--blue-ink),#10456f);color:#fff}
+.club-band{display:grid;grid-template-columns:1.1fr 1fr;gap:40px;align-items:center;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:40px 42px}
+.club-band .eyebrow{color:#FFB37A}
+.club-band .eyebrow::before{background:#FFB37A}
+.club-band h2{color:#fff;font-size:clamp(1.8rem,3.2vw,2.4rem);margin-top:12px}
+.club-band>div:first-child p{color:#B7CBDC;margin-top:14px;font-size:1.04rem}
+.club-price{display:flex;align-items:baseline;gap:8px;margin:18px 0 0}
+.club-price b{font-family:var(--fhead);font-weight:800;font-size:2.6rem}
+.club-price span{color:#9FC2DD;font-weight:600}
+.club-list{list-style:none;display:flex;flex-direction:column;gap:13px}
+.club-list li{display:flex;align-items:flex-start;gap:12px;font-size:.97rem;color:#E6EFF6}
+.club-list li svg{width:21px;height:21px;flex:none;color:var(--ok);margin-top:1px}
+.club-band .btn{margin-top:6px;width:100%}
+
+/* process, vertical timeline */
+.timeline{max-width:760px;margin:0 auto;position:relative;padding-left:8px}
+.timeline::before{content:"";position:absolute;left:25px;top:8px;bottom:8px;width:2px;background:linear-gradient(180deg,var(--cool),var(--heat))}
+.tl-step{position:relative;padding:0 0 34px 70px}
+.tl-step:last-child{padding-bottom:0}
+.tl-step .tn{position:absolute;left:0;top:0;width:52px;height:52px;border-radius:16px;background:#fff;border:2px solid var(--line);display:grid;place-items:center;font-family:var(--fhead);font-weight:800;font-size:1.1rem;color:var(--blue2);box-shadow:var(--sh-sm)}
+.tl-step h4{font-family:var(--fhead);font-size:1.18rem;color:var(--blue-ink);font-weight:700;padding-top:11px}
+.tl-step p{color:var(--muted);font-size:.97rem;margin-top:5px;max-width:52ch}
+
+/* reviews, featured + two */
+.rev-head{text-align:center;max-width:620px;margin:0 auto 42px}
+.rev-rate{display:inline-flex;align-items:center;gap:10px;font-weight:600;color:var(--ink);margin-top:12px}
+.rev-rate .stars{font-size:1.2rem}
+.rev-rate b{font-family:var(--fhead)}
+.rev-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:22px}
+.rev-feature{background:linear-gradient(160deg,var(--blue-ink),#10456f);color:#fff;border-radius:22px;padding:38px 40px;display:flex;flex-direction:column}
+.rev-feature .rc-stars{color:var(--star);letter-spacing:2px;font-size:1.2rem}
+.rev-feature blockquote{font-family:var(--fhead);font-weight:600;font-size:1.4rem;line-height:1.4;margin:18px 0 22px}
+.rev-feature .rc-by{display:flex;align-items:center;gap:13px;margin-top:auto}
+.rev-feature .ava{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--cool),var(--heat));display:grid;place-items:center;font-family:var(--fhead);font-weight:700;color:#fff;flex:none}
+.rev-feature .nm{font-family:var(--fhead);font-weight:700;display:block}
+.rev-feature .src{font-size:.84rem;color:#9FC2DD}
+.rev-side{display:flex;flex-direction:column;gap:22px}
+.rev-card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--sh-sm);display:flex;flex-direction:column}
+.rev-card .rc-stars{color:var(--star);letter-spacing:2px;font-size:1rem}
+.rev-card p{font-family:var(--fhead);font-weight:600;font-size:1rem;line-height:1.45;color:var(--blue-ink);margin:11px 0 14px}
+.rev-card .rc-by{display:flex;align-items:center;gap:11px;margin-top:auto}
+.rev-card .ava{width:40px;height:40px;border-radius:50%;background:var(--bg2);color:var(--blue2);display:grid;place-items:center;font-family:var(--fhead);font-weight:700;flex:none;border:1px solid var(--line)}
+.rev-card .nm{font-family:var(--fhead);font-weight:700;color:var(--blue-ink);display:block;line-height:1.2;font-size:.95rem}
+.rev-card .src{font-size:.78rem;color:var(--muted)}
+
+/* service area */
+.area{background:var(--bg2);border-top:1px solid var(--line)}
+.area-grid{display:flex;flex-wrap:wrap;justify-content:center;gap:11px;max-width:840px;margin:0 auto}
+.area-chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:12px 20px;font-weight:600;display:flex;align-items:center;gap:9px;color:var(--ink)}
+.area-chip svg{width:16px;height:16px;color:var(--heat);flex:none}
+
+/* book, split with prominent form */
+.book{background:radial-gradient(120% 100% at 10% 0%,#114b76,#0A2236 60%,#06192a);color:#fff}
+.book-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.book .eyebrow{color:#7FD3F2}.book .eyebrow::before{background:#7FD3F2}
+.book h2{color:#fff;font-size:clamp(2rem,3.4vw,2.6rem);margin-top:12px}
+.book .lead{color:#B7CBDC;margin-top:14px;font-size:1.08rem;max-width:42ch}
+.qcall{display:inline-flex;align-items:center;gap:13px;margin-top:24px;padding:16px 28px;border-radius:999px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.22);color:#fff;font-family:var(--fhead);font-weight:800;font-size:1.35rem}
+.qcall svg{width:24px;height:24px;color:var(--heat)}
+.qcall:hover{background:rgba(255,255,255,.15)}
+.qnote{margin-top:14px;color:#9FC2DD;font-size:.92rem}
+.qnote a{color:#fff;font-weight:600}
+.qform{background:#fff;border-radius:22px;padding:30px;box-shadow:var(--sh);color:var(--ink)}
+.qform h3{font-size:1.3rem;margin-bottom:4px;color:var(--blue-ink)}
+.qform .sub{color:var(--muted);font-size:.92rem;margin-bottom:18px}
+.field{margin-bottom:13px}
+.field label{display:block;font-size:.82rem;font-weight:600;color:var(--ink);margin-bottom:5px}
+.field input,.field select,.field textarea{width:100%;border:1px solid var(--line2);border-radius:12px;padding:12px 14px;font-family:inherit;font-size:.96rem;color:var(--ink);background:#fff}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-color:var(--blue2);box-shadow:0 0 0 3px rgba(15,111,184,.14)}
+.field textarea{resize:vertical;min-height:70px}
+.qform .btn{width:100%;margin-top:6px}
+
+/* faq */
+.faq-list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.faq-item{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--sh-sm)}
+.faq-item>button{width:100%;text-align:left;background:transparent;border:0;cursor:pointer;color:var(--blue-ink);font-family:var(--fhead);font-weight:700;font-size:1.04rem;line-height:1.3;padding:21px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.faq-item>button .fq-ic{width:24px;height:24px;color:var(--heat);flex:none;transition:transform .3s cubic-bezier(.16,1,.3,1)}
+.faq-item.open>button .fq-ic{transform:rotate(45deg)}
+.faq-item .fa{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-item .fa p{padding:0 24px 21px;color:var(--muted);font-size:.98rem;line-height:1.6}
+@media(prefers-reduced-motion:reduce){.faq-item .fa{transition:none}.faq-item>button .fq-ic{transition:none}.hdr{transition:none}}
+
+/* footer */
+footer{background:#06192a;color:#B7CBDC;padding:56px 0 30px}
+footer .ftop{display:flex;flex-wrap:wrap;gap:34px;justify-content:space-between}
+footer .fbrand{max-width:300px}
+footer .fbrand .brand b{color:#fff}
+footer .fbrand p{margin-top:14px;font-size:.92rem;color:#8AA5BC}
+.fcol h4{font-family:var(--fhead);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:#7E9AB2;margin-bottom:14px}
+.fcol a,.fcol p{display:block;color:#C2D4E2;font-size:.93rem;margin-bottom:9px;transition:color .2s}
+.fcol a:hover{color:#fff}
+.fbot{margin-top:40px;padding-top:22px;border-top:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:.82rem;color:#7E9AB2}
+
+/* sticky mobile call */
+.scall{position:fixed;left:0;right:0;bottom:0;z-index:55;display:none;padding:11px 14px calc(11px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line2);box-shadow:0 -8px 24px -14px rgba(10,34,54,.4)}
+.scall a{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:15px;border-radius:999px;background:var(--heat);color:#fff;font-family:var(--fhead);font-weight:800;font-size:1.05rem}
+.scall svg{width:20px;height:20px}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .55s cubic-bezier(.16,1,.3,1),transform .55s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:920px){
+  .hero-grid,.why-grid,.book-grid,.club-band,.svc-split{grid-template-columns:1fr}
+  .hero{padding:130px 0 70px}
+  .dial-wrap{max-width:360px;margin:10px auto 0}
+  .why-media{order:-1;max-width:440px;margin:0 auto}
+  .nav-links,.hdr-phone{display:none}
+  .burger{display:grid;place-items:center}
+  .navcta{display:none}
+  .scall{display:block}
+  body{padding-bottom:74px}
+}
+@media(max-width:560px){
+  .wrap{padding:0 18px}
+  .area-chip{padding:10px 16px}
+  .hero h1{font-size:2.2rem}
+  .sec{padding:64px 0}
+  .svc-col,.club-band{padding:28px 22px}
+  .tl-step{padding-left:62px}
+  .timeline::before{left:23px}
+}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+
+<!-- UTILITY BAR -->
+<div class="ubar">
+  <div class="wrap">
+    <div class="u-left">
+      <span class="keep"><svg class="u-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2z"/></svg> 4.9 on 320+ Google reviews</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="#7FD3A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> NATE-certified technicians</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="#7FD3A8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg> 24/7 emergency service</span>
+    </div>
+    <a href="tel:+18165550142" class="u-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (816) 555-0142</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="TrueComfort Heating and Air home">
+      <span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16"/></svg></span>
+      <span><b>TrueComfort</b><small>Heating &amp; Air</small></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#why">Why us</a>
+      <a href="#club">Comfort Club</a>
+      <a href="#process">Process</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#book">Contact</a>
+    </nav>
+    <div class="hdr-right">
+      <span class="hdr-phone"><span class="em">24/7 Emergency</span><a href="tel:+18165550142"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(816) 555-0142</a></span>
+      <a href="#book" class="btn btn-cta navcta">Schedule Service</a>
+      <button class="burger" id="burger" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<div class="mmenu" id="mmenu">
+  <button class="mclose" id="mclose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <a href="#services">Services</a>
+  <a href="#why">Why us</a>
+  <a href="#club">Comfort Club</a>
+  <a href="#process">Process</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#faq">FAQ</a>
+  <a href="#book">Contact</a>
+  <a href="tel:+18165550142" class="btn btn-cta">Call (816) 555-0142</a>
+</div>
+
+<span id="top"></span>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-copy reveal">
+      <span class="eyebrow">Kansas City heating &amp; cooling</span>
+      <h1>Keep your home <span class="cool">cool</span> in July and <span class="warm">warm</span> in January.</h1>
+      <p class="lead">One NATE-certified team for both your AC and your heating. We tell you the price before we start, and we pick up the phone 24/7 when something quits.</p>
+      <div class="cta-row">
+        <a href="#book" class="btn btn-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Schedule Service</a>
+        <a href="tel:+18165550142" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(816) 555-0142</a>
+      </div>
+      <div class="hero-chips">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Upfront flat-rate pricing</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Financing, $0 down</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Same-day appointments</span>
+      </div>
+    </div>
+    <div class="dial-wrap reveal">
+      <svg class="dial" viewBox="0 0 320 320" role="img" aria-label="Thermostat set to a comfortable 72 degrees">
+        <defs>
+          <linearGradient id="hc" x1="0" y1="1" x2="1" y2="0">
+            <stop offset="0" stop-color="#37A0E6"/><stop offset=".5" stop-color="#9AC9C0"/><stop offset="1" stop-color="#EE7A2B"/>
+          </linearGradient>
+        </defs>
+        <circle cx="160" cy="160" r="150" fill="#081d2f" stroke="rgba(255,255,255,.08)" stroke-width="1"/>
+        <circle cx="160" cy="160" r="150" fill="none" stroke="rgba(255,255,255,.05)" stroke-width="1"/>
+        <!-- gauge track (270deg, open at bottom) -->
+        <circle cx="160" cy="160" r="120" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="16" stroke-linecap="round" stroke-dasharray="565 754" transform="rotate(135 160 160)"/>
+        <!-- value arc ~72% -->
+        <circle cx="160" cy="160" r="120" fill="none" stroke="url(#hc)" stroke-width="16" stroke-linecap="round" stroke-dasharray="408 754" transform="rotate(135 160 160)"/>
+        <!-- marker dot at value -->
+        <circle cx="160" cy="40" r="9" fill="#fff" transform="rotate(60 160 160)"/>
+        <text class="dnum" x="160" y="178" text-anchor="middle" font-size="76" fill="#fff">72°</text>
+        <text x="160" y="212" text-anchor="middle" font-size="15" fill="#7FA8C6" letter-spacing="4" font-family="Poppins" font-weight="600">COMFORT</text>
+        <text x="86" y="280" text-anchor="middle" font-size="13" fill="#67C0F5" letter-spacing="2" font-family="Poppins" font-weight="700">COOL</text>
+        <text x="234" y="280" text-anchor="middle" font-size="13" fill="#FF9E52" letter-spacing="2" font-family="Poppins" font-weight="700">HEAT</text>
+      </svg>
+      <span class="dial-tag cool"><span class="d"></span>AC &amp; cooling</span>
+      <span class="dial-tag heat"><span class="d"></span>Heating</span>
+    </div>
+  </div>
+</section>
+
+<!-- STAT STRIP -->
+<section class="stats">
+  <div class="wrap row">
+    <div class="stat"><b>20</b><span>years serving KC</span></div>
+    <div class="stat"><b>12,000+</b><span>homes kept comfortable</span></div>
+    <div class="stat"><b>4.9★</b><span>on 320+ Google reviews</span></div>
+    <div class="stat"><b>24/7</b><span>emergency service</span></div>
+  </div>
+</section>
+
+<!-- SERVICES, COOLING | HEATING SPLIT -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="shead center reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>The same crew for your AC and your furnace.</h2>
+      <p>Kansas City summers get brutal and the winters get cold, so we work on both. The crew that handles an emergency breakdown also installs new high-efficiency systems.</p>
+    </div>
+    <div class="svc-split">
+      <div class="svc-col cool reveal">
+        <div class="ch">
+          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M12 6 8.5 3.5M12 6l3.5-2.5M2 7l20 10M2 7l3 1.3M2 7l1.3-3M22 17l-3-1.3M22 17l-1.3 3M22 7 2 17M22 7l-3 1.3M22 7l-1.3-3M2 17l3-1.3M2 17l1.3 3"/></svg></span>
+          <div><h3>Cooling</h3><small>For the Kansas City summers</small></div>
+        </div>
+        <div class="svc-row"><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>AC repair</b><p>Same-day fixes when the air conditioner quits in the heat.</p></div></div>
+        <div class="svc-row"><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>AC installation</b><p>High-efficiency systems sized right for your home, with financing.</p></div></div>
+        <div class="svc-row"><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>Heat pumps &amp; mini-splits</b><p>Cooling for additions and rooms that never get comfortable.</p></div></div>
+        <div class="svc-row"><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>Spring AC tune-up</b><p>A tune-up in spring so it doesn't quit on the first 95-degree day.</p></div></div>
+      </div>
+      <div class="svc-col heat reveal">
+        <div class="ch">
+          <span class="ci"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s4 4 4 8a4 4 0 0 1-8 0c0-4 4-8 4-8z"/><path d="M12 14v6M9 22h6"/></svg></span>
+          <div><h3>Heating</h3><small>For the cold months</small></div>
+        </div>
+        <div class="svc-row"><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>Furnace repair</b><p>24/7 service the night the heat goes out.</p></div></div>
+        <div class="svc-row"><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>Furnace &amp; system installation</b><p>New furnaces, heat pumps, and boilers, installed and tested.</p></div></div>
+        <div class="svc-row"><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>Thermostats &amp; smart controls</b><p>Programmable and smart thermostats that cut your bills.</p></div></div>
+        <div class="svc-row"><svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>Fall heating tune-up</b><p>A safety check and tune-up before the first freeze.</p></div></div>
+      </div>
+    </div>
+    <div class="svc-extra reveal">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 5.5a2.5 2.5 0 1 1 2 4H2M12.5 18.5a2.5 2.5 0 1 0 2-4H2"/></svg>Indoor Air Quality</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="6" rx="1"/><rect x="3" y="14" width="18" height="6" rx="1"/></svg>Ductwork &amp; sealing</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h20M5 12V7M19 12v5"/></svg>Humidifiers &amp; purifiers</span>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why sec" id="why">
+  <div class="wrap why-grid">
+    <div class="why-media reveal">
+      <img src="https://images.pexels.com/photos/32588555/pexels-photo-32588555.jpeg?auto=compress&cs=tinysrgb&w=900" alt="A NATE-certified TrueComfort technician servicing a home comfort system" loading="lazy" width="900" height="1080" />
+      <div class="wm-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 6v6c0 5 3.4 7.7 8 10 4.6-2.3 8-5 8-10V6l-8-4z"/></svg><div><b>NATE-certified &amp; EPA 608</b><span>Licensed and insured</span></div></div>
+    </div>
+    <div class="reveal">
+      <span class="eyebrow">Why homeowners choose us</span>
+      <h2 style="font-size:clamp(1.9rem,3.4vw,2.5rem);margin-top:12px">We answer the phone, and we charge what we quoted.</h2>
+      <div class="why-panel" style="margin-top:24px">
+        <div class="why-row"><span class="wn">01</span><div><h4>Upfront, flat-rate pricing</h4><p>You approve the price before we start. The invoice matches the quote, and an emergency call costs the same as any other.</p></div></div>
+        <div class="why-row"><span class="wn">02</span><div><h4>24/7 emergency service</h4><p>No heat in January or no AC in July, we answer the phone and send someone out, day or night.</p></div></div>
+        <div class="why-row"><span class="wn">03</span><div><h4>NATE-certified technicians</h4><p>Factory-trained techs who find the actual problem instead of guessing at it.</p></div></div>
+        <div class="why-row"><span class="wn">04</span><div><h4>Comfort guarantee &amp; financing</h4><p>Every install comes with a satisfaction guarantee, and new systems can be financed with $0 down.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMFORT CLUB -->
+<section class="club sec" id="club">
+  <div class="wrap">
+    <div class="club-band reveal">
+      <div>
+        <span class="eyebrow">Comfort Club membership</span>
+        <h2>Two tune-ups a year, and you skip the wait.</h2>
+        <p>Members get a spring and a fall tune-up, go to the front of the line when they call, and get 15% off repairs. It's how you catch a problem in March instead of on the first 100-degree day.</p>
+        <div class="club-price"><b>$14</b><span>/ month</span></div>
+      </div>
+      <div>
+        <ul class="club-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>2 tune-ups a year (spring AC + fall heat)</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Priority scheduling, so members go to the front</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>15% off all repairs, no overtime fees</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Filter reminders &amp; a documented system report</li>
+        </ul>
+        <a href="#book" class="btn btn-cta">Join the Comfort Club</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS, VERTICAL TIMELINE -->
+<section class="sec" id="process">
+  <div class="wrap">
+    <div class="shead center reveal">
+      <span class="eyebrow">How it works</span>
+      <h2>How a service call works.</h2>
+      <p>You'll know the price and the plan before any work starts.</p>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-step"><span class="tn">1</span><h4>Book in minutes</h4><p>Call or book online and pick a time. We keep same-day and emergency slots open.</p></div>
+      <div class="tl-step"><span class="tn">2</span><h4>Diagnose &amp; quote upfront</h4><p>A NATE-certified tech finds the problem and gives you a flat-rate price to approve before any work starts.</p></div>
+      <div class="tl-step"><span class="tn">3</span><h4>Fix or install the same visit</h4><p>Most repairs are done on the spot. New systems get installed and tested before we leave.</p></div>
+      <div class="tl-step"><span class="tn">4</span><h4>Comfort guaranteed</h4><p>We check the system is running right and back it with our satisfaction guarantee.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec" id="reviews">
+  <div class="wrap">
+    <div class="rev-head reveal">
+      <span class="eyebrow">Real Google reviews</span>
+      <h2>What Kansas City homeowners say.</h2>
+      <div class="rev-rate"><span class="stars">★★★★★</span> <b>4.9</b> <span class="muted">average on 320+ reviews</span></div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev-feature reveal">
+        <div class="rc-stars">★★★★★</div>
+        <blockquote>"Our AC died during the July heat wave and TrueComfort had a tech out the same afternoon. Honest about the price, fixed it fast, and didn't try to upsell us a whole new unit."</blockquote>
+        <div class="rc-by"><span class="ava">JM</span><span><span class="nm">Jenna M.</span><span class="src">Overland Park · Google review</span></span></div>
+      </div>
+      <div class="rev-side">
+        <div class="rev-card reveal">
+          <div class="rc-stars">★★★★★</div>
+          <p>"Furnace quit on the coldest night of the year. They answered at 11pm and had us warm by morning. The Comfort Club has paid for itself."</p>
+          <div class="rc-by"><span class="ava">DR</span><span><span class="nm">David R.</span><span class="src">Lee's Summit · Google</span></span></div>
+        </div>
+        <div class="rev-card reveal">
+          <div class="rc-stars">★★★★★</div>
+          <p>"New system install was spotless. Walked me through financing, showed up on time, cleaned up like they were never here."</p>
+          <div class="rc-by"><span class="ava">SP</span><span><span class="nm">Sandra P.</span><span class="src">Independence · Google</span></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="area sec" id="area">
+  <div class="wrap">
+    <div class="shead center reveal">
+      <span class="eyebrow">Service area</span>
+      <h2>Where we work.</h2>
+      <p>Locally owned, covering Kansas City and the nearby suburbs.</p>
+    </div>
+    <div class="area-grid reveal">
+      <div class="area-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Kansas City</div>
+      <div class="area-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Overland Park</div>
+      <div class="area-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Olathe</div>
+      <div class="area-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Lee's Summit</div>
+      <div class="area-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Lenexa</div>
+      <div class="area-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Shawnee</div>
+      <div class="area-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Independence</div>
+      <div class="area-chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Blue Springs</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq" style="background:var(--bg2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="shead center reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2>Questions homeowners ask us.</h2>
+      <p>Answers to the ones we hear most.</p>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button type="button" aria-expanded="false"><span>Should I repair or replace my system?</span><svg class="fq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="fa"><p>A good rule of thumb: if your system is 12 to 15 years old, or the repair would cost more than about half the price of a new unit, replacement usually makes more sense. We'll give you the numbers both ways and let you decide.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" aria-expanded="false"><span>How much does a new system cost?</span><svg class="fq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="fa"><p>It depends on the size of your home and the efficiency you choose. A new AC or furnace usually runs a few thousand dollars, and a full system costs more. We give you a written quote up front and offer financing with $0 down.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" aria-expanded="false"><span>How often should I have my HVAC serviced?</span><svg class="fq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="fa"><p>Twice a year: the AC in spring and the heating in fall, plus a new filter every 30 to 90 days. Regular tune-ups keep your bills down and keep the manufacturer warranty valid. Our Comfort Club books both visits for you.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" aria-expanded="false"><span>Do you really offer 24/7 emergency service?</span><svg class="fq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="fa"><p>Yes. No heat during a cold snap or no AC in a heat wave is a real emergency, so we answer the phone and send a technician day or night. Members pay no overtime fees.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" aria-expanded="false"><span>Are your technicians certified?</span><svg class="fq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="fa"><p>Yes. Our technicians are NATE-certified and EPA Section 608 certified to handle refrigerant, and we're fully licensed and insured. We're happy to show proof before any work begins.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" aria-expanded="false"><span>What does the Comfort Club include?</span><svg class="fq-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button>
+        <div class="fa"><p>Two tune-ups a year (spring AC and fall heating), priority scheduling ahead of non-members, 15% off repairs with no overtime fees, and filter reminders with a written system report.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK / FINAL CTA -->
+<section class="book sec" id="book">
+  <div class="wrap book-grid">
+    <div class="reveal">
+      <span class="eyebrow">Get in touch</span>
+      <h2>Schedule your service today.</h2>
+      <p class="lead">Tell us what's going on, or just call. We're here 24/7 for heating and cooling emergencies, and the quote is always upfront.</p>
+      <a href="tel:+18165550142" class="qcall"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(816) 555-0142</a>
+      <p class="qnote">Or email <a href="mailto:service@truecomfortkc.com">service@truecomfortkc.com</a> &middot; Open 24/7 for emergencies</p>
+    </div>
+    <form class="qform reveal" id="bookForm" onsubmit="return sendBooking(event)">
+      <h3>Request service</h3>
+      <div class="sub">We'll get right back to you to schedule.</div>
+      <div class="field"><label for="qn">Name</label><input id="qn" name="name" required placeholder="Your name" /></div>
+      <div class="field"><label for="qp">Phone</label><input id="qp" name="phone" type="tel" required placeholder="(816) 000-0000" /></div>
+      <div class="field"><label for="qs">What do you need?</label>
+        <select id="qs" name="service">
+          <option>AC repair</option><option>Heating / furnace repair</option><option>New system / install quote</option>
+          <option>Maintenance / tune-up</option><option>Indoor air quality</option><option>Join the Comfort Club</option><option>Emergency: no heat or no AC</option>
+        </select>
+      </div>
+      <div class="field"><label for="qm">Details (optional)</label><textarea id="qm" name="msg" placeholder="Tell us what's going on with your system"></textarea></div>
+      <button type="submit" class="btn btn-cta">Schedule my service</button>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="ftop">
+      <div class="fbrand">
+        <a href="#top" class="brand"><span class="logo"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 4a8 8 0 0 1 0 16"/></svg></span><span><b>TrueComfort</b><small style="color:#7E9AB2">Heating &amp; Air</small></span></a>
+        <p>Heating and cooling repair, installs, and maintenance across the Kansas City metro. NATE-certified, licensed, and insured. Locally owned for 20 years.</p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="#services">Air Conditioning</a><a href="#services">Heating &amp; Furnaces</a><a href="#services">Maintenance</a><a href="#services">Indoor Air Quality</a><a href="#services">Ductless Mini-Splits</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="#why">Why us</a><a href="#club">Comfort Club</a><a href="#process">Process</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a><a href="#book">Contact</a>
+      </div>
+      <div class="fcol">
+        <h4>Get in touch</h4>
+        <a href="tel:+18165550142">(816) 555-0142</a>
+        <a href="mailto:service@truecomfortkc.com">service@truecomfortkc.com</a>
+        <p>Serving the KC metro</p>
+        <p>Open 24/7 for emergencies</p>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 TrueComfort Heating &amp; Air. NATE-certified · Licensed &amp; insured.</span>
+      <span>4.9★ on 320+ Google reviews</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CALL -->
+<div class="scall">
+  <a href="tel:+18165550142"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call for 24/7 service</a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* sticky/transparent header */
+  var hdr = document.getElementById('hdr'), lastY = window.pageYOffset;
+  window.addEventListener('scroll', function(){
+    var y = window.pageYOffset;
+    hdr.classList.toggle('scrolled', y > 40);
+    if (y > lastY && y > 260) hdr.classList.add('hide'); else hdr.classList.remove('hide');
+    lastY = y;
+  }, {passive:true});
+
+  /* mobile menu */
+  var burger = document.getElementById('burger'), mmenu = document.getElementById('mmenu'), mclose = document.getElementById('mclose');
+  function closeMenu(){ mmenu.classList.remove('open'); document.body.style.overflow=''; }
+  burger.addEventListener('click', function(){ mmenu.classList.add('open'); document.body.style.overflow='hidden'; });
+  mclose.addEventListener('click', closeMenu);
+  mmenu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+
+  /* FAQ accordion */
+  document.querySelectorAll('.faq-item > button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.parentElement, open = item.classList.contains('open'), fa = item.querySelector('.fa');
+      document.querySelectorAll('.faq-item.open').forEach(function(o){
+        o.classList.remove('open'); o.querySelector('.fa').style.maxHeight = null; o.querySelector('button').setAttribute('aria-expanded','false');
+      });
+      if (!open){ item.classList.add('open'); fa.style.maxHeight = fa.scrollHeight + 'px'; btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+
+  /* scroll reveal */
+  if (reduce || !('IntersectionObserver' in window)){
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {threshold:0.1, rootMargin:'0px 0px -8% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  }
+
+  /* booking form -> mailto fallback */
+  window.sendBooking = function(e){
+    e.preventDefault();
+    var f = e.target;
+    var body = 'Name: ' + f.name.value + '%0D%0APhone: ' + f.phone.value +
+               '%0D%0AService: ' + f.service.value + '%0D%0ADetails: ' + (f.msg.value || '');
+    window.location.href = 'mailto:service@truecomfortkc.com?subject=' + encodeURIComponent('Service request from ' + f.name.value) + '&body=' + body;
+    return false;
+  };
+})();
+</script>
+</body>
+</html>

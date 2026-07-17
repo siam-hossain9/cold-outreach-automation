@@ -1,0 +1,1168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Voltline Electric · Seattle Electricians · Panels, EV Chargers, 24/7</title>
+<meta name="description" content="Voltline Electric is a Seattle electrician for panel upgrades, EV charger installs, generators, rewiring, and lighting, with a 24/7 emergency line. Licensed and insured, upfront pricing, financing. 4.9 stars on 300+ reviews. Call (562) 431-1960." />
+<meta name="theme-color" content="#111110" />
+<link rel="canonical" href="https://voltlineelectric.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Voltline Electric · Seattle's 4.9-star Electricians" />
+<meta property="og:description" content="Panel upgrades, EV chargers, generators, rewiring, and lighting across Seattle, with a 24/7 emergency line. Licensed and insured, upfront pricing, financing. Call (562) 431-1960." />
+<meta property="og:image" content="assets/_img/577ad34aeb12.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111110'/%3E%3Cpath d='M34 13 18 37h10l-2 14 18-25H33l4-13z' fill='%23C6F03A'/%3E%3Crect x='18' y='51' width='28' height='3' rx='1.5' fill='%23C6F03A'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bone:#ECE7DB;      /* warm bone page */
+  --bone2:#E4DECF;     /* alt light */
+  --ink:#111110;       /* near-black text */
+  --ink2:#39362E;
+  --muted:#6C6658;
+  --faint:#928C7D;
+  --line:rgba(17,17,16,.18);   /* hairline on bone */
+  --dark:#121211;      /* near-black section */
+  --dark2:#0B0B0A;
+  --lineD:rgba(236,231,219,.16);
+  --volt:#C6F03A;      /* electric lime accent */
+  --volt2:#D6FA55;
+  --brass:#C99A52;     /* stars only */
+  --red:#E23D22;       /* emergency */
+  --maxw:1360px;
+  --fdisp:'Chakra Petch','Segoe UI',system-ui,sans-serif;
+  --fbody:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --fmono:'Space Mono',ui-monospace,'SF Mono',Menlo,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bone);color:var(--ink);font-family:var(--fbody);font-weight:400;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+h1,h2,h3,h4{font-family:var(--fdisp);font-weight:700;line-height:.98;letter-spacing:-.02em;color:var(--ink)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(20px,5vw,64px)}
+.sec{padding:clamp(64px,11vh,140px) 0;position:relative}
+
+/* mono label */
+.kick{display:inline-flex;align-items:center;gap:12px;font-family:var(--fmono);font-size:.72rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.kick .dot{width:7px;height:7px;background:var(--volt);border-radius:50%;flex:none}
+.kick .n{color:var(--faint)}
+
+/* big editorial section heading */
+.shead{max-width:22ch}
+.shead h2{font-size:clamp(2.6rem,6.6vw,6rem);margin-top:22px;letter-spacing:-.03em;line-height:.92}
+.shead h2 em{font-style:normal;position:relative;white-space:nowrap}
+.shead h2 em::after{content:"";position:absolute;left:0;right:0;bottom:.08em;height:.14em;background:var(--volt);z-index:-1}
+.shead .sub{font-size:1.14rem;color:var(--muted);margin-top:24px;max-width:52ch;line-height:1.6}
+
+/* buttons: one lime pill, rest are underlined text links (non-boxy) */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 30px;border-radius:100px;font-family:var(--fbody);font-weight:600;font-size:.94rem;letter-spacing:.01em;white-space:nowrap;cursor:pointer;border:1.5px solid transparent;transition:transform .18s ease,background .2s,color .2s,border-color .2s}
+a:focus-visible,button:focus-visible{outline:2.5px solid var(--volt);outline-offset:3px}
+.btn svg{width:18px;height:18px}
+.btn-cta{background:var(--volt);color:var(--ink);border-color:var(--volt)}
+.btn-cta:hover{background:var(--volt2);transform:translateY(-2px)}
+.btn-ink{background:var(--ink);color:var(--bone)}
+.btn-ink:hover{transform:translateY(-2px)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:var(--bone);transform:translateY(-2px)}
+.btn-lineL{background:transparent;color:var(--bone);border-color:rgba(236,231,219,.45)}
+.btn-lineL:hover{background:rgba(236,231,219,.1);border-color:var(--bone);transform:translateY(-2px)}
+.tlink{display:inline-flex;align-items:center;gap:9px;font-family:var(--fmono);font-size:.82rem;letter-spacing:.04em;color:var(--ink);border-bottom:2px solid var(--volt);padding-bottom:3px;transition:gap .2s}
+.tlink svg{width:16px;height:16px}
+.tlink:hover{gap:14px}
+.on-dark .tlink{color:var(--bone)}
+
+.stars{display:inline-flex;gap:2px;color:var(--brass)}
+.stars svg{width:15px;height:15px}
+
+/* logo */
+.brand{display:flex;align-items:center;gap:12px}
+.brand .mk{flex:none}
+.brand .bt{display:flex;flex-direction:column;line-height:1}
+.brand .bt b{font-family:var(--fdisp);font-weight:800;font-size:1.36rem;letter-spacing:-.03em;color:var(--bone)}
+.topbar.scrolled .brand .bt b{color:var(--ink)}
+.brand .bt small{font-family:var(--fmono);font-size:.56rem;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--faint);margin-top:3px}
+
+/* emergency micro-bar */
+.ebar{background:var(--dark);color:var(--bone);font-size:.8rem}
+.ebar .wrap{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px 14px;padding:8px 20px;text-align:center}
+.ebar b{font-weight:600}
+.ebar .pulse{width:8px;height:8px;border-radius:50%;background:var(--red);position:relative;flex:none}
+.ebar .pulse::after{content:"";position:absolute;inset:0;border-radius:50%;background:var(--red);animation:pulse 1.8s ease-out infinite}
+@keyframes pulse{0%{transform:scale(1);opacity:.7}100%{transform:scale(3.2);opacity:0}}
+.ebar .sep{opacity:.4}
+.ebar a{display:inline-flex;align-items:center;gap:7px;font-family:var(--fmono);font-weight:400;color:var(--volt);letter-spacing:.02em}
+.ebar a svg{width:13px;height:13px}
+
+/* topbar */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:90;transition:background .3s,box-shadow .3s}
+.topbar.scrolled .hdr{background:var(--bone);box-shadow:0 1px 0 var(--line)}
+.hdr{transition:background .3s}
+.hdr .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;height:72px}
+.nav{display:flex;align-items:center;gap:4px}
+.nav a{position:relative;font-family:var(--fmono);padding:9px 12px;font-size:.72rem;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:rgba(236,231,219,.82);white-space:nowrap;transition:color .2s}
+.nav a:hover{color:var(--bone)}
+.topbar.scrolled .nav a{color:var(--ink2)}
+.topbar.scrolled .nav a:hover{color:var(--ink)}
+.hdr-r{display:flex;align-items:center;gap:20px}
+.hdr-ph{display:flex;flex-direction:column;align-items:flex-end;line-height:1.05}
+.hdr-ph .em{font-family:var(--fmono);font-size:.54rem;font-weight:400;letter-spacing:.14em;text-transform:uppercase;color:var(--red)}
+.hdr-ph a{font-family:var(--fdisp);font-weight:700;font-size:1.16rem;letter-spacing:-.02em;color:var(--bone);white-space:nowrap}
+.topbar.scrolled .hdr-ph a{color:var(--ink)}
+.navcta{padding:11px 22px;font-size:.82rem}
+.burger{display:none;width:46px;height:46px;border:1.5px solid rgba(236,231,219,.4);border-radius:100px;background:transparent;cursor:pointer;color:var(--bone)}
+.topbar.scrolled .burger{color:var(--ink);border-color:var(--line)}
+.burger svg{width:22px;height:22px;margin:auto}
+
+.mmenu{position:fixed;inset:0;z-index:95;background:var(--dark);color:var(--bone);display:none;flex-direction:column;padding:90px 30px 30px;gap:2px}
+.mmenu.open{display:flex}
+.mmenu a{font-family:var(--fdisp);font-weight:700;font-size:2rem;letter-spacing:-.02em;color:var(--bone);padding:14px 0;border-bottom:1px solid var(--lineD)}
+.mmenu .btn{margin-top:22px}
+.mclose{position:absolute;top:22px;right:24px;width:46px;height:46px;border:1px solid var(--lineD);border-radius:100px;background:transparent;cursor:pointer;color:var(--bone)}
+.mclose svg{width:22px;height:22px;margin:auto}
+
+/* ===== HERO: full-bleed image + oversized overlapping type ===== */
+.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden;background:var(--dark)}
+.hero-fig{position:absolute;inset:0;z-index:0}
+.hero-fig img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.hero-fig::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,11,10,.5) 0%,rgba(11,11,10,.18) 34%,rgba(11,11,10,.4) 64%,rgba(11,11,10,.92) 100%)}
+.hero-meta{position:absolute;top:clamp(96px,14vh,150px);left:0;right:0;z-index:2}
+.hero-meta .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.hero-meta span{font-family:var(--fmono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(236,231,219,.72)}
+.hero-meta span b{color:var(--volt);font-weight:400}
+.hero-inner{position:relative;z-index:2;width:100%;padding-bottom:clamp(40px,7vh,80px);padding-top:150px}
+.hero h1{color:var(--bone);font-weight:800;font-size:clamp(3.4rem,13.5vw,13rem);line-height:.86;letter-spacing:-.04em;text-transform:uppercase}
+.hero h1 .volt{color:var(--volt);display:inline-block}
+.hero-row{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:26px;margin-top:38px}
+.hero .lede{color:rgba(236,231,219,.9);font-size:clamp(1.05rem,1.5vw,1.28rem);line-height:1.55;max-width:46ch}
+.hero-cta{display:flex;flex-wrap:wrap;align-items:center;gap:18px 26px}
+.hero-trust{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin-top:30px;padding-top:22px;border-top:1px solid rgba(236,231,219,.22)}
+.hero-trust .ti{display:inline-flex;align-items:center;gap:8px;font-family:var(--fmono);font-size:.8rem;color:rgba(236,231,219,.88)}
+.hero-trust .ti b{font-family:var(--fdisp);font-weight:700;font-size:1.05rem;color:var(--bone)}
+.hero-trust .div{width:1px;height:20px;background:rgba(236,231,219,.28)}
+.hero .stars{color:var(--brass)}
+
+/* dark section base */
+.on-dark{background:var(--dark);color:var(--bone)}
+.on-dark h2,.on-dark h3,.on-dark h4{color:var(--bone)}
+.on-dark .kick{color:rgba(236,231,219,.7)}
+.on-dark .shead .sub{color:rgba(236,231,219,.7)}
+.on-dark .shead h2 em::after{background:var(--volt)}
+
+/* ===== STATS: type row on near-black ===== */
+.stats{border-top:1px solid var(--lineD)}
+.stats .row{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}
+.stat{padding-top:6px;border-top:2px solid var(--volt)}
+.stat b{display:block;font-family:var(--fdisp);font-weight:800;font-size:clamp(3rem,6vw,5.4rem);line-height:.9;color:var(--bone);letter-spacing:-.03em}
+.stat b i{font-style:normal;color:var(--volt)}
+.stat .lb{display:block;margin-top:16px;font-family:var(--fmono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(236,231,219,.55)}
+
+/* ===== SERVICES: big-type index + pinned image (no cards) ===== */
+.svc-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,80px);align-items:start;margin-top:56px}
+.svc-figwrap{position:sticky;top:100px}
+.svc-stage{position:relative;overflow:hidden;background:var(--dark)}
+.svc-stage img{width:100%;height:clamp(420px,64vh,660px);object-fit:cover;display:block;transition:opacity .4s ease}
+.svc-stage .ft-tag{position:absolute;top:0;left:0;z-index:2;background:var(--volt);color:var(--ink);font-family:var(--fmono);font-size:.66rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;padding:9px 15px;display:inline-flex;align-items:center;gap:7px}
+.svc-stage .ft-tag svg{width:12px;height:12px}
+.svc-meta{position:absolute;left:0;right:0;bottom:0;z-index:2;display:flex;justify-content:space-between;align-items:flex-end;gap:12px;padding:20px;background:linear-gradient(180deg,transparent,rgba(11,11,10,.9));color:var(--bone)}
+.svc-meta .s{font-family:var(--fdisp);font-weight:700;font-size:1.35rem;letter-spacing:-.02em}
+.svc-meta .p{font-family:var(--fmono);font-size:.88rem;color:var(--volt);white-space:nowrap}
+.svc-list{border-top:1px solid var(--line)}
+.svc-row{display:grid;grid-template-columns:auto 1fr auto;gap:20px;align-items:baseline;padding:26px 2px;border-bottom:1px solid var(--line);cursor:pointer;position:relative;transition:padding-left .3s ease}
+.svc-row:hover,.svc-row.on{padding-left:16px}
+.svc-row .no{font-family:var(--fmono);font-size:.8rem;color:var(--faint);padding-top:8px}
+.svc-row.on .no{color:var(--ink)}
+.svc-row h4{font-family:var(--fdisp);font-weight:700;font-size:clamp(1.5rem,2.6vw,2.35rem);color:var(--muted);letter-spacing:-.02em;transition:color .25s}
+.svc-row:hover h4,.svc-row.on h4{color:var(--ink)}
+.svc-row .pr{font-family:var(--fmono);font-size:.76rem;color:var(--muted);white-space:nowrap;padding-top:10px;text-align:right}
+.svc-row .pr b{color:var(--ink);font-weight:700}
+.svc-row .rowsub{display:block;grid-column:2;font-size:.92rem;color:var(--muted);margin-top:8px;max-width:52ch;max-height:0;overflow:hidden;opacity:0;transition:max-height .35s ease,opacity .3s ease,margin .3s ease}
+.svc-row:hover .rowsub,.svc-row.on .rowsub{max-height:80px;opacity:1;margin-top:12px}
+
+/* ===== WORK: borderless bleed collage ===== */
+.work-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:120px;gap:16px;margin-top:56px}
+.work-item{position:relative;overflow:hidden}
+.work-item img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .55s ease,transform .7s ease,filter .4s ease;filter:grayscale(.12)}
+.work-item .wi-back{opacity:0}
+.work-item:hover .wi-front{opacity:0}
+.work-item:hover .wi-back{opacity:1}
+.work-item:hover img{transform:scale(1.05);filter:grayscale(0)}
+.work-item .cap{z-index:2}
+.work-item .cap{position:absolute;left:14px;bottom:12px;font-family:var(--fmono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:var(--bone);text-shadow:0 1px 8px rgba(0,0,0,.6);opacity:0;transform:translateY(8px);transition:.3s}
+.work-item:hover .cap{opacity:1;transform:none}
+.w1{grid-column:1 / 7;grid-row:span 4}
+.w2{grid-column:7 / 10;grid-row:span 2}
+.w3{grid-column:10 / 13;grid-row:span 2}
+.w4{grid-column:7 / 13;grid-row:span 2}
+.w5{grid-column:1 / 5;grid-row:span 2}
+.w6{grid-column:5 / 9;grid-row:span 2}
+.w7{grid-column:9 / 13;grid-row:span 2}
+
+/* ===== CREDENTIALS: statement + image bleed + rule list ===== */
+.creds-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,80px);align-items:stretch}
+.creds-media{overflow:hidden;align-self:stretch;min-height:420px}
+.creds-media img{width:100%;height:100%;object-fit:cover}
+.cred-list{margin-top:34px;border-top:1px solid var(--lineD)}
+.cred-item{display:grid;grid-template-columns:auto 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--lineD);align-items:baseline}
+.cred-item .cn{font-family:var(--fmono);font-size:.82rem;color:var(--volt)}
+.cred-item b{font-family:var(--fdisp);font-weight:700;font-size:1.2rem;color:var(--bone);display:block;letter-spacing:-.01em}
+.cred-item span{color:rgba(236,231,219,.66);font-size:.94rem;display:block;margin-top:4px}
+
+/* ===== PRICING: typographic price list (no cards) ===== */
+.price-list{margin-top:56px;border-top:1px solid var(--line)}
+.price-row{display:grid;grid-template-columns:auto 1fr auto;gap:24px;align-items:center;padding:30px 2px;border-bottom:1px solid var(--line);position:relative;transition:padding .25s ease}
+.price-row:hover{padding-left:14px}
+.price-row .pl-tag{font-family:var(--fmono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);align-self:start;padding-top:10px}
+.price-row.feat .pl-tag{color:var(--ink)}
+.price-row.feat .pl-tag::before{content:"";display:inline-block;width:8px;height:8px;background:var(--volt);border-radius:50%;margin-right:8px;vertical-align:middle}
+.price-row h3{font-family:var(--fdisp);font-weight:700;font-size:clamp(1.5rem,2.6vw,2.2rem);color:var(--ink);letter-spacing:-.02em}
+.price-row .plist{margin-top:8px;font-size:.9rem;color:var(--muted);display:flex;flex-wrap:wrap;gap:6px 16px}
+.price-row .plist span{display:inline-flex;align-items:center;gap:7px}
+.price-row .plist svg{width:15px;height:15px;color:var(--volt);flex:none}
+.price-row .amt{font-family:var(--fdisp);font-weight:800;font-size:clamp(1.8rem,3.4vw,2.8rem);color:var(--ink);letter-spacing:-.03em;white-space:nowrap;text-align:right}
+.price-row .amt small{display:block;font-family:var(--fmono);font-weight:400;font-size:.72rem;color:var(--muted);letter-spacing:.02em;margin-top:6px}
+.price-foot{margin-top:28px;font-size:.94rem;color:var(--muted);max-width:70ch}
+.price-foot b{color:var(--ink)}
+
+/* ===== REVIEWS: oversized pull-quote + margin notes ===== */
+.rev-rate{display:inline-flex;align-items:center;gap:11px;margin-top:20px;font-family:var(--fmono);font-size:.86rem;color:rgba(236,231,219,.7)}
+.rev-rate b{font-family:var(--fdisp);font-weight:700;font-size:1.4rem;color:var(--bone)}
+/* reviews: continuous right-to-left marquee */
+.rev-marquee{margin-top:48px;position:relative;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent);mask-image:linear-gradient(90deg,transparent,#000 7%,#000 93%,transparent)}
+.rev-track{display:flex;width:max-content;animation:revscroll 55s linear infinite;will-change:transform}
+.rev-marquee:hover .rev-track{animation-play-state:paused}
+@keyframes revscroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+.rq{flex:0 0 auto;width:clamp(300px,30vw,400px);margin-right:22px;border-left:3px solid var(--volt);background:rgba(236,231,219,.045);padding:28px 30px;display:flex;flex-direction:column}
+.rq .stars{color:var(--brass);margin-bottom:16px}
+.rq blockquote{font-family:var(--fbody);font-size:1rem;line-height:1.55;color:rgba(236,231,219,.9);flex:1}
+.rq blockquote .volt{color:var(--volt)}
+.rq figcaption{margin-top:22px;display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.rq .nm{font-family:var(--fdisp);font-weight:700;font-size:1.02rem;color:var(--bone)}
+.rq .loc{font-family:var(--fmono);font-size:.64rem;letter-spacing:.06em;text-transform:uppercase;color:var(--volt);white-space:nowrap}
+.rev-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:clamp(30px,5vw,70px);margin-top:56px;align-items:start}
+.rev-feature blockquote{font-family:var(--fdisp);font-weight:600;font-size:clamp(1.8rem,3.6vw,3.4rem);line-height:1.08;color:var(--bone);letter-spacing:-.02em}
+.rev-feature blockquote .volt{color:var(--volt)}
+.rev-feature figcaption{margin-top:28px;display:flex;align-items:center;gap:12px;font-family:var(--fmono);font-size:.8rem;color:rgba(236,231,219,.72)}
+.rev-feature .nm{color:var(--bone);font-weight:700}
+.rev-list{display:flex;flex-direction:column;border-top:1px solid var(--lineD)}
+.rev-mini{padding:20px 0;border-bottom:1px solid var(--lineD)}
+.rev-mini p{font-size:.95rem;line-height:1.5;color:rgba(236,231,219,.82);margin-bottom:10px}
+.rev-mini figcaption{font-family:var(--fmono);font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;color:var(--volt);display:flex;justify-content:space-between;gap:10px}
+.rev-mini .rl{color:rgba(236,231,219,.5)}
+
+/* ===== SERVICE AREA: inline type list ===== */
+.area-flow{margin-top:44px;font-family:var(--fdisp);font-weight:600;font-size:clamp(1.6rem,3.4vw,2.9rem);line-height:1.28;letter-spacing:-.02em;color:var(--faint);max-width:26ch}
+.area-flow .ac{color:var(--ink);transition:color .2s}
+.area-flow .ac:hover{color:var(--ink)}
+.area-flow .sep{color:var(--volt);padding:0 .18em}
+
+/* ===== FAQ: big type, hairline rules ===== */
+.faq-list{max-width:1000px;margin:56px auto 0;border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item>button{width:100%;text-align:left;background:transparent;border:0;cursor:pointer;color:var(--ink);font-family:var(--fdisp);font-weight:700;font-size:clamp(1.3rem,2.4vw,2rem);letter-spacing:-.02em;line-height:1.12;padding:30px 0;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.faq-item .ic{flex:none;font-size:1.9rem;color:var(--ink);transition:transform .3s;line-height:1;font-family:var(--fbody);font-weight:300}
+.faq-item.open .ic{transform:rotate(45deg);color:var(--volt)}
+.faq-item .a{max-height:0;overflow:hidden;transition:max-height .38s ease}
+.faq-item .a p{padding:0 60px 30px 0;color:var(--muted);font-size:1.05rem;line-height:1.65}
+
+/* ===== BOOK: big CTA + underline-only form ===== */
+.book-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(36px,6vw,90px);align-items:center}
+.book h2{color:var(--bone);font-size:clamp(2.8rem,7vw,6.4rem);letter-spacing:-.03em;line-height:.9}
+.book h2 .volt{color:var(--volt)}
+.book .lede{color:rgba(236,231,219,.72);margin-top:24px;font-size:1.1rem;max-width:42ch;line-height:1.6}
+.book .call{display:inline-flex;align-items:center;gap:14px;margin-top:30px;font-family:var(--fdisp);font-weight:800;font-size:clamp(1.8rem,3vw,2.4rem);letter-spacing:-.02em;color:var(--bone)}
+.book .call svg{width:26px;height:26px;color:var(--volt)}
+.book .cn{margin-top:16px;font-family:var(--fmono);font-size:.82rem;color:rgba(236,231,219,.6)}
+.book .cn a{color:var(--volt)}
+.qform h3{font-family:var(--fdisp);font-weight:700;font-size:1.5rem;color:var(--bone);letter-spacing:-.02em}
+.qform .sub{font-family:var(--fmono);font-size:.8rem;color:rgba(236,231,219,.55);margin-top:6px;margin-bottom:26px}
+.field{margin-bottom:22px}
+.field label{display:block;font-family:var(--fmono);font-size:.66rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(236,231,219,.55);margin-bottom:8px}
+.field input,.field select,.field textarea{width:100%;border:0;border-bottom:1.5px solid var(--lineD);border-radius:0;padding:10px 2px;font-family:var(--fbody);font-size:1rem;color:var(--bone);background:transparent}
+.field select option{color:var(--ink)}
+.field input::placeholder,.field textarea::placeholder{color:rgba(236,231,219,.35)}
+.field input:focus,.field select:focus,.field textarea:focus{outline:0;border-bottom-color:var(--volt)}
+.field textarea{resize:vertical;min-height:60px}
+.qform .btn{width:100%;margin-top:8px}
+.qform .micro{margin-top:16px;font-family:var(--fmono);font-size:.7rem;color:rgba(236,231,219,.5);text-align:center}
+
+/* footer */
+footer{background:var(--dark2);color:rgba(236,231,219,.6);padding:80px 0 34px;position:relative;overflow:hidden}
+footer>.wrap{position:relative;z-index:1}
+.footer-particles{position:absolute;inset:0;z-index:0;pointer-events:none;display:block}
+.ftop{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:40px}
+.fbrand .bt b{color:var(--bone)}.fbrand .bt small{color:rgba(236,231,219,.5)}
+.fbrand p{margin-top:18px;font-size:.92rem;max-width:34ch;color:rgba(236,231,219,.55)}
+.fcol h4{font-family:var(--fmono);font-size:.66rem;font-weight:400;letter-spacing:.12em;text-transform:uppercase;color:var(--volt);margin-bottom:16px}
+.fcol a,.fcol p{display:block;font-size:.93rem;margin-bottom:10px;color:rgba(236,231,219,.66);transition:color .2s;overflow-wrap:anywhere}
+.fcol a:hover{color:var(--bone)}
+.fbot{margin-top:56px;padding-top:24px;border-top:1px solid var(--lineD);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-family:var(--fmono);font-size:.72rem;letter-spacing:.02em;color:rgba(236,231,219,.45)}
+
+/* sticky mobile call */
+.scall{position:fixed;left:0;right:0;bottom:0;z-index:70;display:none;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--dark);border-top:1px solid var(--lineD)}
+.scall a{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;padding:15px;border-radius:100px;background:var(--volt);color:var(--ink);font-family:var(--fbody);font-weight:600;font-size:.98rem}
+.scall svg{width:19px;height:19px}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* two-column section header - fills the empty right of a narrow heading */
+.sec-head{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,5vw,72px);align-items:end}
+.sec-head .shead{margin-bottom:0;max-width:none}
+.sec-aside{padding-bottom:6px}
+.sec-aside p{font-size:1rem;color:var(--muted);line-height:1.6;max-width:44ch}
+.on-dark .sec-aside p{color:rgba(236,231,219,.72)}
+.aside-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:20px}
+.aside-tags span{font-family:var(--fmono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);border:1.5px solid var(--line);padding:9px 15px;border-radius:100px}
+.on-dark .aside-tags span{color:var(--bone);border-color:var(--lineD)}
+.aside-tags span b{color:var(--volt);font-weight:400;margin-right:7px}
+.aside-stat{margin-top:20px;font-family:var(--fmono);font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.on-dark .aside-stat{color:rgba(236,231,219,.6)}
+.aside-stat b{color:var(--volt);font-weight:700;font-size:1rem}
+.coverage{width:100%;max-width:300px;height:auto;margin-left:auto;display:block}
+@media(max-width:1000px){.sec-head{grid-template-columns:1fr;gap:26px;align-items:start}.coverage{margin-left:0;max-width:240px}}
+
+@media(max-width:1000px){
+  .svc-grid,.creds-grid,.rev-grid,.book-grid{grid-template-columns:1fr;gap:44px}
+  .svc-figwrap{position:static;order:-1}
+  .work-grid{grid-auto-rows:100px}
+  .stats .row{grid-template-columns:1fr 1fr;gap:32px}
+  .nav,.hdr-ph{display:none}
+  .burger{display:grid;place-items:center}
+  .navcta{display:none}
+  .scall{display:block}
+  body{padding-bottom:72px}
+}
+@media(max-width:600px){
+  .hero h1{font-size:clamp(3rem,17vw,5.4rem)}
+  .work-grid{grid-template-columns:repeat(6,1fr);grid-auto-rows:110px}
+  .w1{grid-column:1 / 7;grid-row:span 3}
+  .w2,.w3,.w4,.w5,.w6,.w7{grid-column:span 3;grid-row:span 2}
+  .stats .row{grid-template-columns:1fr 1fr;gap:28px}
+  .price-row{grid-template-columns:1fr;gap:8px}
+  .price-row .amt{text-align:left}
+  .price-row .pl-tag{padding-top:0}
+  .ftop{grid-template-columns:1fr 1fr}
+}
+@media(prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .faq-item .a,.faq-item .ic,.hdr,.topbar{transition:none}
+  .ebar .pulse::after{animation:none}
+  .rev-track{animation:none}
+  .rev-marquee{overflow-x:auto}
+  html{scroll-behavior:auto}
+}
+</style>
+<style>
+/* ===== MOTION - electrical theme, recolored electric-lime, CSS/JS only ===== */
+#chargebar{position:fixed;top:0;left:0;height:3px;width:0;z-index:100;background:var(--volt);box-shadow:0 0 10px rgba(198,240,58,.85);transition:width .1s linear;pointer-events:none}
+.nav a::after{content:"";position:absolute;left:12px;right:12px;bottom:5px;height:2px;background:var(--volt);transform:scaleX(0);transform-origin:left center;transition:transform .26s cubic-bezier(.16,1,.3,1)}
+.nav a:hover::after{transform:scaleX(1)}
+.brand .mk{animation:boltcharge 1.5s ease-out both}
+@keyframes boltcharge{0%,12%{filter:none}15%{filter:brightness(1.4) drop-shadow(0 0 6px var(--volt))}19%{filter:none}25%{filter:brightness(1.5) drop-shadow(0 0 9px var(--volt))}31%{filter:none}100%{filter:none}}
+/* kinetic hero accent: charge-flicker then a slow breathing weight (kinetic type) */
+.hero h1 .volt{animation:neonflick 3.4s linear infinite both}
+@keyframes neonflick{
+  0%,2%{opacity:.5;text-shadow:none}
+  3%,5%{opacity:1;text-shadow:0 0 22px rgba(198,240,58,.85),0 0 48px rgba(198,240,58,.4)}
+  6%,8%{opacity:.5;text-shadow:none}
+  9%,11%{opacity:1;text-shadow:0 0 22px rgba(198,240,58,.85),0 0 48px rgba(198,240,58,.4)}
+  12%,18%{opacity:.5;text-shadow:none}
+  20%,22%{opacity:1;text-shadow:0 0 22px rgba(198,240,58,.85),0 0 48px rgba(198,240,58,.4)}
+  23%,25%{opacity:.5;text-shadow:none}
+  27%,100%{opacity:1;text-shadow:0 0 16px rgba(198,240,58,.5),0 0 34px rgba(198,240,58,.28)}
+}
+/* faint drifting circuit lines over the hero image */
+.hero-fig::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;opacity:.5;mix-blend-mode:screen;background:repeating-linear-gradient(118deg,transparent 0 24px,rgba(198,240,58,.06) 24px 25px);animation:circuitdrift 22s linear infinite}
+@keyframes circuitdrift{0%{background-position:0 0}100%{background-position:150px 0}}
+/* pinned service image edge glows on active row */
+.svc-stage{transition:box-shadow .3s}
+.svc-row.on ~ .svc-figwrap .svc-stage{box-shadow:0 0 0 2px var(--volt)}
+/* emergency ghost hero link -> signal ring */
+.hero-cta .btn-lineL{animation:emgring 2.6s ease-out infinite}
+@keyframes emgring{0%{box-shadow:0 0 0 0 rgba(226,61,34,.5)}70%,100%{box-shadow:0 0 0 12px rgba(226,61,34,0)}}
+/* parallax feature image */
+.creds-media img{transform:scale(1.12);will-change:transform}
+.stat .cup{font-variant-numeric:tabular-nums}
+.reveal{opacity:1;transform:none;transition:none}
+.sdrift{will-change:transform,opacity}
+/* SIGNATURE: current running down the line as you scroll */
+#currentrail{position:fixed;left:18px;top:104px;bottom:80px;width:3px;z-index:60;background:rgba(198,240,58,.16);pointer-events:none;overflow:visible}
+#currentrail .cr-fill{position:absolute;left:0;right:0;top:0;height:0;background:linear-gradient(180deg,rgba(198,240,58,.4),var(--volt));box-shadow:0 0 9px rgba(198,240,58,.75);overflow:hidden}
+#currentrail .cr-fill::after{content:"";position:absolute;left:0;right:0;top:0;height:100%;background:linear-gradient(180deg,transparent,rgba(255,255,255,.95),transparent);background-repeat:no-repeat;background-size:100% 46px;background-position:0 -46px;animation:crflow 1.5s linear infinite}
+@keyframes crflow{0%{background-position:0 -46px}100%{background-position:0 calc(100% + 46px)}}
+#currentrail .cr-head{position:absolute;left:50%;top:0;width:9px;height:9px;border-radius:50%;transform:translate(-50%,-50%);background:#f7ffd9;box-shadow:0 0 6px 2px var(--volt),0 0 16px 5px rgba(198,240,58,.6);opacity:0;transition:opacity .3s}
+#currentrail.active .cr-head{animation:crpulse 1.1s ease-in-out infinite}
+@keyframes crpulse{0%,100%{box-shadow:0 0 6px 2px var(--volt),0 0 16px 5px rgba(198,240,58,.5)}50%{box-shadow:0 0 9px 3px #e4ff8f,0 0 24px 8px rgba(198,240,58,.8)}}
+@media(max-width:1100px){#currentrail{display:none}}
+@media(prefers-reduced-motion:reduce){
+  #chargebar{display:none}
+  #currentrail .cr-fill::after,#currentrail .cr-head{animation:none}
+  .brand .mk,.hero h1 .volt,.hero-fig::before,.hero-cta .btn-lineL{animation:none}
+  .hero h1 .volt{text-shadow:none}
+  .creds-media img{transform:none}
+  .reveal,.sdrift{opacity:1;transform:none;transition:none}
+}
+</style>
+</head>
+<body>
+<div id="chargebar" aria-hidden="true"></div>
+<div id="currentrail" aria-hidden="true"><span class="cr-fill"></span><span class="cr-head"></span></div>
+
+<div class="topbar">
+<!-- EMERGENCY MICRO-BAR -->
+<div class="ebar">
+  <div class="wrap">
+    <span class="pulse" aria-hidden="true"></span>
+    <b>Power out, breaker tripping, or a burning smell?</b>
+    <span class="sep">/</span>
+    <a href="tel:+15624311960"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(562) 431-1960 · answered 24/7</a>
+  </div>
+</div>
+
+<!-- HEADER -->
+<header class="hdr" id="hdr">
+  <div class="wrap">
+    <a href="#top" class="brand" aria-label="Voltline Electric home">
+      <svg class="mk" viewBox="0 0 64 64" width="40" height="40" aria-hidden="true">
+        <rect x="1" y="1" width="62" height="62" rx="11" fill="#111110"/>
+        <path d="M34 13 18 37h10l-2 14 18-25H33l4-13z" fill="#C6F03A"/>
+        <rect x="18" y="51" width="28" height="3" rx="1.5" fill="#C6F03A"/>
+      </svg>
+      <span class="bt"><b>Voltline</b><small>Electric · Seattle</small></span>
+    </a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#gallery">Work</a>
+      <a href="#credentials">Licensing</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="hdr-r">
+      <span class="hdr-ph"><span class="em">24/7 Emergency</span><a href="tel:+15624311960">(562) 431-1960</a></span>
+      <a href="#book" class="btn btn-cta navcta">Book Online</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+    </div>
+  </div>
+</header>
+</div>
+
+<div class="mmenu" id="mmenu">
+  <button class="mclose" id="mclose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+  <a href="#services">Services</a>
+  <a href="#gallery">Recent Work</a>
+  <a href="#credentials">Licensing</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#faq">FAQ</a>
+  <a href="#book" class="btn btn-cta">Book Online</a>
+  <a href="tel:+15624311960" class="btn btn-lineL" style="margin-top:10px">Call (562) 431-1960</a>
+</div>
+
+<span id="top"></span>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-fig"><img src="assets/_img/577ad34aeb12.jpg" alt="A licensed electrician working overhead power lines from a ladder at dusk in Seattle" fetchpriority="high" width="1100" height="1375" /></div>
+  <div class="hero-meta">
+    <div class="wrap">
+      <span>Seattle <b>/</b> WA</span>
+      <span>Licensed <b>&amp;</b> insured</span>
+      <span>Answered <b>24/7</b></span>
+    </div>
+  </div>
+  <div class="hero-inner">
+    <div class="wrap reveal">
+      <h1>Power you<br>can <span class="volt">count on.</span></h1>
+      <div class="hero-row">
+        <p class="lede">Panel upgrades, EV chargers, generators, rewiring, and lighting across Seattle. Licensed electricians, upfront pricing, and a real person on the emergency line at any hour.</p>
+        <div class="hero-cta">
+          <a href="#book" class="btn btn-cta"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Book Online</a>
+          <a href="tel:+15624311960" class="btn btn-lineL"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>24/7 Emergency</a>
+        </div>
+      </div>
+      <div class="hero-trust">
+        <span class="ti"><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></span> <b>4.9</b> / 300+ reviews</span>
+        <span class="div"></span>
+        <span class="ti"><b>2026</b> NEC code</span>
+        <span class="div"></span>
+        <span class="ti">Upfront <b>pricing</b></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats on-dark sec" aria-label="By the numbers">
+  <div class="wrap">
+    <div class="row reveal">
+      <div class="stat"><b><span class="cup" data-to="4.9" data-dec="1">0.0</span><i>★</i></b><span class="lb">Average across 300+ reviews</span></div>
+      <div class="stat"><b>24/7</b><span class="lb">Emergency line, a real electrician</span></div>
+      <div class="stat"><b><span class="cup" data-to="100" data-dec="0">0</span><i>%</i></b><span class="lb">Permitted &amp; inspection-passed</span></div>
+      <div class="stat"><b><span class="cup" data-to="2026" data-dec="0">0</span></b><span class="lb">Wired to current NEC code</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="shead">
+        <span class="kick"><span class="dot"></span>01 / What we do</span>
+        <h2>From a tripping breaker to a <em>200-amp panel.</em></h2>
+      </div>
+      <div class="sec-aside">
+        <p>Most calls are panels and EV chargers, but the same licensed crew handles whatever the house needs, from a dead outlet to a whole-home rewire.</p>
+        <div class="aside-tags"><span><b>+</b>Licensed WA</span><span><b>+</b>2026 NEC</span><span><b>+</b>Own crews</span></div>
+      </div>
+    </div>
+    <div class="svc-grid">
+      <div class="svc-list reveal">
+        <div class="svc-row on" tabindex="0" data-img="assets/_img/51161863df22.jpg" data-tag="Most requested" data-name="Panel upgrades" data-price="$1,300 to $3,000" data-idx="01 / 06">
+          <span class="no">01</span>
+          <div><h4>Panel upgrades, 100A to 200A</h4><span class="rowsub">An old or full panel can't carry a modern home with an EV, a heat pump, and a kitchen at once. We upsize the service, label every circuit, and pull the permit.</span></div>
+          <span class="pr"><b>$1,300 to $3,000</b></span>
+        </div>
+        <div class="svc-row" tabindex="0" data-img="assets/_img/87258d453bf4.jpg" data-tag="EV ready" data-name="EV charger install" data-price="$800 to $2,500" data-idx="02 / 06">
+          <span class="no">02</span>
+          <div><h4>EV charger install</h4><span class="rowsub">Level 2 home charging, a NEMA 14-50 outlet, or a Tesla Wall Connector, wired and inspected.</span></div>
+          <span class="pr"><b>$800 to $2,500</b></span>
+        </div>
+        <div class="svc-row" tabindex="0" data-img="assets/_img/b98b4583750b.jpg" data-tag="Backup power" data-name="Whole-home generators" data-price="Generac dealer" data-idx="03 / 06">
+          <span class="no">03</span>
+          <div><h4>Whole-home generators</h4><span class="rowsub">Standby generator sizing and install so the lights stay on when the grid does not.</span></div>
+          <span class="pr">Generac dealer</span>
+        </div>
+        <div class="svc-row" tabindex="0" data-img="assets/_img/13a47095f0d8.jpg" data-tag="Rewires" data-name="Rewiring &amp; circuits" data-price="Free estimate" data-idx="04 / 06">
+          <span class="no">04</span>
+          <div><h4>Rewiring &amp; circuits</h4><span class="rowsub">Whole-house rewires, knob-and-tube and aluminum replacement, and new dedicated circuits.</span></div>
+          <span class="pr">Free estimate</span>
+        </div>
+        <div class="svc-row" tabindex="0" data-img="assets/_img/cf73b31d4907.jpg" data-tag="Lighting" data-name="Lighting &amp; fixtures" data-price="Room or whole home" data-idx="05 / 06">
+          <span class="no">05</span>
+          <div><h4>Lighting &amp; fixtures</h4><span class="rowsub">Recessed lighting, under-cabinet runs, fans, and outdoor and landscape lighting.</span></div>
+          <span class="pr">Room or whole home</span>
+        </div>
+        <div class="svc-row" tabindex="0" data-img="assets/_img/f3e452b54d1c.jpg" data-tag="Safety" data-name="Safety &amp; code" data-price="Diagnostic $75+" data-idx="06 / 06">
+          <span class="no">06</span>
+          <div><h4>Safety &amp; code</h4><span class="rowsub">Panel and home inspections, surge protection, GFCI and AFCI, and hardwired smoke alarms.</span></div>
+          <span class="pr">Diagnostic <b>$75+</b></span>
+        </div>
+      </div>
+      <div class="svc-figwrap reveal">
+        <figure class="svc-stage">
+          <span class="ft-tag"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8z"/></svg><span id="svcTag">Most requested</span></span>
+          <img id="svcImg" src="assets/_img/51161863df22.jpg" alt="Electrical work by a Voltline electrician" loading="lazy" width="1100" height="1955" />
+          <figcaption class="svc-meta"><span class="s" id="svcName">Panel upgrades</span><span class="p" id="svcPrice">$1,300 to $3,000</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section class="sec on-dark" id="gallery">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="shead">
+        <span class="kick"><span class="dot"></span>02 / Recent work</span>
+        <h2>Panels, chargers, and the <em>jobs behind them.</em></h2>
+      </div>
+      <div class="sec-aside">
+        <p>Real Seattle jobs, wired to code and signed off by the inspector. Clean panel swaps, garage charger installs, and full rewires.</p>
+        <div class="aside-stat"><b><span class="cup" data-to="7" data-dec="0" data-pad="2">07</span></b> recent jobs · Seattle metro</div>
+      </div>
+    </div>
+    <div class="work-grid reveal">
+      <div class="work-item w1"><img class="wi-front" src="assets/_img/03f4b82ab9b0.jpg" alt="An electrician probing terminal blocks in a control panel with a multimeter" loading="lazy" /><img class="wi-back" src="assets/_img/51161863df22.jpg" alt="Panel and service work in progress" loading="lazy" aria-hidden="true" /><span class="cap">Service panel testing</span></div>
+      <div class="work-item w2"><img class="wi-front" src="assets/_img/4475d97e43c7.jpg" alt="A homeowner using a wall-mounted EV charger on a brick garage" loading="lazy" /><img class="wi-back" src="assets/_img/6b5599d98026.jpg" alt="A Tesla Wall Connector mounted outdoors, close up" loading="lazy" aria-hidden="true" /><span class="cap">Home EV charging</span></div>
+      <div class="work-item w3"><img class="wi-front" src="assets/_img/13a47095f0d8.jpg" alt="Hands wiring a bank of new outlets and switches into a wall" loading="lazy" /><img class="wi-back" src="assets/_img/cf73b31d4907.jpg" alt="Installing a wall outlet with a screwdriver" loading="lazy" aria-hidden="true" /><span class="cap">Outlet &amp; switch runs</span></div>
+      <div class="work-item w4"><img class="wi-front" src="assets/_img/87258d453bf4.jpg" alt="An electric SUV plugged into a wall-mounted home charger beside a garage" loading="lazy" /><img class="wi-back" src="assets/_img/4475d97e43c7.jpg" alt="A homeowner using a wall-mounted EV charger" loading="lazy" aria-hidden="true" /><span class="cap">Level 2 charger, wired and tested</span></div>
+      <div class="work-item w5"><img class="wi-front" src="assets/_img/b98b4583750b.jpg" alt="An electrician in hi-vis working inside an electrical control cabinet" loading="lazy" /><img class="wi-back" src="assets/_img/51161863df22.jpg" alt="Panel and service work in progress" loading="lazy" aria-hidden="true" /><span class="cap">Cabinet wiring</span></div>
+      <div class="work-item w6"><img class="wi-front" src="assets/_img/6b5599d98026.jpg" alt="A Tesla Wall Connector mounted outdoors, close up" loading="lazy" /><img class="wi-back" src="assets/_img/87258d453bf4.jpg" alt="An electric SUV plugged into a home charger" loading="lazy" aria-hidden="true" /><span class="cap">Wall Connector mount</span></div>
+      <div class="work-item w7"><img class="wi-front" src="assets/_img/f3e452b54d1c.jpg" alt="An electrician using a multimeter to test wiring on a unit" loading="lazy" /><img class="wi-back" src="assets/_img/03f4b82ab9b0.jpg" alt="Probing a control panel with a multimeter" loading="lazy" aria-hidden="true" /><span class="cap">Circuit diagnostics</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CREDENTIALS -->
+<section class="sec on-dark" id="credentials" style="border-top:1px solid var(--lineD)">
+  <div class="wrap creds-grid">
+    <div class="reveal">
+      <span class="kick"><span class="dot"></span>03 / Licensed, not a handyman</span>
+      <div class="shead" style="max-width:none"><h2>A licensed electrician on <em>every job.</em></h2></div>
+      <p class="sub" style="color:rgba(236,231,219,.7);margin-top:22px;max-width:46ch">Electrical work that cuts corners shows up later as a tripping breaker, or worse. Every Voltline job is wired by a licensed electrician, built to current code, and signed off by the inspector.</p>
+      <div class="cred-list">
+        <div class="cred-item"><span class="cn">01</span><div><b>Licensed WA electrician</b><span>State licensed, bonded, and insured.</span></div></div>
+        <div class="cred-item"><span class="cn">02</span><div><b>Wired to the 2026 NEC</b><span>Current code on every circuit we touch.</span></div></div>
+        <div class="cred-item"><span class="cn">03</span><div><b>EV &amp; panel specialists</b><span>Tesla and Qmerit certified install work.</span></div></div>
+        <div class="cred-item"><span class="cn">04</span><div><b>Answered 24/7</b><span>A real Seattle electrician on the line, any hour.</span></div></div>
+      </div>
+    </div>
+    <figure class="creds-media reveal"><img src="assets/_img/cf73b31d4907.jpg" alt="An electrician installing a wall outlet with a screwdriver against a clean white wall" loading="lazy" width="900" height="1348" /></figure>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="sec" id="pricing">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="shead">
+        <span class="kick"><span class="dot"></span>04 / Upfront pricing</span>
+        <h2>You hear the price <em>before we start.</em></h2>
+      </div>
+      <div class="sec-aside">
+        <p>Flat, written pricing on the common jobs, with a fixed price before any work starts. National-average ranges that vary by home and region, never a surprise on the invoice.</p>
+        <div class="aside-tags"><span><b>+</b>Financing available</span><span><b>+</b>Free inspection</span></div>
+      </div>
+    </div>
+    <div class="price-list reveal">
+      <div class="price-row">
+        <span class="pl-tag">Diagnostic</span>
+        <div>
+          <h3>Service call</h3>
+          <div class="plist"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>On-site diagnosis</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Written repair quote</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Credited toward the repair</span></div>
+        </div>
+        <div class="amt"><span class="cup" data-to="75" data-dec="0" data-prefix="$">$75</span><small>to $200 · emergency 1.5 to 2x</small></div>
+      </div>
+      <div class="price-row feat">
+        <span class="pl-tag">Most requested</span>
+        <div>
+          <h3>200A panel upgrade</h3>
+          <div class="plist"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>New 200-amp service panel</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Permit pulled and inspected</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Every circuit labeled</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Financing available</span></div>
+        </div>
+        <div class="amt"><span class="cup" data-to="1300" data-dec="0" data-prefix="$" data-group="1">$1,300</span><small>to $3,000 · full swaps to $5,000+</small></div>
+      </div>
+      <div class="price-row">
+        <span class="pl-tag">EV ready</span>
+        <div>
+          <h3>Level 2 EV charger</h3>
+          <div class="plist"><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>NEMA 14-50 or hardwired unit</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Tesla Wall Connector ready</span><span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Load check and inspection</span></div>
+        </div>
+        <div class="amt"><span class="cup" data-to="800" data-dec="0" data-prefix="$">$800</span><small>to $2,500 · more if panel needs work</small></div>
+      </div>
+    </div>
+    <p class="price-foot reveal">Figures are national-average estimates and vary by region. <b>Financing available</b> on larger jobs, so a panel or EV install can be paid monthly.</p>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec on-dark" id="reviews">
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="kick"><span class="dot"></span>05 / Real Google reviews</span>
+      <h2>Seattle homeowners <em>call us back.</em></h2>
+      <div class="rev-rate"><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></span> <b>4.9</b> average · 300+ reviews</div>
+    </div>
+    <div class="rev-marquee reveal">
+      <div class="rev-track">
+        <figure class="rq"><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></span><blockquote>Our panel was full and the breaker kept tripping every time the dryer ran. Voltline swapped it for a 200-amp, labeled everything, and <span class="volt">passed inspection the first time.</span></blockquote><figcaption><span class="nm">Dana M.</span><span class="loc">Ballard</span></figcaption></figure>
+        <figure class="rq"><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></span><blockquote>Booked online for an EV charger in the garage. They checked the panel load first, gave me a flat price, and the Tesla connector was running that afternoon.</blockquote><figcaption><span class="nm">Raj P.</span><span class="loc">Capitol Hill</span></figcaption></figure>
+        <figure class="rq"><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></span><blockquote>Lost power to half the house at 11pm. I called the emergency line and an actual electrician picked up, walked me through shutting it off, and was out the next morning.</blockquote><figcaption><span class="nm">Sarah K.</span><span class="loc">West Seattle</span></figcaption></figure>
+        <figure class="rq"><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></span><blockquote>Quoted the recessed lighting for the whole main floor up front. No upsell, no surprise charges, and they cleaned up every bit of drywall dust before they left.</blockquote><figcaption><span class="nm">Tom L.</span><span class="loc">Greenwood</span></figcaption></figure>
+        <figure class="rq"><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></span><blockquote>Had them put in a whole-home generator before winter. The sizing visit was honest about what we actually needed, and the financing made it easy to say yes.</blockquote><figcaption><span class="nm">Aisha N.</span><span class="loc">Magnolia</span></figcaption></figure>
+        <figure class="rq" aria-hidden="true"><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></span><blockquote>Our panel was full and the breaker kept tripping every time the dryer ran. Voltline swapped it for a 200-amp, labeled everything, and <span class="volt">passed inspection the first time.</span></blockquote><figcaption><span class="nm">Dana M.</span><span class="loc">Ballard</span></figcaption></figure>
+        <figure class="rq" aria-hidden="true"><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></span><blockquote>Booked online for an EV charger in the garage. They checked the panel load first, gave me a flat price, and the Tesla connector was running that afternoon.</blockquote><figcaption><span class="nm">Raj P.</span><span class="loc">Capitol Hill</span></figcaption></figure>
+        <figure class="rq" aria-hidden="true"><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></span><blockquote>Lost power to half the house at 11pm. I called the emergency line and an actual electrician picked up, walked me through shutting it off, and was out the next morning.</blockquote><figcaption><span class="nm">Sarah K.</span><span class="loc">West Seattle</span></figcaption></figure>
+        <figure class="rq" aria-hidden="true"><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></span><blockquote>Quoted the recessed lighting for the whole main floor up front. No upsell, no surprise charges, and they cleaned up every bit of drywall dust before they left.</blockquote><figcaption><span class="nm">Tom L.</span><span class="loc">Greenwood</span></figcaption></figure>
+        <figure class="rq" aria-hidden="true"><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></span><blockquote>Had them put in a whole-home generator before winter. The sizing visit was honest about what we actually needed, and the financing made it easy to say yes.</blockquote><figcaption><span class="nm">Aisha N.</span><span class="loc">Magnolia</span></figcaption></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICE AREA -->
+<section class="sec" id="area">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="shead">
+        <span class="kick"><span class="dot"></span>06 / Service area</span>
+        <h2>Across Seattle <em>and the Eastside.</em></h2>
+        <p class="sub">Local crews, with the emergency line open across the whole service area.</p>
+      </div>
+      <div class="sec-aside">
+        <svg class="coverage" viewBox="0 0 300 168" fill="none" aria-hidden="true">
+          <path d="M18 150 A132 132 0 0 1 282 150" stroke="#C6F03A" stroke-width="2" opacity=".9"/>
+          <path d="M56 150 A94 94 0 0 1 244 150" stroke="#C6F03A" stroke-width="2" opacity=".55"/>
+          <path d="M94 150 A56 56 0 0 1 206 150" stroke="#C6F03A" stroke-width="2" opacity=".32"/>
+          <line x1="18" y1="150" x2="282" y2="150" stroke="#111110" stroke-width="1.5" opacity=".25"/>
+          <circle cx="150" cy="150" r="6" fill="#C6F03A"/>
+          <g fill="#111110">
+            <circle cx="84" cy="98" r="3.4"/><circle cx="150" cy="62" r="3.4"/><circle cx="216" cy="98" r="3.4"/><circle cx="116" cy="122" r="3"/><circle cx="188" cy="122" r="3"/>
+          </g>
+        </svg>
+        <div class="aside-stat"><b><span class="cup" data-to="12" data-dec="0">12</span></b> cities · one 24/7 line</div>
+      </div>
+    </div>
+    <p class="area-flow reveal"><span class="ac">Seattle</span><span class="sep">/</span><span class="ac">Ballard</span><span class="sep">/</span><span class="ac">West Seattle</span><span class="sep">/</span><span class="ac">Bellevue</span><span class="sep">/</span><span class="ac">Redmond</span><span class="sep">/</span><span class="ac">Shoreline</span><span class="sep">/</span><span class="ac">Renton</span><span class="sep">/</span><span class="ac">Kirkland</span><span class="sep">/</span><span class="ac">Capitol Hill</span><span class="sep">/</span><span class="ac">Greenwood</span><span class="sep">/</span><span class="ac">Magnolia</span><span class="sep">/</span><span class="ac">Wallingford</span></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec" id="faq" style="border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="shead reveal">
+      <span class="kick"><span class="dot"></span>07 / FAQ</span>
+      <h2>Questions homeowners <em>ask us.</em></h2>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item">
+        <button type="button" aria-expanded="false"><span>My breaker keeps tripping. Is that dangerous?</span><span class="ic">+</span></button>
+        <div class="a"><p>A breaker that trips now and then is doing its job. One that trips over and over is telling you a circuit is overloaded or there is a fault, and it should be looked at. If you ever smell burning or see scorching at the panel, shut off the main and call the emergency line.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" aria-expanded="false"><span>Do I need a 200-amp panel upgrade?</span><span class="ic">+</span></button>
+        <div class="a"><p>If you are adding an EV charger, a heat pump, or a hot tub, an older 100-amp panel often does not have the capacity. We check the actual load before we recommend anything, so you only upsize the service if the house needs it.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" aria-expanded="false"><span>Do I need a permit for an EV charger or panel?</span><span class="ic">+</span></button>
+        <div class="a"><p>Yes. A panel upgrade and an EV charger install both need a permit and an inspection in Washington. We pull the permit, schedule the inspection, and handle the paperwork so it is signed off clean and on record.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" aria-expanded="false"><span>How much does it cost, and is pricing upfront?</span><span class="ic">+</span></button>
+        <div class="a"><p>You get the price before we start. A diagnostic visit runs $75 to $200, a 200-amp panel upgrade is usually $1,300 to $3,000, and a Level 2 EV charger is $800 to $2,500. These are national-average ranges that vary by your home and region, and financing is available on larger jobs.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" aria-expanded="false"><span>Are you licensed and insured?</span><span class="ic">+</span></button>
+        <div class="a"><p>Yes. We are a licensed Washington electrical contractor, bonded and insured, and every job is built to the current NEC. We can show the license and certificate of insurance before any work starts.</p></div>
+      </div>
+      <div class="faq-item">
+        <button type="button" aria-expanded="false"><span>The power just went out. How fast can you come?</span><span class="ic">+</span></button>
+        <div class="a"><p>Call (562) 431-1960 any hour and a real electrician answers, not a call center. For a dead panel, sparking, or a burning smell, we walk you through making it safe and get a crew out as fast as we can.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK -->
+<section class="sec on-dark" id="book">
+  <div class="wrap book-grid">
+    <div class="reveal">
+      <span class="kick"><span class="dot"></span>Get in touch</span>
+      <h2 style="margin-top:20px">Let's get to <span class="volt">work.</span></h2>
+      <p class="lede">Tell us what the house needs and we will get right back with a written price. If the power is out or something is sparking, call the line instead.</p>
+      <a href="tel:+15624311960" class="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(562) 431-1960</a>
+      <p class="cn">Or email <a href="mailto:hello@voltlineelectric.com">hello@voltlineelectric.com</a> · Emergency line answered 24/7</p>
+    </div>
+    <form class="qform reveal" id="quoteForm" onsubmit="return sendQuote(event)">
+      <h3>Request a free quote</h3>
+      <div class="sub">Tell us about the job and we will get right back to you.</div>
+      <div class="field"><label for="qn">Name</label><input id="qn" name="name" required placeholder="Your name" /></div>
+      <div class="field"><label for="qp">Phone</label><input id="qp" name="phone" type="tel" required placeholder="(206) 000-0000" /></div>
+      <div class="field"><label for="qs">What do you need?</label>
+        <select id="qs" name="service">
+          <option>Panel upgrade (100A to 200A)</option>
+          <option>EV charger install</option>
+          <option>Whole-home generator</option>
+          <option>Rewiring or new circuit</option>
+          <option>Lighting or fixtures</option>
+          <option>Safety or code inspection</option>
+          <option>Emergency (power out / sparking)</option>
+          <option>Not sure, need advice</option>
+        </select>
+      </div>
+      <div class="field"><label for="qm">Details (optional)</label><textarea id="qm" name="msg" placeholder="What is going on, and roughly how old is the home and panel?"></textarea></div>
+      <button type="submit" class="btn btn-cta">Get my free quote</button>
+      <p class="micro">No cost, no obligation. Licensed &amp; insured WA electrician.</p>
+    </form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <canvas class="footer-particles" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="ftop">
+      <div class="fbrand">
+        <a href="#top" class="brand">
+          <svg class="mk" viewBox="0 0 64 64" width="38" height="38" aria-hidden="true">
+            <rect x="1" y="1" width="62" height="62" rx="11" fill="#111110" stroke="rgba(236,231,219,.14)"/>
+            <path d="M34 13 18 37h10l-2 14 18-25H33l4-13z" fill="#C6F03A"/>
+            <rect x="18" y="51" width="28" height="3" rx="1.5" fill="#C6F03A"/>
+          </svg>
+          <span class="bt"><b>Voltline</b><small>Electric · Seattle</small></span>
+        </a>
+        <p>Panel upgrades, EV chargers, generators, rewiring, and lighting across Seattle, with a 24/7 emergency line. Licensed, bonded, and insured.</p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="#services">Panel Upgrades</a><a href="#services">EV Charger Install</a><a href="#services">Generators</a><a href="#services">Rewiring</a><a href="#services">Lighting</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="#gallery">Recent Work</a><a href="#credentials">Licensing</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a><a href="#area">Service area</a><a href="#faq">FAQ</a>
+      </div>
+      <div class="fcol">
+        <h4>Get in touch</h4>
+        <a href="tel:+15624311960">(562) 431-1960</a>
+        <a href="mailto:hello@voltlineelectric.com">hello@voltlineelectric.com</a>
+        <p>Serving Seattle &amp; the Eastside</p>
+        <p>Emergency line open 24/7</p>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>© 2026 Voltline Electric · Licensed WA electrician · Bonded &amp; insured</span>
+      <span>4.9★ on 300+ Google reviews</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CALL -->
+<div class="scall">
+  <a href="tel:+15624311960"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call our 24/7 line</a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var topbar = document.querySelector('.topbar');
+  function onScroll(){ topbar.classList.toggle('scrolled', window.pageYOffset > 8); }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  var burger = document.getElementById('burger'), mmenu = document.getElementById('mmenu'), mclose = document.getElementById('mclose');
+  function openMenu(){ mmenu.classList.add('open'); document.body.style.overflow='hidden'; burger.setAttribute('aria-expanded','true'); }
+  function closeMenu(){ mmenu.classList.remove('open'); document.body.style.overflow=''; burger.setAttribute('aria-expanded','false'); }
+  burger.addEventListener('click', openMenu);
+  mclose.addEventListener('click', closeMenu);
+  mmenu.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+
+  // services photo-swap (default row stays active until another is chosen)
+  var svcImg = document.getElementById('svcImg'), svcTag = document.getElementById('svcTag'),
+      svcName = document.getElementById('svcName'), svcPrice = document.getElementById('svcPrice');
+  function svcActivate(row){
+    document.querySelectorAll('.svc-row').forEach(function(r){ r.classList.remove('on'); });
+    row.classList.add('on');
+    var img = row.getAttribute('data-img');
+    if (svcImg && img && svcImg.getAttribute('src') !== img){
+      svcImg.style.opacity = 0;
+      setTimeout(function(){ svcImg.setAttribute('src', img); svcImg.style.opacity = 1; }, reduce ? 0 : 180);
+    }
+    if (svcTag) svcTag.textContent = row.getAttribute('data-tag');
+    if (svcName) svcName.innerHTML = row.getAttribute('data-name');
+    if (svcPrice) svcPrice.textContent = row.getAttribute('data-price');
+  }
+  document.querySelectorAll('.svc-row').forEach(function(row){
+    row.addEventListener('mouseenter', function(){ svcActivate(row); });
+    row.addEventListener('focus', function(){ svcActivate(row); });
+    row.addEventListener('click', function(){ svcActivate(row); });
+  });
+
+  document.querySelectorAll('.faq-item > button').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.parentElement, open = item.classList.contains('open'), a = item.querySelector('.a');
+      document.querySelectorAll('.faq-item.open').forEach(function(o){
+        o.classList.remove('open'); o.querySelector('.a').style.maxHeight = null; o.querySelector('button').setAttribute('aria-expanded','false');
+      });
+      if (!open){ item.classList.add('open'); a.style.maxHeight = a.scrollHeight + 'px'; btn.setAttribute('aria-expanded','true'); }
+    });
+  });
+
+  if (reduce || !('IntersectionObserver' in window)){
+    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){ e.target.classList.toggle('in', e.isIntersecting); });
+    }, {threshold:0.08, rootMargin:'0px 0px -10% 0px'});
+    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+  }
+
+  window.sendQuote = function(e){
+    e.preventDefault();
+    var f = e.target;
+    var body = 'Name: ' + f.name.value + '%0D%0APhone: ' + f.phone.value +
+               '%0D%0AService: ' + f.service.value + '%0D%0ADetails: ' + (f.msg.value || '');
+    window.location.href = 'mailto:hello@voltlineelectric.com?subject=' + encodeURIComponent('Quote request from ' + f.name.value) + '&body=' + body;
+    return false;
+  };
+})();
+</script>
+
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  var doc = document.documentElement;
+  function clamp(v,a,b){ return v<a?a:(v>b?b:v); }
+
+  var cbar = document.getElementById('chargebar');
+  var rail = document.getElementById('currentrail');
+  var rfill = rail && rail.querySelector('.cr-fill');
+  var rhead = rail && rail.querySelector('.cr-head');
+  var railH = 0;
+  function measureRail(){ if (rail) railH = rail.clientHeight; }
+  function progress(){
+    var mx = doc.scrollHeight - doc.clientHeight;
+    var sc = doc.scrollTop || document.body.scrollTop;
+    var p = mx > 0 ? clamp(sc / mx, 0, 1) : 0;
+    if (cbar) cbar.style.width = (p * 100) + '%';
+    if (rfill){
+      var h = p * railH;
+      rfill.style.height = h + 'px';
+      rhead.style.top = h + 'px';
+      rhead.style.opacity = p > 0.004 ? 1 : 0;
+      rail.classList.toggle('active', p > 0.004 && p < 0.999);
+    }
+  }
+
+  var drifters = [].slice.call(document.querySelectorAll('.reveal')).filter(function(el){
+    return !el.closest('.hero');
+  });
+  if (!reduce) drifters.forEach(function(el){ el.classList.add('sdrift'); });
+  function fade(){
+    var vh = window.innerHeight || doc.clientHeight;
+    for (var i = 0; i < drifters.length; i++){
+      var el = drifters[i], r = el.getBoundingClientRect();
+      var n = (r.top + r.height / 2) / vh;
+      var k = 0;
+      if (n > 0.74){ k = clamp((n - 0.74) / 0.42, 0, 1); }
+      else if (n < 0.26){ k = clamp((0.26 - n) / 0.42, 0, 1); }
+      el.style.opacity = (1 - k).toFixed(3);
+      el.style.transform = 'scale(' + (1 - 0.035 * k).toFixed(3) + ')';
+    }
+  }
+
+  var pxImgs = [].slice.call(document.querySelectorAll('.creds-media img'));
+  if (!reduce) pxImgs.forEach(function(im){ im.style.willChange = 'transform'; });
+  function parallax(){
+    var vh = window.innerHeight || doc.clientHeight, amp = 22;
+    for (var i = 0; i < pxImgs.length; i++){
+      var im = pxImgs[i], r = im.getBoundingClientRect();
+      if (r.bottom < -60 || r.top > vh + 60) continue;
+      var prog = clamp(((r.top + r.height / 2) - vh / 2) / (vh / 2), -1, 1);
+      im.style.transform = 'translateY(' + (prog * amp).toFixed(1) + 'px) scale(1.12)';
+    }
+  }
+
+  var ticking = false;
+  function frame(){ progress(); if (!reduce){ fade(); parallax(); } ticking = false; }
+  function onScroll(){ if (!ticking){ ticking = true; requestAnimationFrame(frame); } }
+  measureRail();
+  frame();
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', function(){ measureRail(); frame(); });
+
+  function fmt(el, val){
+    var dec = parseInt(el.getAttribute('data-dec') || '0', 10);
+    var s = val.toFixed(dec);
+    if (el.getAttribute('data-group') === '1'){
+      var parts = s.split('.');
+      parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+      s = parts.join('.');
+    }
+    var pad = parseInt(el.getAttribute('data-pad') || '0', 10);
+    if (pad && dec === 0){ while (s.length < pad) s = '0' + s; }
+    return (el.getAttribute('data-prefix') || '') + s + (el.getAttribute('data-suffix') || '');
+  }
+  function countUp(el){
+    var to = parseFloat(el.getAttribute('data-to')), dur = 1500, t0 = null;
+    function step(ts){
+      if (!t0) t0 = ts;
+      var p = Math.min((ts - t0) / dur, 1), e = 1 - Math.pow(1 - p, 3);
+      el.textContent = fmt(el, to * e);
+      if (p < 1) requestAnimationFrame(step); else el.textContent = fmt(el, to);
+    }
+    requestAnimationFrame(step);
+  }
+  var cups = [].slice.call(document.querySelectorAll('.cup'));
+  if (cups.length){
+    if (reduce || !('IntersectionObserver' in window)){
+      cups.forEach(function(el){ el.textContent = fmt(el, parseFloat(el.getAttribute('data-to'))); });
+    } else {
+      var seen = [];
+      var co = new IntersectionObserver(function(entries){
+        entries.forEach(function(e){
+          var i = cups.indexOf(e.target);
+          if (e.isIntersecting){ if (!seen[i]){ seen[i] = true; countUp(e.target); } }
+          else if (seen[i]){ seen[i] = false; e.target.textContent = fmt(e.target, 0); }
+        });
+      }, {threshold:0.6});
+      cups.forEach(function(el){ co.observe(el); });
+    }
+  }
+})();
+</script>
+
+<!-- footer particle network (vanilla canvas, electric-lime constellation) -->
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var footer = document.querySelector('footer');
+  var canvas = footer && footer.querySelector('.footer-particles');
+  if(!footer || !canvas) return;
+  var ctx = canvas.getContext('2d');
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var W = 0, H = 0, pts = [], mouse = {x:-9999, y:-9999};
+  var LINE = 132, MLINE = 168;
+  function build(){
+    var r = footer.getBoundingClientRect();
+    W = Math.max(1, r.width); H = Math.max(1, r.height);
+    canvas.width = W * dpr; canvas.height = H * dpr;
+    canvas.style.width = W + 'px'; canvas.style.height = H + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var count = Math.min(96, Math.max(28, Math.round(W * H / 13500)));
+    pts = [];
+    for(var i=0;i<count;i++){
+      pts.push({x:Math.random()*W, y:Math.random()*H, vx:(Math.random()-.5)*0.32, vy:(Math.random()-.5)*0.32});
+    }
+  }
+  function frame(){
+    ctx.clearRect(0,0,W,H);
+    var i,j;
+    for(i=0;i<pts.length;i++){
+      var p=pts[i];
+      p.x+=p.vx; p.y+=p.vy;
+      if(p.x<=0||p.x>=W){ p.vx*=-1; p.x=Math.max(0,Math.min(W,p.x)); }
+      if(p.y<=0||p.y>=H){ p.vy*=-1; p.y=Math.max(0,Math.min(H,p.y)); }
+    }
+    for(i=0;i<pts.length;i++){
+      var a=pts[i];
+      for(j=i+1;j<pts.length;j++){
+        var b=pts[j], dx=a.x-b.x, dy=a.y-b.y, d=Math.sqrt(dx*dx+dy*dy);
+        if(d<LINE){
+          ctx.strokeStyle='rgba(198,240,58,'+((1-d/LINE)*0.16).toFixed(3)+')';
+          ctx.lineWidth=1;
+          ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(b.x,b.y); ctx.stroke();
+        }
+      }
+      var mdx=a.x-mouse.x, mdy=a.y-mouse.y, md=Math.sqrt(mdx*mdx+mdy*mdy);
+      if(md<MLINE){
+        ctx.strokeStyle='rgba(198,240,58,'+((1-md/MLINE)*0.4).toFixed(3)+')';
+        ctx.lineWidth=1;
+        ctx.beginPath(); ctx.moveTo(a.x,a.y); ctx.lineTo(mouse.x,mouse.y); ctx.stroke();
+      }
+    }
+    for(i=0;i<pts.length;i++){
+      var q=pts[i];
+      ctx.fillStyle='rgba(198,240,58,0.55)';
+      ctx.beginPath(); ctx.arc(q.x,q.y,1.8,0,6.2832); ctx.fill();
+    }
+  }
+  var raf=null;
+  function loop(){ frame(); raf=requestAnimationFrame(loop); }
+  function start(){ if(!raf && !reduce) loop(); }
+  function stop(){ if(raf){ cancelAnimationFrame(raf); raf=null; } }
+  footer.addEventListener('mousemove', function(e){ var r=footer.getBoundingClientRect(); mouse.x=e.clientX-r.left; mouse.y=e.clientY-r.top; }, {passive:true});
+  footer.addEventListener('mouseleave', function(){ mouse.x=-9999; mouse.y=-9999; });
+  var rt;
+  window.addEventListener('resize', function(){ clearTimeout(rt); rt=setTimeout(function(){ build(); if(reduce) frame(); }, 150); });
+  build();
+  if(reduce){ frame(); return; }
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting) start(); else stop(); }); }, {threshold:0}).observe(footer);
+  } else { start(); }
+})();
+</script>
+
+<!-- pf-chatbot:start -->
+<script>window.CHATBOT_KB={"name": "Electrical · Voltline Electric", "accent": "#8FB400", "mode": "business", "intro": "Hi! I'm the Voltline Electric assistant. Ask about our services, service area, pricing, hours or booking, or about this site's design (colors, type, layout).", "suggestions": ["Services", "Service area", "Pricing", "Emergency", "Design & type"], "qa": [{"k": ["design", "style", "aesthetic", "look", "feel", "vibe", "theme"], "a": "A kinetic editorial design: oversized headline typography over full-bleed photography, borderless layouts, and lots of negative space. Palette: warm bone #ECE7DB, near-black #111110, and one electric-lime accent #C6F03A, with brass #C99A52 for star ratings. Type: Chakra Petch for the huge display headlines, Inter for body, Space Mono for labels. Flow: Hero to Stats to Services to Work to Licensing to Pricing to Reviews to Service area to FAQ to Book."}, {"k": ["color", "colour", "palette", "hex", "accent", "brand color"], "a": "Warm bone #ECE7DB, near-black #111110, electric-lime accent #C6F03A, brass #C99A52 for stars, and a red #E23D22 for the emergency accent. Sections alternate between bone and near-black."}, {"k": ["button", "btn", "cta", "call to action"], "a": "The primary CTA is an electric-lime pill (#C6F03A with near-black text); secondary actions are underlined text links. Book Online and the free quote are the main actions."}, {"k": ["font", "type", "typography", "typeface", "headline font"], "a": "Chakra Petch for the oversized display headlines, Inter for body copy, and Space Mono for labels, section numbers and captions."}, {"k": ["layout", "section", "structure", "flow", "page", "wireframe"], "a": "A borderless, type-driven editorial layout: full-bleed hero with an oversized headline, a stats type-row, a big-type services index with a pinned image that swaps on hover, a bleed image collage of recent work, a licensing statement, a typographic price list, oversized pull-quote reviews, an inline service-area type list, FAQ, and a book / final CTA."}, {"k": ["tech", "stack", "built", "build", "framework", "made", "code", "recreate", "rebuild", "library"], "a": "Hand-written HTML, CSS and vanilla JS, single file. To recreate: Chakra Petch + Inter + Space Mono, warm bone and near-black with an electric-lime accent, oversized headlines over full-bleed photos, no card boxes, hairline rules, and a scroll-linked charge bar and current rail."}, {"k": ["service", "services", "offer", "do you", "what do you do", "help with", "fix", "repair", "install"], "a": "Panel upgrades (100A to 200A), EV charger installs, whole-home generators, rewiring and new circuits, lighting and fixtures, and safety and code work. From a tripping breaker to a 200-amp panel."}, {"k": ["area", "location", "where", "serve", "service area", "near me", "city", "local", "cover"], "a": "We serve Seattle and the Eastside: Ballard, West Seattle, Bellevue, Redmond, Shoreline, Renton, Kirkland, Capitol Hill, Greenwood, Magnolia, and Wallingford."}, {"k": ["contact", "phone", "call", "reach", "email", "number", "get in touch"], "a": "Call (562) 431-1960 or email hello@voltlineelectric.com. The emergency line is answered 24/7."}, {"k": ["book", "appointment", "schedule", "quote", "estimate", "booking", "get started", "request"], "a": "Book online with the form at the bottom of the page, or call (562) 431-1960. Tell us the issue and your address and we will lock a time."}, {"k": ["hour", "open", "emergency", "24", "available", "when", "power out", "sparking"], "a": "The emergency line is answered 24/7 by a real Seattle electrician. If the power is out, a breaker is sparking, or you smell burning, shut off the main and call (562) 431-1960."}, {"k": ["price", "pricing", "cost", "how much", "rate", "fee", "afford", "financing", "finance"], "a": "A diagnostic runs $75 to $200, a 200-amp panel upgrade is usually $1,300 to $3,000, and a Level 2 EV charger is $800 to $2,500. National-average ranges, upfront and written, with financing on larger jobs."}, {"k": ["about", "who", "story", "experience", "trust", "why you", "reviews", "rating", "licensed"], "a": "Voltline Electric is a licensed, bonded and insured Seattle electrician for panels, EV chargers, generators, rewiring and lighting, wired to the 2026 NEC, with a 4.9 rating across 300+ reviews and a 24/7 emergency line."}], "fallback": "I can talk about this site's design (colors, type, layout, tech) and the business (services, area, pricing, hours, booking). Try a chip below."};</script>
+
+<style>
+#pfbot-root{--pfa:#8FB400;position:fixed;right:20px;bottom:20px;z-index:2147483000;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+#pfbot-launch{width:58px;height:58px;border:0;border-radius:50%;background:#111110;color:#C6F03A;cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.28);display:grid;place-items:center;transition:transform .15s}
+#pfbot-launch:hover{transform:scale(1.06)}
+#pfbot-launch svg{width:26px;height:26px}
+#pfbot-panel{position:absolute;right:0;bottom:72px;width:350px;max-width:calc(100vw - 32px);height:520px;max-height:calc(100vh - 110px);background:#fff;border-radius:14px;box-shadow:0 24px 60px rgba(0,0,0,.32);display:none;flex-direction:column;overflow:hidden;border:1px solid rgba(0,0,0,.08)}
+#pfbot-root[data-open="true"] #pfbot-panel{display:flex}
+#pfbot-head{background:#111110;color:#fff;padding:14px 16px;display:flex;align-items:center;gap:10px}
+#pfbot-head .t{font-weight:700;font-size:15px;line-height:1.1}
+#pfbot-head .s{font-size:11px;opacity:.85}
+#pfbot-head .av{width:34px;height:34px;border-radius:50%;background:#C6F03A;color:#111110;display:grid;place-items:center;font-size:17px}
+#pfbot-x{margin-left:auto;background:0;border:0;color:#fff;font-size:20px;cursor:pointer;opacity:.85;line-height:1}
+#pfbot-log{flex:1;overflow-y:auto;padding:14px;background:#f6f7f9;display:flex;flex-direction:column;gap:10px}
+.pfb{max-width:84%;padding:10px 13px;border-radius:14px;font-size:13.5px;line-height:1.5;white-space:pre-wrap;word-wrap:break-word}
+.pfb.bot{background:#fff;color:#1d2430;border:1px solid #e7e9ee;border-bottom-left-radius:4px;align-self:flex-start}
+.pfb.me{background:#111110;color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+.pfb.typing{color:#8a93a3;font-style:italic}
+#pfbot-chips{display:flex;flex-wrap:wrap;gap:7px;padding:10px 12px;background:#fff;border-top:1px solid #eef0f3}
+.pfchip{border:1px solid #111110;color:#111110;background:#fff;border-radius:999px;padding:6px 11px;font-size:12px;cursor:pointer;transition:.12s}
+.pfchip:hover{background:#C6F03A;border-color:#C6F03A;color:#111110}
+#pfbot-form{display:flex;gap:8px;padding:11px;border-top:1px solid #eef0f3;background:#fff}
+#pfbot-input{flex:1;border:1px solid #d8dce3;border-radius:10px;padding:10px 12px;font-size:13.5px;outline:0}
+#pfbot-input:focus{border-color:#111110}
+#pfbot-send{border:0;background:#111110;color:#C6F03A;border-radius:10px;padding:0 15px;cursor:pointer;font-size:14px}
+@media(max-width:430px){#pfbot-panel{width:calc(100vw - 24px);right:-2px}}
+</style>
+<script>
+(function(){
+ var KB=window.CHATBOT_KB; if(!KB||document.getElementById('pfbot-root'))return;
+ var root=document.createElement('div'); root.id='pfbot-root';
+ root.innerHTML=
+  '<button id="pfbot-launch" aria-label="Open assistant"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4 8.4 8.4 0 0 1-3.8-.9L3 21l2-5.3A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4z"/></svg></button>'+
+  '<div id="pfbot-panel" role="dialog" aria-label="Site assistant">'+
+   '<div id="pfbot-head"><div class="av">⚡</div><div style="flex:1"><div class="t"></div><div class="s">AI assistant · ask me anything</div></div><button id="pfbot-call" title="Talk to the AI" style="display:none;margin-right:8px;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;border-radius:999px;padding:4px 10px;font-size:12px;cursor:pointer">&#128222; Call</button><button id="pfbot-x" aria-label="Close">×</button></div>'+
+   '<div id="pfbot-log"></div><div id="pfbot-chips"></div>'+
+   '<form id="pfbot-form"><input id="pfbot-input" autocomplete="off" placeholder="Type your question…"/><button id="pfbot-send">➤</button></form>'+
+  '</div>';
+ document.body.appendChild(root);
+ root.querySelector('#pfbot-head .t').textContent=KB.name||'Assistant';
+ var log=root.querySelector('#pfbot-log'), chips=root.querySelector('#pfbot-chips'),
+     form=root.querySelector('#pfbot-form'), input=root.querySelector('#pfbot-input'),
+     launch=root.querySelector('#pfbot-launch'), greeted=false;
+ var R=window.__RECEPTIONIST__||null, sid=null, callBtn=root.querySelector('#pfbot-call');
+ function bubble(role,txt){var d=document.createElement('div');d.className='pfb '+role;d.textContent=txt;log.appendChild(d);log.scrollTop=log.scrollHeight;return d;}
+ function botSay(txt){var tp=bubble('bot typing','typing…');setTimeout(function(){tp.remove();bubble('bot',txt);},380+Math.min(900,txt.length*7));}
+ function renderChips(){chips.innerHTML='';(KB.suggestions||[]).forEach(function(s){var b=document.createElement('button');b.className='pfchip';b.type='button';b.textContent=s;b.onclick=function(){send(s);};chips.appendChild(b);});}
+ function answer(q){
+   q=(q||'').toLowerCase().trim();
+   if(/^(hi|hey|hello|yo|sup|good (morning|evening|afternoon))\b/.test(q))return KB.intro;
+   if(/(thank|thanks|thx|cheers|appreciate)/.test(q))return "Anytime! Anything else you want to know?";
+   if(/(bye|goodbye|see ya|that's all|done)/.test(q))return "Take care, and call (562) 431-1960 any hour if you need us.";
+   var best=null,bs=0;
+   (KB.qa||[]).forEach(function(it){var s=0;it.k.forEach(function(k){if(q.indexOf(k)>=0)s+=k.length;});if(s>bs){bs=s;best=it;}});
+   return best?best.a:KB.fallback;
+ }
+ function send(txt){txt=(txt||'').trim();if(!txt)return;bubble('me',txt);input.value='';if(R&&R.chatUrl){liveSend(txt);}else{botSay(answer(txt));}}
+ function liveSend(txt){
+   var tp=bubble('bot typing','typing…');
+   fetch(R.chatUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({leadId:R.leadId,sessionId:sid,message:txt})})
+     .then(function(r){return r.json();})
+     .then(function(j){sid=j.sessionId||sid;tp.remove();bubble('bot',j.reply||'…');})
+     .catch(function(){tp.remove();bubble('bot','sorry — connection hiccup. try again, or give us a call.');});
+ }
+ form.addEventListener('submit',function(e){e.preventDefault();send(input.value);});
+ launch.addEventListener('click',function(){var o=root.getAttribute('data-open')==='true';root.setAttribute('data-open',o?'false':'true');if(!o&&!greeted){greeted=true;renderChips();botSay(KB.intro);input.focus();}});
+ root.querySelector('#pfbot-x').addEventListener('click',function(){root.setAttribute('data-open','false');});
+ // Voice (Retell) — shown only when the demo has voice configured; loads the SDK lazily on first click.
+ var rc=null,callTimer=null;
+ function endCall(){try{rc&&rc.stopCall&&rc.stopCall();}catch(e){}rc=null;callBtn.textContent='📞 Call';if(callTimer){clearTimeout(callTimer);callTimer=null;}}
+ function loadRetell(cb){
+   if(window.RetellWebClient){cb(window.RetellWebClient);return;}
+   var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/retell-client-js-sdk@2/dist/index.umd.js';
+   s.onload=function(){cb(window.RetellWebClient||(window.RetellClientJsSdk&&window.RetellClientJsSdk.RetellWebClient));};
+   s.onerror=function(){bubble('bot','voice module didn\'t load — chat still works!');callBtn.textContent='📞 Call';};
+   document.head.appendChild(s);
+ }
+ function startCall(){
+   if(rc){endCall();return;}
+   callBtn.textContent='…';bubble('bot','starting a voice call — allow mic access when asked…');
+   fetch(R.voiceUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({leadId:R.leadId})})
+     .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+     .then(function(o){
+       if(!o.ok||!o.j.access_token){bubble('bot','voice isn\'t live yet — try the chat or give us a call.');callBtn.textContent='📞 Call';return;}
+       var max=(o.j.max_seconds||60)*1000;
+       loadRetell(function(RWC){
+         if(!RWC){bubble('bot','voice module unavailable — chat still works!');callBtn.textContent='📞 Call';return;}
+         rc=new RWC();
+         if(rc.on){rc.on('call_ended',function(){bubble('bot','call ended. want a follow-up? just drop your name + number here.');endCall();});}
+         rc.startCall({accessToken:o.j.access_token}).then(function(){callBtn.textContent='■ End';callTimer=setTimeout(endCall,max);})
+           .catch(function(){bubble('bot','couldn\'t connect the call — try chat instead.');endCall();});
+       });
+     })
+     .catch(function(){bubble('bot','couldn\'t start the call — try chat instead.');callBtn.textContent='📞 Call';});
+ }
+ if(R&&R.voiceUrl){callBtn.style.display='inline-block';callBtn.addEventListener('click',startCall);}
+})();
+</script>
+<!-- pf-chatbot:end -->
+</body>
+</html>

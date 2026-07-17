@@ -1,0 +1,52 @@
+{
+  "niche": "roofing",
+  "templateDir": "02-roofing",
+  "file": "layout.html",
+  "assetDirs": ["assets/_img", "img"],
+  "imageStrategy": "self-hosted",
+  "galleryImageDir": "assets/_img",
+  "_note": "Tokens VERIFIED against templates/02-roofing/layout.html (VoltarisLabs Web_Project). Template is SELF-HOSTED (local assets/_img jpgs + img/ hero video) — theme.json's 'remote Pexels' note is stale. Phone in the file is a PLUMBER-template copy-paste leftover ((562) 431-1960 / +15624311960), scrubbed here. Hero is a local video (not a photo slot). The 2 swappable photos are the before/after roof slider (ba-before / ba-after).",
+
+  "brand": {
+    "full": "Ridgeline Roofing",
+    "short": "Ridgeline",
+    "domain": "ridgelineroofing.com",
+    "email": "hello@ridgelineroofing.com"
+  },
+
+  "phones": {
+    "display": "(562) 431-1960",
+    "href": "+15624311960",
+    "formPlaceholder": "(469) 000-0000"
+  },
+
+  "geo": {
+    "city": "Dallas",
+    "stateAbbr": "TX",
+    "regionPhrases": ["the Dallas-Fort Worth metro", "Dallas-Fort Worth", "the DFW metro", "DFW"],
+    "countyPhrase": "",
+    "areasMultiWord": ["Fort Worth"],
+    "areas": ["Plano", "Arlington", "Frisco", "McKinney", "Denton", "Irving", "Grapevine"]
+  },
+
+  "license": {
+    "sources": ["Licensed &amp; Insured", "Licensed &amp; insured", "licensed and insured"]
+  },
+
+  "facts": {},
+
+  "extraReplacements": [
+    { "from": "North Texas", "to": "{city}" }
+  ],
+
+  "gallerySlots": [
+    {
+      "imgTag": "<img class=\"ba-before\" src=\"assets/_img/6f29a75d197f.jpg\" alt=\"An aging roof being torn off a North Texas brick home\" />",
+      "caption": ""
+    },
+    {
+      "imgTag": "<img class=\"ba-after\" src=\"assets/_img/fd40f0b4dd63.jpg\" alt=\"A brand-new architectural shingle roof going on a North Texas home\" />",
+      "caption": ""
+    }
+  ]
+}

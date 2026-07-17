@@ -1,0 +1,11 @@
+# Secrets — never commit
+config.local.json
+.env
+.env.local
+
+# Lead data (business PII)
+leads-*.csv
+
+# Node
+node_modules/
+usage.json

@@ -1,0 +1,18 @@
+{
+  "name": "voltaris-rebuild-admin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Lightweight monitoring + kill-switch dashboard for the ugly-website rebuild outreach pipeline. Reads stats from Convex, toggles system_flags.outbound_paused.",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}

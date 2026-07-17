@@ -1,0 +1,11 @@
+# Secrets — never commit
+.env
+.env.local
+
+# Generated demo output (business data + build artifacts)
+build/
+
+# Node
+node_modules/
+_ex.json
+_ex.err

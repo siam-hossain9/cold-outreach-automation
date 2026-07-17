@@ -1,0 +1,69 @@
+{
+  "name": "HVAC Template 1",
+  "slug": "03-hvac",
+  "niche": "hvac",
+  "archetype": "Dark immersive · thermostat-dial hero · cooling/heating split (its own layout, NOT the split-hero card-grid used by 01-plumber / 02-roofing)",
+  "design_style": "Comfort-tech polish on a DARK immersive hero. Cool 'cooling' blue → warm 'heating' orange duality, expressed as a thermostat-dial gauge. Poppins + Open Sans, pill components, transparent header that solidifies on scroll.",
+  "best_for": "Residential HVAC contractors in dual-season climates (hot summers + cold winters) running BOTH 24/7 emergency repair and scheduled installs/maintenance, pushing a maintenance membership.",
+  "demo_brand": "TrueComfort Heating & Air (Kansas City), placeholder identity, swap per client",
+  "library_sources": {
+    "palette": "ui-ux-pro-max colors.csv row 55 'Home Services' (professional blue + urgent orange), adapted into a dark cool/warm duality",
+    "fonts": "ui-ux-pro-max typography.csv row 2 'Modern Professional' (Poppins + Open Sans)"
+  },
+  "colors": {
+    "blue": "#1B83C9",
+    "blue2": "#0F6FB8",
+    "blue_ink": "#0A2236",
+    "cool": "#37A0E6",
+    "heat": "#EE7A2B",
+    "heat2": "#D5611A",
+    "ink": "#15232E",
+    "muted": "#5A6B79",
+    "bg": "#ffffff",
+    "bg2": "#EEF5FB",
+    "line": "#DCE6EF",
+    "line2": "#C7D5E1",
+    "star": "#F4A91F",
+    "ok": "#34C77B"
+  },
+  "fonts": {
+    "heading": "Poppins (500;600;700;800)",
+    "body": "Open Sans (400;500;600;700)",
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap"
+  },
+  "spacing": {
+    "max_width": "1180px",
+    "radius": "18px (rounder than 01/02)",
+    "section_padding_desktop": "90px 0",
+    "buttons": "pill (border-radius:999px)"
+  },
+  "sections": [
+    "utility bar (dark)",
+    "transparent header → solidifies white on scroll (distinct from 01/02's always-solid header)",
+    "DARK hero: copy + thermostat-dial gauge centerpiece (no framed stock photo)",
+    "stat strip (gradient numbers on dark)",
+    "services: COOLING | HEATING two-column split + extra pills (NOT a 3-up icon-card grid)",
+    "why us: tall photo panel w/ overlay badge + numbered 01-04 bordered panel",
+    "Comfort Club: wide horizontal membership banner",
+    "process: vertical timeline w/ gradient spine (NOT horizontal cards)",
+    "reviews: one large featured quote + two small cards",
+    "service area (pill chips, centered wrap)",
+    "faq (accordion)",
+    "book: dark split + prominent white form",
+    "footer (dark)",
+    "sticky mobile call bar"
+  ],
+  "signature_features": [
+    "Thermostat-dial hero gauge, cool→warm gradient arc, '72° COMFORT', COOL/HEAT labels (the hot/cold duality built into the hero, no stock photo)",
+    "Cooling | Heating split services layout (reinforces the duality)",
+    "Vertical process timeline with a blue→orange gradient spine",
+    "Comfort Club membership banner (the HVAC retention/proof element)",
+    "Transparent-over-dark header that solidifies to white on scroll"
+  ],
+  "motion": "Minimum-animation per brief. Vanilla JS only, IntersectionObserver scroll-reveal, transparent→solid + hide-on-scroll header, FAQ accordion. NO perpetual background loops. Every animation honors prefers-reduced-motion.",
+  "delivery": {
+    "format": "single-file index.html, no local asset dependencies (the dial is inline SVG)",
+    "remote_images": "Pexels, why-panel tech (32588555). og:image (5463575). Hero uses the SVG dial, not a photo. Swap photos for the client's real tech/van shots.",
+    "logo": "inline SVG ring/dial mark"
+  }
+}

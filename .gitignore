@@ -1,0 +1,25 @@
+# Secrets — never commit
+.env
+.env.local
+**/.env
+**/.env.local
+**/config.local.json
+
+# Data (contains PII)
+*.csv
+**/leads-*.csv
+
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Generated / build output
+convex/_generated/
+generator/build/
+**/build/
+**/.next/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

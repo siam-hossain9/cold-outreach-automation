@@ -1,0 +1,88 @@
+<!-- AI Receptionist widget — injected into every demo by the generator.
+     Consistent across all niches; reads window.__RECEPTIONIST__ (leadId, chatUrl,
+     voiceUrl?, businessName, agentName, accent). Self-contained, no dependencies.
+     Auto-opens on load; white launch bubble; Call button always visible. -->
+<style>
+#rcpt-launch{position:fixed;bottom:22px;right:22px;border:0;background:transparent;cursor:pointer;padding:0;display:grid;place-items:center;z-index:2147483000;transition:transform .15s;filter:drop-shadow(0 6px 16px rgba(0,0,0,.45))}
+#rcpt-launch:hover{transform:scale(1.08)}
+#rcpt-launch svg{width:64px;height:64px;fill:var(--rc,#C6F03A)}
+#rcpt-panel{position:fixed;bottom:100px;right:24px;width:400px;max-width:calc(100vw - 28px);height:620px;max-height:calc(100vh - 128px);background:#0f1115;color:#eef;border-radius:20px;box-shadow:0 26px 70px rgba(0,0,0,.5);display:none;flex-direction:column;overflow:hidden;z-index:2147483000;font-family:system-ui,-apple-system,'Segoe UI',Roboto,sans-serif}
+#rcpt-panel.open{display:flex}
+#rcpt-head{background:#15181d;padding:15px 17px;display:flex;align-items:center;gap:11px}
+#rcpt-head .av{width:38px;height:38px;border-radius:50%;background:#fff;display:grid;place-items:center;flex:none}
+#rcpt-head .av svg{width:20px;height:20px;fill:var(--rc,#2f6bff)}
+#rcpt-head .t{font-weight:700;font-size:15.5px;line-height:1.15}
+#rcpt-head .s{font-size:12px;opacity:.65}
+#rcpt-call{margin-left:auto;border:1px solid rgba(255,255,255,.3);background:transparent;color:#fff;border-radius:999px;padding:7px 14px;font-size:13px;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;gap:6px}
+#rcpt-call svg{width:14px;height:14px;fill:#fff}
+#rcpt-x{background:transparent;border:0;color:#fff;font-size:22px;cursor:pointer;margin-left:8px;opacity:.75;line-height:1}
+#rcpt-log{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:9px}
+.rcpt-b{max-width:84%;padding:11px 14px;border-radius:16px;font-size:15px;line-height:1.4;white-space:pre-wrap;word-wrap:break-word}
+.rcpt-b.me{align-self:flex-end;background:var(--rc,#2f6bff);color:#fff}
+.rcpt-b.bot{align-self:flex-start;background:#20242c;color:#eef}
+.rcpt-b.typing{opacity:.6;font-style:italic}
+#rcpt-form{display:flex;gap:9px;padding:13px;border-top:1px solid #20242c}
+#rcpt-input{flex:1;background:#20242c;border:0;color:#fff;border-radius:999px;padding:12px 16px;font-size:15px;outline:none}
+#rcpt-send{background:var(--rc,#2f6bff);border:0;color:#fff;border-radius:50%;width:42px;height:42px;cursor:pointer;font-size:16px;flex:none}
+</style>
+<button id="rcpt-launch" aria-label="Open assistant"><svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.8 2 11.5c0 2.3 1.1 4.4 2.9 5.9L4 21l4.3-1.6c1.1.3 2.4.5 3.7.5 5.5 0 10-3.8 10-8.5S17.5 3 12 3z"/></svg></button>
+<div id="rcpt-panel" role="dialog" aria-label="AI assistant">
+  <div id="rcpt-head">
+    <div class="av"><svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.8 2 11.5c0 2.3 1.1 4.4 2.9 5.9L4 21l4.3-1.6c1.1.3 2.4.5 3.7.5 5.5 0 10-3.8 10-8.5S17.5 3 12 3z"/></svg></div>
+    <div style="flex:1;min-width:0"><div class="t">Assistant</div><div class="s">AI assistant</div></div>
+    <button id="rcpt-call"><svg viewBox="0 0 24 24"><path d="M20 15.5c-1.2 0-2.4-.2-3.6-.6a1 1 0 0 0-1 .2l-2.2 2.2a15 15 0 0 1-6.6-6.6l2.2-2.2a1 1 0 0 0 .2-1C8.7 6.4 8.5 5.2 8.5 4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1C3 13.4 10.6 21 20 21a1 1 0 0 0 1-1v-3.5a1 1 0 0 0-1-1z"/></svg>Call</button>
+    <button id="rcpt-x" aria-label="Close">×</button>
+  </div>
+  <div id="rcpt-log"></div>
+  <form id="rcpt-form"><input id="rcpt-input" autocomplete="off" placeholder="Type a message…"/><button id="rcpt-send" type="submit" aria-label="Send">➤</button></form>
+</div>
+<script>(function(){
+  var R=window.__RECEPTIONIST__;
+  var launch=document.getElementById('rcpt-launch');
+  if(!R||!R.chatUrl){ if(launch)launch.style.display='none'; var p=document.getElementById('rcpt-panel'); if(p)p.style.display='none'; return; }
+  var root=document.getElementById('rcpt-panel'),
+      log=document.getElementById('rcpt-log'), form=document.getElementById('rcpt-form'),
+      input=document.getElementById('rcpt-input'), callBtn=document.getElementById('rcpt-call');
+  if(R.accent){document.documentElement.style.setProperty('--rc',R.accent);}
+  document.querySelector('#rcpt-head .t').textContent=R.businessName||'Assistant';
+  document.querySelector('#rcpt-head .s').textContent='Chat with '+(R.agentName||'us');
+  var sid=null, greeted=false;
+  function bub(role,txt){var d=document.createElement('div');d.className='rcpt-b '+role;d.textContent=txt;log.appendChild(d);log.scrollTop=log.scrollHeight;return d;}
+  function greet(){ if(greeted)return; greeted=true; bub('bot','Hey! I\'m '+(R.agentName||'the')+(R.businessName?', '+R.businessName+'\'s assistant':' assistant')+'. How can I help you today?'); }
+  function openPanel(){ root.classList.add('open'); greet(); try{input.focus();}catch(e){} }
+  function closePanel(){ root.classList.remove('open'); }
+  function sendMsg(txt){txt=(txt||'').trim();if(!txt)return;bub('me',txt);input.value='';var tp=bub('bot typing','typing…');
+    fetch(R.chatUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({leadId:R.leadId,sessionId:sid,message:txt})})
+      .then(function(r){return r.json();})
+      .then(function(j){sid=j.sessionId||sid;tp.remove();bub('bot',j.reply||'…');})
+      .catch(function(){tp.remove();bub('bot','sorry — connection hiccup. try again, or give us a call.');});
+  }
+  form.addEventListener('submit',function(e){e.preventDefault();sendMsg(input.value);});
+  launch.addEventListener('click',function(){ root.classList.contains('open')?closePanel():openPanel(); });
+  document.getElementById('rcpt-x').addEventListener('click',closePanel);
+  // Auto-open on load (a beat after paint) so visitors see it immediately.
+  setTimeout(openPanel, 900);
+  // ── Voice (Retell) — button always visible; live once voice is configured ──
+  var rc=null,ct=null;
+  function endCall(){try{rc&&rc.stopCall&&rc.stopCall();}catch(e){}rc=null;callBtn.innerHTML=callHTML;if(ct){clearTimeout(ct);ct=null;}}
+  var callHTML=callBtn.innerHTML;
+  function loadRetell(cb){if(window.RetellWebClient){cb(window.RetellWebClient);return;}
+    var s=document.createElement('script');s.src='https://cdn.jsdelivr.net/npm/retell-client-js-sdk@2/dist/index.umd.js';
+    s.onload=function(){cb(window.RetellWebClient);};s.onerror=function(){bub('bot','voice module didn\'t load — chat still works!');callBtn.innerHTML=callHTML;};document.head.appendChild(s);}
+  function startCall(){
+    if(!R.voiceUrl){ if(!root.classList.contains('open'))openPanel(); bub('bot','📞 The voice calling feature needs a quick backend setup to go live. Want to see it in action? Just let us know and we\'ll send you a live demo!'); return; }
+    if(rc){endCall();return;}
+    if(!root.classList.contains('open'))openPanel();
+    callBtn.textContent='…';bub('bot','starting a voice call — allow mic access when asked…');
+    fetch(R.voiceUrl,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({leadId:R.leadId})})
+      .then(function(r){return r.json().then(function(j){return {ok:r.ok,j:j};});})
+      .then(function(o){if(!o.ok||!o.j.access_token){bub('bot','voice isn\'t live yet — try the chat or give us a call.');callBtn.innerHTML=callHTML;return;}
+        var max=(o.j.max_seconds||60)*1000;
+        loadRetell(function(RWC){if(!RWC){bub('bot','voice unavailable — chat still works!');callBtn.innerHTML=callHTML;return;}
+          rc=new RWC();if(rc.on){rc.on('call_ended',function(){bub('bot','call ended. want a follow-up? just drop your name + number here.');endCall();});}
+          rc.startCall({accessToken:o.j.access_token}).then(function(){callBtn.textContent='■ End';ct=setTimeout(endCall,max);}).catch(function(){bub('bot','couldn\'t connect the call — try chat instead.');endCall();});
+        });})
+      .catch(function(){bub('bot','couldn\'t start the call — try chat instead.');callBtn.innerHTML=callHTML;});
+  }
+  callBtn.addEventListener('click',startCall);
+})();</script>

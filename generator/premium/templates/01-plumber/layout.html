@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>The Family Plumber | Orange County &amp; LA Plumbers, 24/7, 4.9★</title>
+<meta name="description" content="Josh, Mike and Rick, the original plumbers serving Orange County and Los Angeles for over 39 years. Family-owned, available 24/7, 4.9★ on 100+ Google reviews. Free estimates and second opinions. Call (562) 431-1960." />
+<meta name="theme-color" content="#14202B" />
+<link rel="canonical" href="https://thefamilyplumber.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="The Family Plumber, OC &amp; LA's 4.9★ Family Plumbers" />
+<meta property="og:description" content="The plumbers your neighbors actually recommend. 39+ years, family-owned, available 24/7. Free estimates. Call (562) 431-1960." />
+<meta property="og:image" content="img/hero.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314202B'/%3E%3Ctext x='16' y='21' font-family='Arial,Helvetica,sans-serif' font-size='15' font-weight='bold' letter-spacing='-1' text-anchor='middle' fill='%23ffffff'%3EFP%3C/text%3E%3Crect x='0' y='28' width='32' height='4' fill='%23E2521B'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --paper:#F6F5F1; --paper2:#EEEBE3; --card:#ffffff;
+  --ink:#15191D; --ink2:#2B3138; --muted:#6B7278;
+  --line:#E4E0D7; --line2:#D5D0C4;
+  --navy:#14202B; --navy2:#0E1820;
+  --accent:#E2521B; --accent2:#C7430F; --accent-soft:#F6E7DD;
+  --star:#E2951B;
+  --maxw:1280px; --gut:48px; --r:4px;
+  --fdisp:'Archivo',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+  --fbody:'Inter',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:var(--fbody);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gut)}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+h1,h2,h3{font-family:var(--fdisp);font-weight:800;letter-spacing:-.03em;line-height:.98}
+.eyebrow{font-family:var(--fdisp);font-weight:700;font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--accent)}
+.lede{font-size:1.18rem;color:var(--ink2);line-height:1.55;max-width:46ch}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--fdisp);font-weight:700;font-size:.96rem;letter-spacing:-.01em;padding:16px 26px;border-radius:var(--r);transition:transform .18s ease,background .18s ease,color .18s ease;cursor:pointer;border:1.5px solid transparent}
+.btn svg{width:18px;height:18px}
+.btn-primary{background:var(--accent);color:#fff}
+.btn-primary:hover{background:var(--accent2);transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:#fff}
+
+/* ===== NAV ===== */
+header{position:sticky;top:0;z-index:60;background:rgba(246,245,241,.86);backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .25s,background .25s}
+header.scrolled{border-color:var(--line);background:rgba(246,245,241,.96)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:12px}
+.brand .mk{width:38px;height:38px;border-radius:9px;background:var(--navy);display:grid;place-items:center;flex:none;position:relative;overflow:hidden}
+.brand .mk .mono{font-family:var(--fdisp);font-weight:900;font-size:17px;letter-spacing:-.06em;color:#fff;line-height:1}
+.brand .mk .bar{position:absolute;left:0;right:0;bottom:0;height:4px;background:var(--accent)}
+.brand b{font-family:var(--fdisp);font-weight:800;font-size:1.08rem;letter-spacing:-.02em;line-height:1;display:block}
+.brand small{font-size:.72rem;color:var(--muted);letter-spacing:.04em}
+.nav-links{display:flex;align-items:center;gap:34px}
+.nav-links a{font-family:var(--fdisp);font-weight:600;font-size:.92rem;color:var(--ink2);transition:color .18s}
+.nav-links a:hover{color:var(--accent)}
+.nav-right{display:flex;align-items:center;gap:18px}
+.nav-phone{font-family:var(--fdisp);font-weight:700;font-size:1rem;display:flex;align-items:center;gap:8px}
+.nav-phone svg{width:17px;height:17px;color:var(--accent)}
+.burger{display:none;width:44px;height:44px;border:1px solid var(--line2);border-radius:8px;background:transparent;cursor:pointer;place-items:center}
+.burger svg{width:22px;height:22px}
+
+/* ===== HERO ===== */
+.hero{padding:78px 0 0;position:relative}
+.hero-top{position:relative;z-index:1}
+
+/* ambient pipe-flow background (water moving through pipes) */
+.hero-fx{position:absolute;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+.hero-fx svg{position:absolute;inset:0;width:100%;height:100%}
+.hero-fx .pipe{fill:none;stroke:var(--navy);opacity:.055;stroke-width:9;stroke-linecap:round;stroke-linejoin:round}
+.hero-fx .node{fill:var(--navy);opacity:.06}
+.hero-fx .flow{fill:none;stroke:var(--accent);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round;opacity:.5;stroke-dasharray:50 2400;filter:drop-shadow(0 0 5px rgba(226,82,27,.45))}
+.hero-fx .f1{animation:flow 7s linear infinite}
+.hero-fx .f2{animation:flow 9s linear infinite .9s}
+.hero-fx .f3{animation:flow 8s linear infinite 1.7s}
+.hero-fx .f4{animation:flow 6.2s linear infinite .4s}
+@keyframes flow{from{stroke-dashoffset:2450}to{stroke-dashoffset:0}}
+.hero-top{display:grid;grid-template-columns:1.15fr .85fr;gap:60px;align-items:end;padding-bottom:54px}
+.hero h1{font-family:var(--fdisp);font-weight:900;letter-spacing:-.04em;line-height:.92;text-transform:uppercase;font-size:clamp(3.2rem,7.2vw,6.6rem)}
+.hero h1 em{font-style:normal;color:var(--accent);display:inline}
+.hero-right{padding-bottom:8px}
+.hero-right .lede{font-size:1.22rem}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.hero-trust{display:flex;flex-wrap:wrap;align-items:center;gap:10px 22px;margin-top:26px;font-family:var(--fdisp);font-weight:600;font-size:.9rem;color:var(--ink2)}
+.hero-trust .stars{display:inline-flex;gap:2px;color:var(--star)}
+.hero-trust .stars svg{width:16px;height:16px}
+.hero-trust .dot{width:4px;height:4px;border-radius:50%;background:var(--line2)}
+.hero-band{position:relative;width:100vw;left:50%;transform:translateX(-50%);height:clamp(360px,52vw,620px);overflow:hidden;background:var(--navy)}
+.hero-band img,.hero-band video{width:100%;height:100%;object-fit:cover;object-position:center 62%}
+.hero-band video{background:var(--navy)}
+.hero-band .tagstrip{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,rgba(20,32,43,.72));padding:60px var(--gut) 24px}
+.hero-band .tagstrip .inner{max-width:var(--maxw);margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.hero-band .tagstrip b{font-family:var(--fdisp);font-weight:700;color:#fff;font-size:1.05rem;letter-spacing:-.01em}
+.hero-band .tagstrip span{color:rgba(255,255,255,.82);font-size:.92rem}
+
+/* ===== STATS ===== */
+.stats{border-bottom:1px solid var(--line)}
+.stats .row{display:grid;grid-template-columns:repeat(4,1fr)}
+.stat{padding:44px 30px 40px;border-left:1px solid var(--line)}
+.stat:first-child{border-left:0;padding-left:0}
+.stat .n{font-family:var(--fdisp);font-weight:900;letter-spacing:-.04em;font-size:clamp(2.6rem,4vw,3.6rem);line-height:1;color:var(--ink)}
+.stat .n em{font-style:normal;color:var(--accent)}
+.stat .l{margin-top:10px;font-size:.92rem;color:var(--muted);max-width:22ch}
+
+/* ===== SECTION ===== */
+.sec{padding:104px 0}
+.sec-head h2{font-size:clamp(2.4rem,5vw,4.2rem);margin-top:18px}
+.sec-head .lede{margin-top:20px}
+
+/* ===== SERVICES ===== */
+.svc-list{margin-top:54px;border-top:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:96px 1fr auto;gap:30px;align-items:center;padding:30px 8px;border-bottom:1px solid var(--line);transition:padding-left .3s ease,background .3s ease}
+.svc .num{font-family:var(--fdisp);font-weight:700;font-size:1rem;color:var(--muted);letter-spacing:.04em}
+.svc .nm{font-family:var(--fdisp);font-weight:800;font-size:clamp(1.5rem,2.6vw,2.2rem);letter-spacing:-.03em;line-height:1}
+.svc .go{width:46px;height:46px;border-radius:50%;border:1.5px solid var(--line2);display:grid;place-items:center;color:var(--ink);transition:.25s;flex:none}
+.svc .go svg{width:18px;height:18px;transition:transform .25s}
+.svc:hover{background:#fff;padding-left:24px}
+.svc:hover .go{background:var(--accent);border-color:var(--accent);color:#fff}
+.svc:hover .go svg{transform:rotate(-45deg)}
+
+/* ===== FEATURE ===== */
+.feature{position:relative;width:100vw;left:50%;transform:translateX(-50%);background:var(--navy);color:#fff;overflow:hidden}
+.feature .grid{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;max-width:1480px;margin:0 auto}
+.feature .copy{padding:clamp(60px,8vw,120px) clamp(40px,6vw,96px)}
+.feature .copy .eyebrow{color:#E2951B}
+.feature .copy h2{color:#fff;font-size:clamp(2.3rem,4vw,3.7rem);margin-top:18px}
+.feature .copy p{margin-top:22px;color:rgba(255,255,255,.78);font-size:1.12rem;max-width:42ch}
+.feature .copy .flist{margin-top:28px;display:flex;flex-direction:column;gap:13px}
+.feature .copy .flist div{display:flex;gap:12px;align-items:center;font-family:var(--fdisp);font-weight:600;font-size:1.02rem}
+.feature .copy .flist svg{width:20px;height:20px;color:#E2951B;flex:none}
+.feature .ph{min-height:420px}
+.feature .ph img{width:100%;height:100%;object-fit:cover}
+
+/* ===== REVIEWS ===== */
+.reviews{background:var(--paper2)}
+.rev-stage{margin-top:48px;min-height:280px;position:relative}
+.rev{position:absolute;inset:0;opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease;pointer-events:none}
+.rev.on{opacity:1;transform:none;pointer-events:auto;position:relative}
+.rev .stars{display:flex;gap:3px;color:var(--star);margin-bottom:22px}
+.rev .stars svg{width:22px;height:22px}
+.rev blockquote{font-family:var(--fdisp);font-weight:700;letter-spacing:-.025em;line-height:1.08;font-size:clamp(1.7rem,3.6vw,3rem);max-width:20ch}
+.rev .who{margin-top:28px;font-family:var(--fdisp);font-weight:700;font-size:1.05rem}
+.rev .who span{display:block;color:var(--muted);font-weight:500;font-size:.92rem;font-family:var(--fbody)}
+.rev-nav{display:flex;gap:10px;margin-top:40px}
+.rev-dot{width:38px;height:4px;border-radius:2px;background:var(--line2);border:0;cursor:pointer;transition:background .25s}
+.rev-dot.on{background:var(--accent)}
+
+/* ===== AREA ===== */
+.area .grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:start}
+.area .cities{display:flex;flex-wrap:wrap;gap:10px;margin-top:30px}
+.area .chip{font-family:var(--fdisp);font-weight:600;font-size:.92rem;padding:9px 16px;border:1px solid var(--line2);border-radius:40px;background:#fff}
+.area .offices{margin-top:34px;display:flex;gap:40px;flex-wrap:wrap}
+.area .office b{font-family:var(--fdisp);display:block;font-size:1.05rem}
+.area .office span{color:var(--muted);font-size:.92rem}
+.area-photo{border-radius:var(--r);overflow:hidden;aspect-ratio:4/3;background:var(--navy)}
+.area-photo img{width:100%;height:100%;object-fit:cover}
+
+/* ===== ABOUT ===== */
+.about{background:var(--navy);color:#fff;width:100vw;left:50%;transform:translateX(-50%);position:relative}
+.about .inner{max-width:var(--maxw);margin:0 auto;padding:104px var(--gut)}
+.about .eyebrow{color:#E2951B}
+.about h2{color:#fff;font-size:clamp(2.3rem,4.4vw,4rem);margin-top:18px;max-width:18ch}
+.about p{margin-top:24px;color:rgba(255,255,255,.78);font-size:1.14rem;max-width:54ch}
+.owners{margin-top:44px;display:flex;gap:16px;flex-wrap:wrap}
+.owner{display:flex;align-items:center;gap:14px;padding:16px 22px 16px 16px;border:1px solid rgba(255,255,255,.16);border-radius:var(--r)}
+.owner .av{width:48px;height:48px;border-radius:50%;background:var(--accent);display:grid;place-items:center;font-family:var(--fdisp);font-weight:800;color:#fff;flex:none}
+.owner b{font-family:var(--fdisp);font-size:1rem;display:block}
+.owner span{color:rgba(255,255,255,.66);font-size:.85rem}
+.about .award{margin-top:30px;display:inline-flex;gap:12px;align-items:center;font-family:var(--fdisp);font-weight:600;color:#fff}
+.about .award svg{width:22px;height:22px;color:#E2951B;flex:none}
+
+/* ===== FAQ ===== */
+.faq .grid{display:grid;grid-template-columns:.7fr 1.3fr;gap:64px;align-items:start}
+.faq-list{border-top:1px solid var(--line)}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item>button{width:100%;text-align:left;background:transparent;border:0;cursor:pointer;padding:26px 0;display:flex;align-items:center;justify-content:space-between;gap:24px;font-family:var(--fdisp);font-weight:700;font-size:clamp(1.1rem,1.7vw,1.35rem);letter-spacing:-.02em;color:var(--ink)}
+.faq-item .ic{width:26px;height:26px;flex:none;color:var(--accent);transition:transform .3s}
+.faq-item.open .ic{transform:rotate(45deg)}
+.faq-item .a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-item .a p{padding:0 0 26px;color:var(--muted);font-size:1.02rem;max-width:60ch}
+
+/* ===== FINAL CTA ===== */
+.cta{background:var(--accent);color:#fff;width:100vw;left:50%;transform:translateX(-50%);position:relative}
+.cta .inner{max-width:var(--maxw);margin:0 auto;padding:96px var(--gut);display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.cta h2{color:#fff;font-size:clamp(2.4rem,4.6vw,4.2rem);line-height:.95}
+.cta .sub{margin-top:20px;color:rgba(255,255,255,.9);font-size:1.14rem;max-width:36ch}
+.cta .call{margin-top:30px;display:inline-flex;align-items:center;gap:12px;font-family:var(--fdisp);font-weight:800;font-size:1.7rem;color:#fff}
+.cta .call svg{width:26px;height:26px}
+.qform{background:#fff;border-radius:6px;padding:34px}
+.qform h3{color:var(--ink);font-size:1.5rem}
+.field{margin-top:16px}
+.field label{display:block;font-family:var(--fdisp);font-weight:600;font-size:.82rem;color:var(--ink2);margin-bottom:7px}
+.field input,.field textarea{width:100%;border:1.5px solid var(--line2);border-radius:5px;padding:13px 15px;font:400 1rem var(--fbody);color:var(--ink);outline:none;transition:border-color .18s}
+.field input:focus,.field textarea:focus{border-color:var(--accent)}
+.field textarea{resize:vertical;min-height:84px}
+.qform .btn{width:100%;justify-content:center;margin-top:20px}
+.qform .fine{margin-top:14px;color:var(--muted);font-size:.82rem;text-align:center}
+
+/* ===== FOOTER ===== */
+footer{background:var(--navy2);color:#A9B6C2;padding:72px 0 32px}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
+.fbrand b{color:#fff;font-family:var(--fdisp);font-size:1.2rem}
+.fbrand p{margin-top:14px;font-size:.92rem;max-width:30ch}
+.fcol h4{font-family:var(--fdisp);font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:#6E8194;margin-bottom:14px}
+.fcol a,.fcol p{display:block;color:#C4D0DB;font-size:.93rem;margin-bottom:9px}
+.fcol a:hover{color:#fff}
+.fbot{margin-top:54px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;font-size:.82rem;color:#6E8194}
+
+/* sticky mobile call */
+.scall{position:fixed;left:0;right:0;bottom:0;z-index:80;display:none;padding:11px 16px calc(11px + env(safe-area-inset-bottom));background:#fff;border-top:1px solid var(--line2)}
+.scall a{display:flex;align-items:center;justify-content:center;gap:10px;padding:15px;border-radius:6px;background:var(--accent);color:#fff;font-family:var(--fdisp);font-weight:800;font-size:1.05rem}
+.scall svg{width:20px;height:20px}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* mobile menu */
+.mmenu{position:fixed;inset:0;z-index:70;background:var(--paper);transform:translateY(-100%);transition:transform .4s cubic-bezier(.16,1,.3,1);display:flex;flex-direction:column;padding:24px var(--gut)}
+.mmenu.open{transform:none}
+.mmenu .top{display:flex;justify-content:space-between;align-items:center;height:50px}
+.mmenu .x{width:44px;height:44px;border:1px solid var(--line2);border-radius:8px;background:transparent;cursor:pointer;display:grid;place-items:center}
+.mmenu nav{display:flex;flex-direction:column;gap:6px;margin-top:30px}
+.mmenu nav a{font-family:var(--fdisp);font-weight:800;font-size:2rem;letter-spacing:-.03em;padding:10px 0;border-bottom:1px solid var(--line)}
+.mmenu .mcta{margin-top:auto;display:flex;flex-direction:column;gap:12px;padding-bottom:30px}
+
+@media(max-width:1020px){
+  :root{--gut:28px}
+  .hero-top{grid-template-columns:1fr;gap:30px;align-items:start}
+  .hero-right{padding-bottom:0}
+  .feature .grid,.cta .inner,.area .grid,.faq .grid{grid-template-columns:1fr}
+  .feature .ph{min-height:320px;order:-1}
+  .stats .row{grid-template-columns:1fr 1fr}
+  .stat{border-left:1px solid var(--line);padding:30px 22px}
+  .stat:nth-child(odd){border-left:0;padding-left:0}
+  .stat:nth-child(3),.stat:nth-child(4){border-top:1px solid var(--line)}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .nav-links,.nav-phone{display:none}
+  .burger{display:grid}
+  .nav-right .btn{display:none}
+  .scall{display:block}
+  body{padding-bottom:76px}
+  .sec{padding:72px 0}
+  .svc{grid-template-columns:54px 1fr auto;gap:16px;padding:22px 4px}
+  .svc:hover{padding-left:8px}
+  .fgrid{grid-template-columns:1fr 1fr;gap:28px}
+  .area .offices{gap:24px}
+}
+@media(max-width:480px){.fgrid{grid-template-columns:1fr}}
+/* ===== PROMISE / CREDENTIALS (risk reversal) ===== */
+.promise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:50px}
+.promise-grid .p{background:var(--paper);padding:34px 30px;transition:background .25s}
+.promise-grid .p:hover{background:#fff}
+.promise-grid .p .ic{width:28px;height:28px;color:var(--accent)}
+.promise-grid .p b{display:block;font-family:var(--fdisp);font-weight:800;font-size:1.14rem;margin-top:16px;letter-spacing:-.02em;line-height:1.1}
+.promise-grid .p span{color:var(--muted);font-size:.93rem;margin-top:7px;display:block;line-height:1.5}
+.lic{margin-top:26px;font-family:var(--fdisp);font-weight:600;font-size:.9rem;color:var(--ink2);display:inline-flex;align-items:center;gap:10px}
+.lic .vbadge{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line2);border-radius:40px;padding:7px 14px;background:#fff}
+.lic .vbadge svg{width:15px;height:15px;color:var(--accent)}
+
+/* ===== GOOGLE REVIEWS PROOF ===== */
+.gproof{display:inline-flex;align-items:center;gap:14px;margin-top:18px;flex-wrap:wrap}
+.gproof .glogo{width:22px;height:22px;flex:none}
+.gproof .gstars{color:var(--star);display:inline-flex;gap:1px}
+.gproof .gstars svg{width:17px;height:17px}
+.gproof .gtxt{font-family:var(--fdisp);font-weight:700;color:var(--ink);font-size:.96rem}
+.gproof a{font-family:var(--fdisp);font-weight:700;color:var(--ink);border-bottom:2px solid var(--accent);padding-bottom:1px;font-size:.92rem}
+.gproof a:hover{color:var(--accent)}
+
+/* ===== OWNER NOTE ===== */
+.onote{margin-top:36px;border-left:3px solid #E2951B;padding-left:24px;max-width:52ch}
+.onote p{font-family:var(--fdisp);font-weight:600;font-size:1.3rem;color:#fff;line-height:1.32;letter-spacing:-.01em}
+.onote .sig{margin-top:14px;color:#E2951B;font-weight:700;font-family:var(--fdisp);font-size:1rem}
+
+@media(max-width:1020px){.promise-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.promise-grid{grid-template-columns:1fr}}
+
+/* ===== SERVICE DESCRIPTORS ===== */
+.svc .desc{display:block;margin-top:7px;font-family:var(--fbody);font-weight:400;font-size:.97rem;line-height:1.5;letter-spacing:0;color:var(--muted);max-width:56ch}
+@media(max-width:760px){.svc .desc{font-size:.9rem}}
+
+/* ===== RECENT WORK (gallery) ===== */
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:50px}
+.wcard{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;background:var(--navy)}
+.wcard img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.16,1,.3,1)}
+.wcard:hover img{transform:scale(1.05)}
+.wcard .cap{position:absolute;left:0;right:0;bottom:0;padding:42px 22px 18px;background:linear-gradient(transparent,rgba(20,32,43,.82))}
+.wcard .cap b{display:block;font-family:var(--fdisp);font-weight:700;color:#fff;font-size:1.02rem;letter-spacing:-.01em}
+.wcard .cap span{color:rgba(255,255,255,.78);font-size:.86rem}
+@media(max-width:760px){.work-grid{grid-template-columns:1fr;gap:14px}.wcard{aspect-ratio:16/11}}
+
+/* ===== HOW IT WORKS (3-step process) ===== */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:54px}
+.step{position:relative;padding-top:28px;border-top:3px solid var(--ink)}
+.step:nth-child(2),.step:nth-child(3){border-top-color:var(--line2)}
+.step .sn{font-family:var(--fdisp);font-weight:900;font-size:.82rem;letter-spacing:.18em;color:var(--accent)}
+.step h3{font-family:var(--fdisp);font-weight:800;font-size:clamp(1.3rem,2.1vw,1.7rem);letter-spacing:-.03em;margin-top:14px;line-height:1.04}
+.step p{margin-top:12px;color:var(--muted);font-size:1rem;line-height:1.55;max-width:34ch}
+.step .si{width:26px;height:26px;color:var(--ink);margin-top:18px}
+@media(max-width:760px){.steps{grid-template-columns:1fr;gap:0}.step{border-top:1px solid var(--line);padding:26px 0 0}.step:first-child{border-top:3px solid var(--ink)}}
+
+/* ===== FORM STATUS + HONEYPOT ===== */
+.qstatus{display:none;margin-top:8px;padding:22px;border-radius:6px;background:var(--accent-soft);border:1px solid var(--line2)}
+.qstatus.ok b{font-family:var(--fdisp);font-weight:800;font-size:1.2rem;color:var(--ink);display:block}
+.qstatus.ok p{margin-top:8px;color:var(--ink2);font-size:.96rem}
+.qstatus.err{background:#FBE9E4;color:var(--ink2);font-size:.96rem}
+.qstatus.err a{color:var(--accent);font-weight:700}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+
+/* ===== GRAIN (tactile depth on dark sections) ===== */
+.grain{position:relative}
+.grain>*{position:relative;z-index:1}
+.grain::after{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.05;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+
+/* ===== MARQUEE (animated trust strip) ===== */
+.marquee{position:relative;width:100vw;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;overflow:hidden;border-block:1px solid rgba(255,255,255,.08)}
+.marquee .track{display:inline-flex;align-items:center;white-space:nowrap;animation:marq 34s linear infinite;will-change:transform}
+.marquee:hover .track{animation-play-state:paused}
+.marquee .it{font-family:var(--fdisp);font-weight:800;text-transform:uppercase;letter-spacing:-.01em;font-size:1.02rem;padding:16px 0;display:inline-flex;align-items:center}
+.marquee .it::after{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--accent);margin:0 30px}
+@keyframes marq{to{transform:translateX(-50%)}}
+
+/* ===== COUNT-UP ===== */
+.stat .n .count{font-variant-numeric:tabular-nums}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1;transform:none;transition:none}
+  .rev{transition:none}
+  .svc,.btn,.faq-item .ic{transition:none}
+  .marquee .track{animation:none;transform:none}
+  .hero-fx .flow{animation:none;opacity:.32}
+}
+</style>
+
+<!-- ============================================================
+     STRUCTURED DATA (schema.org JSON-LD)
+     Powers Google rich results: star rating, business profile,
+     service list, and FAQ rich snippets. Edit the values marked
+     [SWAP PER CLIENT] when reselling this template.
+     ============================================================ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Plumber",
+      "@id": "https://thefamilyplumber.com/#business",
+      "name": "The Family Plumber",
+      "description": "Family-owned plumbers serving Orange County and Los Angeles for 39+ years. Available 24/7 with free estimates and second opinions.",
+      "url": "https://thefamilyplumber.com/",
+      "telephone": "+1-562-431-1960",
+      "email": "info@thefamilyplumber.com",
+      "image": "img/hero.jpg",
+      "priceRange": "$$",
+      "foundingDate": "1985",
+      "openingHoursSpecification": [
+        { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59" }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "[SWAP PER CLIENT] 123 Main St",
+        "addressLocality": "Los Alamitos",
+        "addressRegion": "CA",
+        "postalCode": "90720",
+        "addressCountry": "US"
+      },
+      "areaServed": [
+        { "@type": "City", "name": "Los Alamitos" },
+        { "@type": "City", "name": "Irvine" },
+        { "@type": "City", "name": "Long Beach" },
+        { "@type": "City", "name": "Seal Beach" },
+        { "@type": "City", "name": "Huntington Beach" },
+        { "@type": "City", "name": "Cypress" },
+        { "@type": "AdministrativeArea", "name": "Orange County" },
+        { "@type": "AdministrativeArea", "name": "Los Angeles County" }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "100",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Plumbing Services",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Drain Cleaning" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Heaters" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bathroom Remodels" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Repiping" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sewer Inspections" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Leak Detection" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Sewer Repair & Replacement" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Fixture Replacement" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Gas Systems" } }
+        ]
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://thefamilyplumber.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Do you really offer free estimates?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We offer free estimates and free second opinions, so you can make a confident decision before any work begins." } },
+        { "@type": "Question", "name": "How fast can you come out?", "acceptedAnswer": { "@type": "Answer", "text": "We're available 24/7, and same- or next-day inspections are available in most cases. For an active emergency, call (562) 431-1960 and we'll get moving." } },
+        { "@type": "Question", "name": "What areas do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "All of Orange County and Los Angeles County, including Los Alamitos, Irvine, Long Beach, Seal Beach, Huntington Beach and Cypress. We have offices in Los Alamitos and Irvine." } },
+        { "@type": "Question", "name": "Who will be doing the work?", "acceptedAnswer": { "@type": "Answer", "text": "Our family, Josh, Mike and Rick, the original plumbers, plus our PHCC-backed technicians. The same people your neighbors recommend." } },
+        { "@type": "Question", "name": "Do you handle big jobs, or just repairs?", "acceptedAnswer": { "@type": "Answer", "text": "Both. From a single clogged drain to full repipes, sewer line replacement, water heater installs and bathroom remodels, one family handles it all." } },
+        { "@type": "Question", "name": "How do I know I can trust you?", "acceptedAnswer": { "@type": "Answer", "text": "We're family-owned with 39+ years in the community, a 4.9 star average on 100+ Google reviews, and we were named PHCC Contractor of the Year in 2024." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="hdr">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="The Family Plumber home">
+      <span class="mk"><span class="mono">FP</span><span class="bar"></span></span>
+      <span><b>The Family Plumber</b><small>Orange County &amp; LA &middot; since 1985</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#why">Why us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#area">Service area</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-right">
+      <a href="tel:+15624311960" class="nav-phone"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (562) 431-1960</a>
+      <a href="#quote" class="btn btn-primary">Free estimate</a>
+      <button class="burger" id="burger" aria-label="Open menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="7" x2="21" y2="7"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="17" x2="21" y2="17"/></svg></button>
+    </div>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="mmenu" id="mmenu" aria-hidden="true">
+  <div class="top">
+    <span class="brand"><span class="mk"><span class="mono">FP</span><span class="bar"></span></span><b>The Family Plumber</b></span>
+    <button class="x" id="mclose" aria-label="Close menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="6" y1="6" x2="18" y2="18"/><line x1="18" y1="6" x2="6" y2="18"/></svg></button>
+  </div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#why">Why us</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#area">Service area</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <div class="mcta">
+    <a href="tel:+15624311960" class="btn btn-ghost" style="justify-content:center">Call (562) 431-1960</a>
+    <a href="#quote" class="btn btn-primary" style="justify-content:center">Get a free estimate</a>
+  </div>
+</div>
+
+<main id="top">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-fx" aria-hidden="true">
+    <svg viewBox="0 0 1440 720" preserveAspectRatio="xMidYMid slice">
+      <!-- pipe routes -->
+      <path class="pipe" d="M-40 120 H520 q44 0 44 44 v132 q0 44 44 44 H1480"/>
+      <path class="pipe" d="M-40 620 H320 q44 0 44 -44 v-150 q0 -44 44 -44 H760 q44 0 44 44 v120 q0 44 44 44 H1480"/>
+      <path class="pipe" d="M-40 350 H170 q44 0 44 44 v96 q0 44 44 44 H1480"/>
+      <path class="pipe" d="M1060 -40 V190 q0 44 -44 44 H660"/>
+      <!-- joint nodes -->
+      <circle class="node" cx="564" cy="164" r="9"/><circle class="node" cx="608" cy="296" r="9"/>
+      <circle class="node" cx="364" cy="576" r="9"/><circle class="node" cx="804" cy="382" r="9"/>
+      <circle class="node" cx="214" cy="394" r="9"/><circle class="node" cx="1016" cy="234" r="9"/>
+      <!-- flowing water highlights (same paths) -->
+      <path class="flow f1" d="M-40 120 H520 q44 0 44 44 v132 q0 44 44 44 H1480"/>
+      <path class="flow f2" d="M-40 620 H320 q44 0 44 -44 v-150 q0 -44 44 -44 H760 q44 0 44 44 v120 q0 44 44 44 H1480"/>
+      <path class="flow f3" d="M-40 350 H170 q44 0 44 44 v96 q0 44 44 44 H1480"/>
+      <path class="flow f4" d="M1060 -40 V190 q0 44 -44 44 H660"/>
+    </svg>
+  </div>
+  <div class="wrap hero-top">
+    <div class="reveal">
+      <span class="eyebrow">Family-owned &middot; 39 years &middot; 24/7</span>
+      <h1 style="margin-top:22px">The plumbers your neighbors <em>actually</em> recommend.</h1>
+    </div>
+    <div class="hero-right reveal">
+      <p class="lede">Josh, Mike and Rick, the original plumbers serving Orange County and Los Angeles for over 39 years. Family-owned and available around the clock.</p>
+      <div class="hero-cta">
+        <a href="tel:+15624311960" class="btn btn-primary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (562) 431-1960</a>
+        <a href="#quote" class="btn btn-ghost">Free estimate</a>
+      </div>
+      <div class="hero-trust">
+        <span class="stars" aria-label="4.9 out of 5 stars">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg>
+        </span>
+        <span>4.9 on 100+ Google reviews</span>
+        <span class="dot"></span>
+        <span>Licensed &amp; insured</span>
+      </div>
+    </div>
+  </div>
+  <div class="hero-band reveal">
+    <!-- [SWAP PER CLIENT] drop img/hero.mp4 (+ optional img/hero.webm) to play a background video.
+         Falls back to the poster image automatically if no video is present. -->
+    <video id="heroVid" autoplay muted loop playsinline preload="none"
+           poster="img/hero-frame.jpg" aria-label="The Family Plumber crew at work">
+      <source src="img/hero.webm" type="video/webm" />
+      <source src="img/hero.mp4" type="video/mp4" />
+    </video>
+    <div class="tagstrip"><div class="inner">
+      <b>Work that holds up. People who pick up.</b>
+      <span>PHCC Contractor of the Year, 2024</span>
+    </div></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="track" id="marqTrack">
+    <span class="it">Free estimates</span><span class="it">24/7 emergency service</span><span class="it">Licensed &amp; insured</span><span class="it">PHCC Contractor of the Year</span><span class="it">Same-day in most cases</span><span class="it">Family-owned since 1985</span><span class="it">4.9&#9733; on 100+ reviews</span>
+  </div>
+</div>
+
+<!-- STATS -->
+<section class="stats">
+  <div class="wrap"><div class="row">
+    <div class="stat reveal"><div class="n"><span class="count" data-to="39">0</span><em>+</em></div><div class="l">Years serving OC &amp; LA County</div></div>
+    <div class="stat reveal"><div class="n"><span class="count" data-to="100">0</span><em>+</em></div><div class="l">Five-star Google reviews</div></div>
+    <div class="stat reveal"><div class="n">24<em>/</em>7</div><div class="l">Available, including emergencies</div></div>
+    <div class="stat reveal"><div class="n">$0</div><div class="l">Estimates and second opinions</div></div>
+  </div></div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec" id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">What we do</span>
+      <h2>One family. Every job, <br>from a drip to a repipe.</h2>
+    </div>
+    <div class="svc-list reveal">
+      <a class="svc" href="#quote"><span class="num">01</span><span><span class="nm">Drain Cleaning</span><span class="desc">Slow sink or a backed-up main line, we clear it and find out why it happened so it doesn't come back.</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="svc" href="#quote"><span class="num">02</span><span><span class="nm">Water Heaters</span><span class="desc">Repairs, tank swaps and tankless installs, usually same day so nobody's stuck with a cold shower.</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="svc" href="#quote"><span class="num">03</span><span><span class="nm">Bathroom Remodels</span><span class="desc">A clean fixture refresh or a full rip-and-replace, plumbed right and finished the way you pictured it.</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="svc" href="#quote"><span class="num">04</span><span><span class="nm">Repiping</span><span class="desc">Old galvanized lines or pinhole leaks, we repipe the whole house with as little wall damage as possible.</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="svc" href="#quote"><span class="num">05</span><span><span class="nm">Sewer Inspections</span><span class="desc">We run a camera down the line so you see exactly what we see before you spend a dime on repairs.</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="svc" href="#quote"><span class="num">06</span><span><span class="nm">Leak Detection</span><span class="desc">We pinpoint the leak behind the wall or under the slab without tearing the house apart to find it.</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="svc" href="#quote"><span class="num">07</span><span><span class="nm">Sewer Repair &amp; Replacement</span><span class="desc">Trenchless where we can, dug and done where we can't. Always permitted, always inspected.</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="svc" href="#quote"><span class="num">08</span><span><span class="nm">Fixture Replacement</span><span class="desc">Faucets, toilets, disposals and hose bibs, swapped clean and tested before we pack up and leave.</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+      <a class="svc" href="#quote"><span class="num">09</span><span><span class="nm">Gas Systems</span><span class="desc">New lines, leak repairs and appliance hookups, every one pressure-tested and brought up to code.</span></span><span class="go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="sec" id="how" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2 style="font-size:clamp(2.2rem,4vw,3.4rem)">Three steps. No runaround.</h2>
+    </div>
+    <div class="steps reveal">
+      <div class="step">
+        <div class="sn">STEP 01</div>
+        <h3>You call, we pick up.</h3>
+        <p>One of the family answers, not a call center. We listen, then set a time that works for you, including nights and weekends.</p>
+        <svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </div>
+      <div class="step">
+        <div class="sn">STEP 02</div>
+        <h3>We look, then quote it free.</h3>
+        <p>We find the real problem, walk you through your options in plain English, and hand you a flat price before any work starts.</p>
+        <svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </div>
+      <div class="step">
+        <div class="sn">STEP 03</div>
+        <h3>We fix it right, in writing.</h3>
+        <p>Clean work, backed by a written warranty. We don't pack up until it's done and you're happy with it.</p>
+        <svg class="si" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURE -->
+<section class="feature grain" id="why">
+  <div class="grid">
+    <div class="copy reveal">
+      <span class="eyebrow">Why homeowners call us</span>
+      <h2>Done right the first time, by people who answer the phone.</h2>
+      <p>From a single clogged drain to a full repipe, sewer line replacement or a complete bathroom remodel, one family handles it all. No call centers, no rotating subcontractors.</p>
+      <div class="flist">
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Free estimates and second opinions</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Same- or next-day in most cases</div>
+        <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Licensed, insured, PHCC-backed</div>
+      </div>
+    </div>
+    <div class="ph"><img src="img/water-heater.jpg" alt="A new tankless water heater installed by The Family Plumber" width="740" height="560" loading="lazy" /></div>
+  </div>
+</section>
+
+<!-- PROMISE / CREDENTIALS (risk reversal) -->
+<section class="sec promise" id="promise">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Why it's safe to call us</span>
+      <h2 style="font-size:clamp(2.2rem,4vw,3.4rem)">No surprises. No risk. <br>Just the work, done right.</h2>
+    </div>
+    <div class="promise-grid reveal">
+      <div class="p"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg><b>Licensed, bonded &amp; insured</b><span>CA License #[SWAP PER CLIENT]. Fully covered on every job, every home.</span></div>
+      <div class="p"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><b>Upfront flat-rate pricing</b><span>You approve the price before we start. No hourly surprises, ever.</span></div>
+      <div class="p"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m9 11 3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg><b>100% satisfaction guarantee</b><span>If it's not right, we make it right. That's the family name on it.</span></div>
+      <div class="p"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.5 8 10 4.6-1.5 8-5 8-10V5z"/></svg><b>Workmanship warranty</b><span>Every repair and install is backed in writing. We stand behind it.</span></div>
+      <div class="p"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg><b>Free estimates, no trip charge</b><span>We come out, look at it, and quote it. No charge to find out.</span></div>
+      <div class="p"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><b>Financing available</b><span>Big job? Spread it out. Ask about monthly payment options.</span></div>
+    </div>
+    <div class="lic reveal">
+      <span class="vbadge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Background-checked technicians</span>
+      <span class="vbadge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> PHCC-certified</span>
+      <span class="vbadge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> We answer our own phones</span>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="sec reviews" id="reviews">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">In their words</span>
+      <div class="gproof">
+        <svg class="glogo" viewBox="0 0 24 24"><path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 0 1-2.2 3.32v2.77h3.57c2.08-1.92 3.27-4.74 3.27-8.1z"/><path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84A11 11 0 0 0 12 23z"/><path fill="#FBBC05" d="M5.84 14.1a6.6 6.6 0 0 1 0-4.2V7.06H2.18a11 11 0 0 0 0 9.88l3.66-2.84z"/><path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84C6.71 7.3 9.14 5.38 12 5.38z"/></svg>
+        <span class="gstars" aria-label="4.9 out of 5"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></span>
+        <span class="gtxt">4.9 &middot; 100+ Google reviews</span>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Family+Plumber" target="_blank" rel="noopener">Read them on Google</a>
+      </div>
+    </div>
+    <div class="rev-stage reveal">
+      <figure class="rev on">
+        <div class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></div>
+        <blockquote>They came out the same day, found the leak in ten minutes, and charged exactly what they quoted.</blockquote>
+        <figcaption class="who">Maria G.<span>Long Beach &middot; Google review</span></figcaption>
+      </figure>
+      <figure class="rev">
+        <div class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></div>
+        <blockquote>Rick talked me out of a repipe I didn't need. That second opinion saved me thousands.</blockquote>
+        <figcaption class="who">David P.<span>Irvine &middot; Google review</span></figcaption>
+      </figure>
+      <figure class="rev">
+        <div class="stars"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.77 5.82 21 7 14.14 2 9.27l6.91-1.01z"/></svg></div>
+        <blockquote>Third generation using them. Our whole street calls The Family Plumber and nobody else.</blockquote>
+        <figcaption class="who">Anh T.<span>Seal Beach &middot; Google review</span></figcaption>
+      </figure>
+    </div>
+    <div class="rev-nav reveal" role="tablist" aria-label="Reviews">
+      <button class="rev-dot on" aria-label="Review 1"></button>
+      <button class="rev-dot" aria-label="Review 2"></button>
+      <button class="rev-dot" aria-label="Review 3"></button>
+    </div>
+  </div>
+</section>
+
+<!-- RECENT WORK -->
+<section class="sec" id="work" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Recent work</span>
+      <h2 style="font-size:clamp(2.2rem,4vw,3.4rem)">A look at the last few jobs.</h2>
+    </div>
+    <!-- [SWAP PER CLIENT] real job photos + captions -->
+    <div class="work-grid reveal">
+      <figure class="wcard"><img src="img/bathroom-result.jpg" alt="Finished walk-in shower rebuild" width="600" height="750" loading="lazy" /><figcaption class="cap"><b>Walk-in shower rebuild</b><span>Long Beach</span></figcaption></figure>
+      <figure class="wcard"><img src="img/water-heater.jpg" alt="New tankless water heater installed" width="600" height="750" loading="lazy" /><figcaption class="cap"><b>Tankless water heater install</b><span>Irvine</span></figcaption></figure>
+      <figure class="wcard"><img src="img/hero.jpg" alt="Completed master bathroom remodel" width="600" height="750" loading="lazy" /><figcaption class="cap"><b>Master bath remodel</b><span>Los Alamitos</span></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- AREA -->
+<section class="sec area" id="area">
+  <div class="wrap grid">
+    <div class="reveal">
+      <span class="eyebrow">Where we work</span>
+      <h2 style="font-size:clamp(2.1rem,3.6vw,3.2rem);margin-top:16px">All of Orange County &amp; LA.</h2>
+      <div class="cities">
+        <span class="chip">Los Alamitos</span><span class="chip">Irvine</span><span class="chip">Long Beach</span>
+        <span class="chip">Seal Beach</span><span class="chip">Huntington Beach</span><span class="chip">Cypress</span>
+      </div>
+      <div class="offices">
+        <div class="office"><b>Los Alamitos</b><span>Main office</span></div>
+        <div class="office"><b>Irvine</b><span>Second office</span></div>
+      </div>
+    </div>
+    <div class="area-photo reveal"><img src="img/bathroom-result.jpg" alt="A pristine finished bathroom remodel by The Family Plumber" width="760" height="570" loading="lazy" /></div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about grain">
+  <div class="inner">
+    <div class="reveal">
+      <span class="eyebrow">The family</span>
+      <h2>39 years, one family name on every truck.</h2>
+      <p>Josh, Mike and Rick are the original plumbers, and they still run the jobs. Backed by PHCC-certified technicians, the same people your neighbors recommend, on every call.</p>
+      <div class="onote">
+        <p>"We answer our own phones. When you call, you get one of us, not a call center, not a stranger. That's how it's worked for 39 years, and that's how it'll stay."</p>
+        <div class="sig">&mdash; Josh, Mike &amp; Rick</div>
+      </div>
+      <div class="owners">
+        <div class="owner"><span class="av">J</span><span><b>Josh</b><span>Original plumber</span></span></div>
+        <div class="owner"><span class="av">M</span><span><b>Mike</b><span>Original plumber</span></span></div>
+        <div class="owner"><span class="av">R</span><span><b>Rick</b><span>Original plumber</span></span></div>
+      </div>
+      <div class="award"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 12.9 17 22l-5-3-5 3 1.5-9.1"/></svg> PHCC Contractor of the Year, 2024</div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="sec faq" id="faq">
+  <div class="wrap grid">
+    <div class="reveal">
+      <span class="eyebrow">FAQ</span>
+      <h2 style="font-size:clamp(2.1rem,3.6vw,3.2rem);margin-top:16px">Straight answers.</h2>
+      <p class="lede" style="margin-top:18px">Before you ever pick up the phone.</p>
+    </div>
+    <div class="faq-list reveal">
+      <div class="faq-item"><button type="button" aria-expanded="false"><span>Do you really offer free estimates?</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="a"><p>Yes. We offer free estimates and free second opinions, so you can make a confident decision before any work begins.</p></div></div>
+      <div class="faq-item"><button type="button" aria-expanded="false"><span>How fast can you come out?</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="a"><p>We're available 24/7, and same- or next-day inspections are available in most cases. For an active emergency, call (562) 431-1960 and we'll get moving.</p></div></div>
+      <div class="faq-item"><button type="button" aria-expanded="false"><span>What areas do you serve?</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="a"><p>All of Orange County and Los Angeles County, including Los Alamitos, Irvine, Long Beach, Seal Beach, Huntington Beach and Cypress. We have offices in Los Alamitos and Irvine.</p></div></div>
+      <div class="faq-item"><button type="button" aria-expanded="false"><span>Who will be doing the work?</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="a"><p>Our family, Josh, Mike and Rick, the original plumbers, plus our PHCC-backed technicians. The same people your neighbors recommend.</p></div></div>
+      <div class="faq-item"><button type="button" aria-expanded="false"><span>Do you handle big jobs, or just repairs?</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="a"><p>Both. From a single clogged drain to full repipes, sewer line replacement, water heater installs and bathroom remodels, one family handles it all.</p></div></div>
+      <div class="faq-item"><button type="button" aria-expanded="false"><span>How do I know I can trust you?</span><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></button><div class="a"><p>We're family-owned with 39+ years in the community, a 4.9 star average on 100+ Google reviews, and we were named PHCC Contractor of the Year in 2024.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="cta grain" id="quote">
+  <div class="inner">
+    <div class="reveal">
+      <span class="eyebrow" style="color:#fff">Get in touch</span>
+      <h2 style="margin-top:16px">Free estimate. Same family. Today.</h2>
+      <p class="sub">Tell us what's going on and we'll get back fast. For an emergency, just call.</p>
+      <a href="tel:+15624311960" class="call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (562) 431-1960</a>
+    </div>
+    <form class="qform reveal" id="quoteForm" data-endpoint="/api/book" onsubmit="return sendQuote(event)">
+      <h3>Request a free estimate</h3>
+      <div class="field"><label for="qn">Name</label><input id="qn" name="name" required placeholder="Your name" /></div>
+      <div class="field"><label for="qp">Phone</label><input id="qp" name="phone" type="tel" required placeholder="(562) 000-0000" /></div>
+      <div class="field"><label for="qm">What do you need?</label><textarea id="qm" name="message" placeholder="Leaky water heater, clogged drain, remodel quote..."></textarea></div>
+      <input class="hp" name="company" tabindex="-1" autocomplete="off" aria-hidden="true" />
+      <button type="submit" class="btn btn-primary">Send request</button>
+      <p class="fine">Prefer to talk? Call <a href="tel:+15624311960" style="color:var(--accent);font-weight:600">(562) 431-1960</a> &middot; Open 24/7</p>
+    </form>
+    <div class="qstatus ok" id="quoteStatus" role="status" aria-live="polite">
+      <b>Got it, thank you.</b>
+      <p>One of us will call you back shortly. Need us now? Call (562) 431-1960.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand">
+        <b>The Family Plumber</b>
+        <p>Family-owned plumbers serving Orange County and Los Angeles since 1985.</p>
+      </div>
+      <div class="fcol">
+        <h4>Services</h4>
+        <a href="#services">Drain Cleaning</a>
+        <a href="#services">Water Heaters</a>
+        <a href="#services">Repiping</a>
+        <a href="#services">Leak Detection</a>
+      </div>
+      <div class="fcol">
+        <h4>Company</h4>
+        <a href="#why">Why us</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#area">Service area</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <div class="fcol">
+        <h4>Contact</h4>
+        <a href="tel:+15624311960">(562) 431-1960</a>
+        <a href="mailto:info@thefamilyplumber.com">info@thefamilyplumber.com</a>
+        <p>Open 24/7</p>
+      </div>
+    </div>
+    <div class="fbot">
+      <span>&copy; <span id="yr"></span> The Family Plumber. Licensed &amp; insured.</span>
+      <span>Orange County &amp; Los Angeles County</span>
+    </div>
+  </div>
+</footer>
+
+<!-- STICKY MOBILE CALL -->
+<div class="scall"><a href="tel:+15624311960"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call now, (562) 431-1960</a></div>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+
+// hero background video: respect reduced-motion (show poster, no playback)
+(function(){
+  const v=document.getElementById('heroVid');
+  if(!v)return;
+  if(matchMedia('(prefers-reduced-motion:reduce)').matches){v.removeAttribute('autoplay');v.pause();}
+})();
+
+// seamless marquee: duplicate the items so translateX(-50%) wraps cleanly
+(function(){const t=document.getElementById('marqTrack');if(t)t.innerHTML+=t.innerHTML})();
+
+const hdr=document.getElementById('hdr');
+addEventListener('scroll',()=>hdr.classList.toggle('scrolled',scrollY>10),{passive:true});
+
+const mm=document.getElementById('mmenu');
+const openM=()=>{mm.classList.add('open');mm.setAttribute('aria-hidden','false')};
+const closeM=()=>{mm.classList.remove('open');mm.setAttribute('aria-hidden','true')};
+document.getElementById('burger').onclick=openM;
+document.getElementById('mclose').onclick=closeM;
+mm.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeM));
+
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -8% 0px'});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+
+// count-up stats
+(function(){
+  const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  const cio=new IntersectionObserver((es)=>{es.forEach(e=>{
+    if(!e.isIntersecting)return; cio.unobserve(e.target);
+    const el=e.target, to=+el.dataset.to;
+    if(reduce){el.textContent=to;return}
+    const dur=1100, t0=performance.now();
+    (function step(t){const p=Math.min((t-t0)/dur,1);const e2=1-Math.pow(1-p,3);el.textContent=Math.round(to*e2);if(p<1)requestAnimationFrame(step)})(t0);
+  })},{threshold:.6});
+  document.querySelectorAll('.count').forEach(el=>cio.observe(el));
+})();
+
+document.querySelectorAll('.faq-item>button').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const item=btn.parentElement, ans=item.querySelector('.a'), open=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>{i.classList.remove('open');i.querySelector('button').setAttribute('aria-expanded','false');i.querySelector('.a').style.maxHeight=null});
+    if(!open){item.classList.add('open');btn.setAttribute('aria-expanded','true');ans.style.maxHeight=ans.scrollHeight+'px'}
+  });
+});
+
+(function(){
+  const revs=[...document.querySelectorAll('.rev')], dots=[...document.querySelectorAll('.rev-dot')];
+  let i=0,timer;
+  const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function show(n){revs[i].classList.remove('on');dots[i].classList.remove('on');i=(n+revs.length)%revs.length;revs[i].classList.add('on');dots[i].classList.add('on')}
+  dots.forEach((d,n)=>d.addEventListener('click',()=>{show(n);restart()}));
+  function restart(){if(reduce)return;clearInterval(timer);timer=setInterval(()=>show(i+1),5500)}
+  restart();
+})();
+
+async function sendQuote(e){
+  e.preventDefault();
+  const f=e.target;
+  if(f.company && f.company.value) return false; // honeypot tripped, silently drop
+  const status=document.getElementById('quoteStatus');
+  const btn=f.querySelector('button[type=submit]'), label=btn.textContent;
+  const payload={
+    name:f.name.value.trim(),
+    phone:f.phone.value.trim(),
+    notes:f.message.value.trim(),
+    service:'Free estimate request',
+    company:''
+  };
+  btn.disabled=true; btn.textContent='Sending...';
+  try{
+    const res=await fetch(f.dataset.endpoint||'/api/book',{
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify(payload)
+    });
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    f.style.display='none';
+    status.className='qstatus ok'; status.style.display='block';
+    status.scrollIntoView({behavior:'smooth',block:'center'});
+  }catch(err){
+    btn.disabled=false; btn.textContent=label;
+    status.className='qstatus err'; status.style.display='block';
+    status.innerHTML='Couldn’t send that just now. Call us at <a href="tel:+15624311960">(562) 431-1960</a> or email <a href="mailto:info@thefamilyplumber.com">info@thefamilyplumber.com</a> and we’ll take care of you.';
+  }
+  return false;
+}
+</script>
+</body>
+</html>

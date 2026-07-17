@@ -1,0 +1,37 @@
+{
+  "_readme": "Copy this file to config.local.json and fill in googleApiKey. config.local.json is git-ignored — never commit real keys.",
+
+  "googleApiKey": "AIza... (Google Places API New — project must have Places API New enabled; enable PageSpeed Insights API too if using useLighthouse)",
+
+  "city": "AZ",
+  "areas": ["Phoenix AZ", "Mesa AZ", "Tucson AZ"],
+  "niches": ["electrician", "HVAC", "plumber"],
+
+  "perNiche": 25,
+  "uglyThreshold": 55,
+  "minReviews": 5,
+  "maxReviews": 40,
+  "maxFetchPages": 3,
+  "useLighthouse": false,
+  "gradeConcurrency": 8,
+
+  "useVision": false,
+  "_vision_readme": "Optional AI-vision pass — screenshots each rebuild-worthy lead (free, WordPress mShots, no key) and a vision model judges the LOOK + gives pitch-ready reasons. OpenAI-compatible, so swap providers by changing baseUrl+model+apiKey:",
+  "vision": {
+    "baseUrl": "https://integrate.api.nvidia.com/v1",
+    "model": "qwen/qwen3.5-397b-a17b",
+    "apiKey": "nvapi-... (NVIDIA build.nvidia.com — free but EVAL/PROTOTYPE-only; for production swap to Groq/Gemini/Ollama below)",
+    "shotWidth": 640,
+    "shotHeight": 820,
+    "_alternatives": {
+      "groq":   { "baseUrl": "https://api.groq.com/openai/v1", "model": "meta-llama/llama-4-scout-17b-16e-instruct", "apiKey": "gsk_..." },
+      "gemini": { "baseUrl": "https://generativelanguage.googleapis.com/v1beta/openai", "model": "gemini-2.5-flash", "apiKey": "AIza..." },
+      "ollama": { "baseUrl": "http://localhost:11434/v1", "model": "qwen2.5vl:7b", "apiKey": "ollama" }
+    }
+  },
+
+  "excludeNames": [],
+  "excludeFiles": [],
+  "autoDedup": true,
+  "languageCode": "en"
+}

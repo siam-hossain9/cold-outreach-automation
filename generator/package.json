@@ -1,0 +1,15 @@
+{
+  "name": "ugly-site-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Demo/rebuild generator: scrape a lead's old site -> site.config.json -> ready-to-deploy folder -> Vercel (Ugly-Website Rebuild, the outreach system).",
+  "type": "commonjs",
+  "engines": { "node": ">=18" },
+  "bin": { "build-demo": "build-demo.js" },
+  "scripts": {
+    "build": "node build-demo.js",
+    "build:no-deploy": "node build-demo.js --no-deploy",
+    "extract": "node extract.js",
+    "deploy": "node deploy-vercel.js"
+  }
+}

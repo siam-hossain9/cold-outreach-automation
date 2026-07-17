@@ -1,0 +1,65 @@
+{
+  "name": "Roofing Template 1",
+  "slug": "02-roofing",
+  "niche": "roofing",
+  "design_style": "Storm-tough trust. Graphite/charcoal base with a confident storm-red CTA and warm sand neutrals. Signature interactive before/after roof slider.",
+  "best_for": "Residential roofers in a storm/hail belt (TX, OK, CO, the Midwest) who win on storm-damage replacements and insurance-claim help and need to look established and trustworthy.",
+  "demo_brand": "Ridgeline Roofing (Dallas-Fort Worth), placeholder identity, swap per client",
+  "colors": {
+    "char": "#1E2A33",
+    "char2": "#15202A",
+    "slate": "#33444F",
+    "cta": "#D8392B",
+    "cta2": "#B72A1E",
+    "cta_soft": "#FBE8E5",
+    "ink": "#1A222A",
+    "muted": "#5C6B76",
+    "bg": "#ffffff",
+    "bg2": "#F4F1EC",
+    "card": "#ffffff",
+    "line": "#E7E2D9",
+    "line2": "#D8D1C4",
+    "star": "#C8973F",
+    "ok": "#1E9E6A"
+  },
+  "fonts": {
+    "heading": "Hanken Grotesk (500;600;700;800)",
+    "body": "Inter (400;500;600)",
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+  },
+  "spacing": {
+    "max_width": "1180px",
+    "radius": "14px",
+    "section_padding_desktop": "84px 0",
+    "section_padding_mobile": "60px 0"
+  },
+  "sections": [
+    "utility bar",
+    "header (sticky, hide-on-scroll)",
+    "hero (split copy + roofer image, float rating card + warranty badge)",
+    "trust bar",
+    "services (clean 6-card reveal grid)",
+    "why us (crew photo + 4 reasons)",
+    "signature: before/after roof slider (drag to compare)",
+    "process (4-step inspection-to-roof)",
+    "reviews (clean 3-card grid)",
+    "service area (city chips)",
+    "faq (accordion)",
+    "quote / final CTA (call + free-inspection form)",
+    "footer",
+    "sticky mobile call bar"
+  ],
+  "signature_features": [
+    "Interactive before/after roof slider (pointer + keyboard via range input)",
+    "Insurance-claim help positioned as a first-class service (storm-belt money angle)",
+    "4-step process section (inspection → estimate & insurance → install → walkthrough)",
+    "Sticky mobile click-to-call bar",
+    "FAQ accordion (one open at a time, aria-expanded)"
+  ],
+  "motion": "Minimum-animation build per brief. Vanilla JS only, IntersectionObserver scroll-reveal, hide-on-scroll header, FAQ accordion, and the user-driven before/after slider. NO perpetual background loops (no beams/sheen/auto-rotation/pulsing). Every animation honors prefers-reduced-motion.",
+  "delivery": {
+    "format": "single-file index.html, no local asset dependencies",
+    "remote_images": "Pexels, hero (33404248 roofer), why/crew (33404981 DFW brick home), before (37677476 tear-off), after (33404080 new shingles). Swap all for the client's real job photos.",
+    "logo": "inline SVG roof-line mark (no raster file required)"
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "template": "11-electrical",
+  "brand": {
+    "name": "Voltline Electric",
+    "demo": true,
+    "tagline": "Seattle electrician for panels, EV chargers, and 24/7 service",
+    "city": "Seattle",
+    "state": "WA",
+    "phone": "(206) 555-0117",
+    "phone_href": "tel:+12065550117",
+    "email": "hello@voltlineelectric.com",
+    "license_placeholder": "Licensed WA electrician #___",
+    "rating": "4.9",
+    "review_count": "300+"
+  },
+  "niche": {
+    "trade": "Electrical",
+    "mode": "emergency-heavy + scheduled",
+    "urgent_share": "~30% of searches",
+    "focus": ["panel upgrade 100A to 200A", "EV charger install", "generators", "rewiring", "lighting"],
+    "signature": ["sticky 24/7 emergency bar", "project gallery (panels/EV)", "30+ homepage reviews", "upfront pricing", "financing"]
+  },
+  "archetype": {
+    "name": "Dark premium + safety yellow",
+    "hero": "B/H hybrid, dark immersive, copy left + framed electrician photo right with bolt motif",
+    "treatment": "near-black UI, electric-yellow accents, slate cards, sparing lightning motif",
+    "distinct_from": ["04-tree-service (light cinematic forest)", "03-hvac (dark blue thermostat)"]
+  },
+  "palette": {
+    "near_black_bg": "#0E1116",
+    "bg2": "#11151B",
+    "panel": "#161B22",
+    "panel2": "#1B212B",
+    "slate": "#2A2F3A",
+    "slate2": "#363D4A",
+    "line": "#262C36",
+    "line2": "#323A47",
+    "electric_yellow": "#FFD23F",
+    "yellow_hover": "#FFC107",
+    "off_white_ink": "#EAECEF",
+    "muted": "#9AA3B0",
+    "muted2": "#727C8A",
+    "ok": "#5BD08A",
+    "star": "#FFD23F"
+  },
+  "fonts": {
+    "heading": "Space Grotesk",
+    "body": "Inter",
+    "source": "Google Fonts"
+  },
+  "logo": {
+    "type": "inline SVG, custom",
+    "concept": "Bolt-in-hex badge. A hexagon (panel/breaker motif) holds an electric-yellow lightning bolt drawn as a 'V' stroke, with a yellow baseline rule for the 'line' in Voltline. Wordmark 'Voltline' in Space Grotesk + 'Electric · Seattle' eyebrow.",
+    "placements": ["header", "footer", "SVG favicon (data URI)"],
+    "colors": {
+      "hex_fill": "#161B22",
+      "hex_stroke": "#363D4A",
+      "bolt": "#FFD23F",
+      "base_rule": "#FFD23F"
+    }
+  },
+  "images": {
+    "source": "Pexels (verified live: HTTP 200 + visually confirmed electrical content)",
+    "verified_ids": [
+      {"id": 16880204, "use": "hero", "shows": "electrician on a ladder working overhead lines at dusk"},
+      {"id": 34054464, "use": "services feature", "shows": "electrician testing an open panel with a multimeter"},
+      {"id": 33694016, "use": "gallery", "shows": "electrician probing terminal blocks in a control panel"},
+      {"id": 27355826, "use": "gallery", "shows": "homeowner using a home EV wall charger on brick"},
+      {"id": 5691588, "use": "gallery", "shows": "hands wiring new outlets and switches"},
+      {"id": 5391510, "use": "gallery", "shows": "EV SUV plugged into a home wall charger"},
+      {"id": 17842843, "use": "gallery", "shows": "hi-vis electrician inside a control cabinet"},
+      {"id": 8827008, "use": "gallery", "shows": "Tesla Wall Connector close-up"},
+      {"id": 33531830, "use": "gallery", "shows": "electrician using a multimeter on wiring"},
+      {"id": 5691589, "use": "credentials", "shows": "electrician installing an outlet with a screwdriver"}
+    ],
+    "url_pattern": "https://images.pexels.com/photos/{id}/pexels-photo-{id}.jpeg?auto=compress&cs=tinysrgb&w={width}",
+    "og_image": "https://images.pexels.com/photos/16880204/pexels-photo-16880204.jpeg?auto=compress&cs=tinysrgb&w=1200&h=630&fit=crop"
+  },
+  "sections": [
+    "emergency bar (sticky-feel, top)",
+    "header (sticky, hide-on-scroll-down)",
+    "hero (dark, photo + 24/7 badge)",
+    "trust strip",
+    "services (1 feature + 5 cards)",
+    "project gallery (bento, 7 images)",
+    "credentials / licensing",
+    "upfront pricing (3 cards, panel featured)",
+    "reviews (6 placeholder Google reviews)",
+    "service area chips",
+    "FAQ accordion",
+    "quote / final CTA + form",
+    "footer",
+    "sticky mobile call"
+  ],
+  "verified_facts": {
+    "code": "NEC = NFPA 70, 3-yr cycle, current 2026 NEC",
+    "certs": "Tesla Certified Installer, Qmerit, Generac dealer tiers, NECA membership",
+    "licensing": "WA state Apprentice/Journeyman/Master, placeholder only, never a real number",
+    "tickets": {
+      "diagnostic": "$75 to $200 (emergency 1.5 to 2x)",
+      "panel_200a": "$1,300 to $3,000 (full service to $5,000+)",
+      "ev_level2": "$800 to $2,500"
+    },
+    "pricing_note": "national-average estimates, vary by region, never fixed quotes"
+  },
+  "honesty": {
+    "brand": "fictional demo brand",
+    "phone": "fictional (206) 555-0117",
+    "license": "placeholder #___, never a real number",
+    "reviews": "placeholder, labeled",
+    "images": "real verified Pexels stock"
+  },
+  "accessibility": {
+    "reduced_motion": true,
+    "focus_visible": true,
+    "aria": "menu expanded state, FAQ aria-expanded, labeled nav and form fields",
+    "sticky_click_to_call": true,
+    "responsive": "breakpoints at 960px and 560px"
+  }
+}

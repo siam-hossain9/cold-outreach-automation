@@ -1,0 +1,67 @@
+{
+  "name": "Plumber Template 1",
+  "slug": "01-plumber",
+  "niche": "plumber",
+  "design_style": "Trust-forward family service. Deep-marine palette with a warm orange CTA. Signature live service-area map.",
+  "best_for": "Multi-generation, family-owned plumbers with a strong local-area identity and 24/7 / emergency positioning.",
+  "seeded_from": "the-family-plumber",
+  "colors": {
+    "navy": "#143A5A",
+    "navy_dark": "#0F2C45",
+    "cta": "#F0682B",
+    "cta_dark": "#E0571C",
+    "cta_soft": "#FFEDE3",
+    "ink": "#16242F",
+    "muted": "#5A6B7A",
+    "bg": "#ffffff",
+    "bg_alt": "#F3F6FA",
+    "card": "#ffffff",
+    "line": "#E2E8EF",
+    "line2": "#CFD9E3",
+    "star": "#F5A623",
+    "ok": "#1E9E6A",
+    "services_backdrop": "purple #7C5CFF to teal #22BED2 over a navy gradient",
+    "reviews_backdrop": "#0c1020 with purple + cyan radial glows"
+  },
+  "fonts": {
+    "heading": "Hanken Grotesk (500;600;700;800)",
+    "body": "Inter (400;500;600)",
+    "google_fonts": "https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap"
+  },
+  "spacing": {
+    "max_width": "1180px",
+    "radius": "14px",
+    "section_padding_desktop": "80px 0",
+    "section_padding_mobile": "60px 0"
+  },
+  "sections": [
+    "utility bar",
+    "header (sticky, hide-on-scroll)",
+    "hero (split copy + image, float card + award badge)",
+    "trust bar",
+    "services (scroll-reveal beam rail, liquid glass, one at a time)",
+    "reviews (auto-rotating glass deck)",
+    "service area (live map + animated pins + city chips + offices)",
+    "about (owners as initial monograms)",
+    "faq (accordion)",
+    "quote / final CTA (call + mailto form)",
+    "footer",
+    "sticky mobile call bar",
+    "lead-capture chat widget"
+  ],
+  "signature_features": [
+    "Live service-area map (location-tracking.svg) with animated map pins",
+    "Scroll-driven 'one service at a time' beam rail with liquid-glass cards",
+    "Auto-rotating glass review deck (real Google reviews only)",
+    "Lead-capture chat widget (localStorage + mailto fallback)",
+    "Sticky mobile click-to-call bar",
+    "FAQ accordion (one open at a time, aria-expanded)"
+  ],
+  "motion": "Vanilla JS only (no GSAP/Lenis). IntersectionObserver reveal, scroll parallax on services, prefers-reduced-motion honored on every animation.",
+  "delivery": {
+    "format": "single-file index.html + local SVG assets",
+    "local_assets": ["location-tracking.svg"],
+    "remote_images": "Pexels (hero, why, about), swap per client",
+    "logo": "inline SVG water-drop mark (no raster file required)"
+  }
+}

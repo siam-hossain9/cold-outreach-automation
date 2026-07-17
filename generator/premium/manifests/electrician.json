@@ -1,0 +1,64 @@
+{
+  "niche": "electrician",
+  "templateDir": "11-electrical",
+  "file": "layout.html",
+  "assetDirs": ["assets/_img", "img"],
+  "imageStrategy": "self-hosted",
+  "galleryImageDir": "assets/_img",
+  "_note": "Source tokens VERIFIED against templates/11-electrical/layout.html (VoltarisLabs Web_Project @96e23d1). Order-sensitive: apply exactly in the sequence the engine encodes (email→brand.full→domain→brand.short, license-before-state, multiword-areas-before-city).",
+
+  "brand": {
+    "full": "Voltline Electric",
+    "short": "Voltline",
+    "domain": "voltlineelectric.com",
+    "email": "hello@voltlineelectric.com"
+  },
+
+  "phones": {
+    "display": "(562) 431-1960",
+    "href": "+15624311960",
+    "formPlaceholder": "(206) 000-0000"
+  },
+
+  "geo": {
+    "city": "Seattle",
+    "stateAbbr": "WA",
+    "regionPhrases": ["and the Eastside", "the Eastside"],
+    "countyPhrase": "King County",
+    "areasMultiWord": ["West Seattle"],
+    "areas": ["Ballard", "Bellevue", "Redmond", "Shoreline", "Renton", "Kirkland", "Capitol Hill", "Greenwood", "Magnolia", "Wallingford"]
+  },
+
+  "license": {
+    "sources": [
+      "Licensed &amp; insured WA electrician",
+      "Licensed WA electrician",
+      "Licensed WA"
+    ]
+  },
+
+  "facts": {
+    "ownCrewsToken": "<b>+</b>Own crews",
+    "credentialSubSource": "<span>State licensed, bonded, and insured.</span>",
+    "sinceAnchor": "signed off by the inspector."
+  },
+
+  "gallerySlots": [
+    {
+      "imgTag": "<img class=\"wi-front\" src=\"assets/_img/03f4b82ab9b0.jpg\" alt=\"An electrician probing terminal blocks in a control panel with a multimeter\" loading=\"lazy\" />",
+      "caption": "Service panel testing"
+    },
+    {
+      "imgTag": "<img class=\"wi-front\" src=\"assets/_img/4475d97e43c7.jpg\" alt=\"A homeowner using a wall-mounted EV charger on a brick garage\" loading=\"lazy\" />",
+      "caption": "Home EV charging"
+    },
+    {
+      "imgTag": "<img class=\"wi-front\" src=\"assets/_img/87258d453bf4.jpg\" alt=\"An electric SUV plugged into a wall-mounted home charger beside a garage\" loading=\"lazy\" />",
+      "caption": "Level 2 charger, wired and tested"
+    },
+    {
+      "imgTag": "<img class=\"wi-front\" src=\"assets/_img/6b5599d98026.jpg\" alt=\"A Tesla Wall Connector mounted outdoors, close up\" loading=\"lazy\" />",
+      "caption": "Wall Connector mount"
+    }
+  ]
+}

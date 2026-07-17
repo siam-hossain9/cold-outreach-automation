@@ -1,0 +1,35 @@
+{
+  "name": "ugly-website-rebuild-outreach",
+  "version": "1.0.0",
+  "private": true,
+  "description": "the outreach system — find trade businesses with an outdated website, build a modern rebuild demo, CALL-FIRST to earn opt-in, then text the demo link, track, follow up, and close ($1,000 launch + $99/mo). Extends the live the existing stack (Close CRM + n8n); NEW dedicated Convex DB.",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "scrape": "node scraper/find-ugly-sites.js",
+    "scrape:test": "node scraper/find-ugly-sites.js --test",
+    "generate": "node generator/premium/build-premium.js",
+    "import": "node import-leads.js",
+    "import:dry": "node import-leads.js --dry-run",
+    "convex:dev": "cd convex && npx convex dev",
+    "convex:deploy": "cd convex && npx convex deploy"
+  },
+  "dependencies": {
+    "convex": "^1.16.0"
+  },
+  "comments": {
+    "scrape": "Stage 1+2 lead finder → writes scraper/leads-*.csv (config in scraper/config.local.json).",
+    "scrape:test": "Verify the Google Places API key with a single call.",
+    "generate": "Per-lead demo builder (generator/premium/build-premium.js): deep-extract old site → AI photo gate → reskin premium template → deploy Vercel → Convex-native /r/ tracked link. Pass --lead-id <id> or --csv <file>. (The old generator/build-demo.js is superseded; its CLI is disabled.)",
+    "import": "Read the newest scraper/leads-*.csv and insert into the Convex leads table (dedupe by place_id, honor the channel gate). Pass a path to import a specific CSV.",
+    "import:dry": "Preview the CSV→schema mapping without writing to Convex.",
+    "convex:dev": "Create / push the NEW dedicated Convex DB from convex/ (writes CONVEX_URL you paste into .env.local).",
+    "convex:deploy": "Push convex/ functions + schema to the production deployment."
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "typescript": "^5.9.3"
+  }
+}

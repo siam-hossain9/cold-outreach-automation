@@ -1,0 +1,13 @@
+{
+  "name": "ugly-site-scraper",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Finds US trade businesses with outdated/ugly websites worth rebuilding (Website-Rebuild outreach, product line 2).",
+  "type": "commonjs",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "test-key": "node find-ugly-sites.js --test",
+    "grade": "node find-ugly-sites.js --grade",
+    "scrape": "node find-ugly-sites.js"
+  }
+}

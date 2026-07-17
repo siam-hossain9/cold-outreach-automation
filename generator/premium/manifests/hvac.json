@@ -1,0 +1,44 @@
+{
+  "niche": "hvac",
+  "templateDir": "03-hvac",
+  "file": "layout.html",
+  "assetDirs": [],
+  "imageStrategy": "remote-pexels",
+  "galleryImageDir": "img",
+  "_note": "Tokens verified against templates/03-hvac/layout.html. Hero is an inline-SVG thermostat dial (no photo); the ONLY content photo is the 'why' section remote Pexels image, used here as the single real-photo slot. Fully self-contained via remote assets + inline SVG (assetDirs empty). Brand appears in three entity forms: '&amp;' (HTML), '&' (meta), and spelled 'and' — all aliased. Bare 'KC' leftovers scrubbed via extraReplacements.",
+
+  "brand": {
+    "full": "TrueComfort Heating &amp; Air",
+    "fullAliases": ["TrueComfort Heating & Air", "TrueComfort Heating and Air"],
+    "short": "TrueComfort",
+    "domain": "truecomfortkc.com",
+    "email": "service@truecomfortkc.com"
+  },
+
+  "phones": { "display": "(816) 555-0142", "href": "+18165550142", "formPlaceholder": "(816) 000-0000" },
+
+  "geo": {
+    "city": "Kansas City",
+    "stateAbbr": "MO",
+    "regionPhrases": ["the Kansas City metro", "the KC metro"],
+    "countyPhrase": "",
+    "areasMultiWord": ["Overland Park", "Lee's Summit", "Blue Springs"],
+    "areas": ["Olathe", "Lenexa", "Shawnee", "Independence"]
+  },
+
+  "license": { "sources": ["Licensed &amp; insured", "Licensed and insured"] },
+
+  "facts": { "sinceAnchor": "Locally owned for 20 years." },
+
+  "extraReplacements": [
+    { "from": "KC's", "to": "{city}'s" },
+    { "from": "serving KC", "to": "serving {city}" }
+  ],
+
+  "gallerySlots": [
+    {
+      "imgTag": "<img src=\"https://images.pexels.com/photos/32588555/pexels-photo-32588555.jpeg?auto=compress&cs=tinysrgb&w=900\" alt=\"A NATE-certified TrueComfort technician servicing a home comfort system\" loading=\"lazy\" width=\"900\" height=\"1080\" />",
+      "caption": ""
+    }
+  ]
+}
