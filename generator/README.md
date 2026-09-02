@@ -44,7 +44,7 @@ No dependencies — Node 18+ built-in `fetch` only. Secrets are loaded from
 node build-demo.js --csv ../scraper/leads-SOUTH-Ugly-2026-07-07-1955.csv --row 1
 
 # Select a specific row by phone or place_id, and pass the real Convex lead id
-node build-demo.js --csv ../scraper/leads-...csv --phone "(318) 487-2074"
+node build-demo.js --csv ../scraper/leads-...csv --phone "(555) 010-0142"
 node build-demo.js --csv ../scraper/leads-...csv --place-id ChIJ... --lead-id <convexLeadId>
 
 # From CLI args (no CSV)

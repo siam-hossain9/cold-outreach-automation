@@ -11,8 +11,8 @@
     "full": "TrueComfort Heating &amp; Air",
     "fullAliases": ["TrueComfort Heating & Air", "TrueComfort Heating and Air"],
     "short": "TrueComfort",
-    "domain": "truecomfortkc.com",
-    "email": "service@truecomfortkc.com"
+    "domain": "example-hvac.com",
+    "email": "service@example-hvac.com"
   },
 
   "phones": { "display": "(816) 555-0142", "href": "+18165550142", "formPlaceholder": "(816) 000-0000" },

@@ -13,8 +13,8 @@
  * facts fall back to the template's tasteful defaults.
  *
  * USAGE
- *   node build-premium.js --name "KDM Electric Inc" --phone "(318) 487-2074" \
- *        --website https://kdmelectricllc.com --niche electrician --city Alexandria --state LA
+ *   node build-premium.js --name "Northside Electric Co" --phone "(555) 010-0142" \
+ *        --website https://example-electric.com --niche electrician --city Alexandria --state LA
  *   node build-premium.js --csv ../../scraper/leads-SOUTH-...csv --row 1
  *   (add --no-deploy to build only, --no-vision to skip the AI photo gate)
  */

@@ -31,7 +31,7 @@
  * USAGE
  *   # from a scraper CSV (1-based data row, header excluded)
  *   node build-demo.js --csv ../scraper/leads-SOUTH-Ugly-2026-07-07-1955.csv --row 1
- *   node build-demo.js --csv ../scraper/leads-...csv --phone "(318) 487-2074"
+ *   node build-demo.js --csv ../scraper/leads-...csv --phone "(555) 010-0142"
  *   node build-demo.js --csv ../scraper/leads-...csv --place-id ChIJ...   --lead-id <convexLeadId>
  *
  *   # from CLI args (no CSV)

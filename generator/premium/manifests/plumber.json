@@ -12,11 +12,11 @@
     "fullAliases": ["Family Plumber"],
     "short": "FP",
     "shortIsMonogram": true,
-    "domain": "thefamilyplumber.com",
-    "email": "info@thefamilyplumber.com"
+    "domain": "example-plumbing.com",
+    "email": "info@example-plumbing.com"
   },
 
-  "phones": { "display": "(562) 431-1960", "href": "+15624311960", "formPlaceholder": "(562) 000-0000" },
+  "phones": { "display": "(555) 010-0199", "href": "+15550100199", "formPlaceholder": "(562) 000-0000" },
 
   "geo": {
     "city": "Los Alamitos",

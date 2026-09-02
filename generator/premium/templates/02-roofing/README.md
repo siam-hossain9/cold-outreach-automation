@@ -38,7 +38,7 @@ utility bar → header → hero → trust bar → **services** (6-card grid) →
 ## How to reuse for a new client
 
 1. Copy `layout.html` → `sites/{client-slug}/index.html`.
-2. Fill the client's facts from their `client-configs/{slug}/business.json` + `content.json`: brand name (search `Ridgeline Roofing`), phone (search `+14695550188` and `(469) 555-0188`), email (`hello@ridgelineroofing.com`), service-area cities, services, FAQ answers, reviews.
+2. Fill the client's facts from their `client-configs/{slug}/business.json` + `content.json`: brand name (search `Ridgeline Roofing`), phone (search `+14695550188` and `(469) 555-0188`), email (`hello@example-roofing.com`), service-area cities, services, FAQ answers, reviews.
 3. Replace the **4 Pexels images** with the client's own job photos, especially the before/after pair (use **one real job**, before and after, so the slider is honest).
 4. Update the warranty/cert claims (`50-year material warranty`, `licensed & insured`, `18 years`) to the client's real numbers.
 5. Run the launch checklist in `DEV2-FULFILLMENT-GUIDE.md` before going live.

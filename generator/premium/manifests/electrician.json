@@ -10,13 +10,13 @@
   "brand": {
     "full": "Voltline Electric",
     "short": "Voltline",
-    "domain": "voltlineelectric.com",
-    "email": "hello@voltlineelectric.com"
+    "domain": "example-electric.com",
+    "email": "hello@example-electric.com"
   },
 
   "phones": {
-    "display": "(562) 431-1960",
-    "href": "+15624311960",
+    "display": "(555) 010-0199",
+    "href": "+15550100199",
     "formPlaceholder": "(206) 000-0000"
   },
 

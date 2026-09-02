@@ -12,7 +12,7 @@
  * back null so the template's tasteful defaults fill the gaps.
  *
  * USAGE
- *   node generator/deep-extract.js https://kdmelectricllc.com/ "KDM Electric Inc" electrician
+ *   node generator/deep-extract.js https://example-electric.com/ "Northside Electric Co" electrician
  *
  * Env (.env.local): VISION_BASE_URL, VISION_MODEL, VISION_API_KEY
  */

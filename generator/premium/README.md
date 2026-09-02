@@ -20,8 +20,8 @@ professional stock stays.
 ## Run
 
 ```bash
-node build-premium.js --name "KDM Electric Inc" --phone "(318) 487-2074" \
-     --website https://kdmelectricllc.com --niche electrician --city Alexandria --state LA --no-deploy
+node build-premium.js --name "Northside Electric Co" --phone "(555) 010-0142" \
+     --website https://example-electric.com --niche electrician --city Alexandria --state LA --no-deploy
 
 node build-premium.js --csv ../../scraper/leads-SOUTH-...csv --row 1        # from a scraper CSV
 ```
@@ -46,7 +46,7 @@ Output: `build/<slug>/` (`index.html` + `assets/` + `img/` + `result.json`) and 
 
 | Niche | Template | Manifest | Status |
 |---|---|---|---|
-| electrician | `11-electrical` (new `layout.html`) | ✅ | **wired + validated** (reproduces KDM; 0 residuals; 4/12 photos kept) |
+| electrician | `11-electrical` (new `layout.html`) | ✅ | **wired + validated** (reproduces Northside; 0 residuals; 4/12 photos kept) |
 | hvac | `03-hvac` | ✅ | **wired + validated** (0 leftovers; SVG-dial hero, 1 "why" photo slot; all-remote assets) |
 | plumber | `01-plumber` | ✅ | **wired + validated** (0 leftovers; 3 gallery photo slots; monogram logo). Owner-card names generalized (Founder/Co-owner) until real owner data — see note in `manifests/plumber.json`. |
 
@@ -64,7 +64,7 @@ Output: `build/<slug>/` (`index.html` + `assets/` + `img/` + `result.json`) and 
 
 - **Sync templates:** these are vendored copies of `VoltarisLabs/Web_Project`. Re-copy
   when the operator updates a template there. (The electrical `layout.html` still had a
-  leftover plumber phone `(562) 431-1960` upstream — the manifest scrubs it; worth
+  leftover plumber phone `(555) 010-0199` upstream — the manifest scrubs it; worth
   fixing at the source too.)
 - **Speed:** the vision gate is ~1 min/lead (parallelized, bounded concurrency). Fine
   for the current volume; swap `VISION_MODEL` for a faster one to scale.

@@ -5,18 +5,18 @@
   "assetDirs": ["assets/_img", "img"],
   "imageStrategy": "self-hosted",
   "galleryImageDir": "assets/_img",
-  "_note": "Tokens VERIFIED against templates/02-roofing/layout.html (VoltarisLabs Web_Project). Template is SELF-HOSTED (local assets/_img jpgs + img/ hero video) — theme.json's 'remote Pexels' note is stale. Phone in the file is a PLUMBER-template copy-paste leftover ((562) 431-1960 / +15624311960), scrubbed here. Hero is a local video (not a photo slot). The 2 swappable photos are the before/after roof slider (ba-before / ba-after).",
+  "_note": "Tokens VERIFIED against templates/02-roofing/layout.html (VoltarisLabs Web_Project). Template is SELF-HOSTED (local assets/_img jpgs + img/ hero video) — theme.json's 'remote Pexels' note is stale. Phone in the file is a PLUMBER-template copy-paste leftover ((555) 010-0199 / +15550100199), scrubbed here. Hero is a local video (not a photo slot). The 2 swappable photos are the before/after roof slider (ba-before / ba-after).",
 
   "brand": {
     "full": "Ridgeline Roofing",
     "short": "Ridgeline",
-    "domain": "ridgelineroofing.com",
-    "email": "hello@ridgelineroofing.com"
+    "domain": "example-roofing.com",
+    "email": "hello@example-roofing.com"
   },
 
   "phones": {
-    "display": "(562) 431-1960",
-    "href": "+15624311960",
+    "display": "(555) 010-0199",
+    "href": "+15550100199",
     "formPlaceholder": "(469) 000-0000"
   },
 

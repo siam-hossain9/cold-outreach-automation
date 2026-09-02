@@ -32,7 +32,7 @@ template ships with a fictional **demo brand** that the generator swaps out per 
 - **Signature:** thermostat-dial hero, cooling/heating split, membership banner
 
 ### 🔧 `01-plumber` — plumber
-- **Demo brand:** The Family Plumber · Los Alamitos, CA · `(562) 431-1960`
+- **Demo brand:** The Family Plumber · Los Alamitos, CA · `(555) 010-0199`
 - **Archetype:** trust-forward family service. Deep-marine `#143A5A` + warm-orange CTA `#F0682B`. Signature **live service-area map** with animated pins.
 - **Fonts:** Hanken Grotesk (display) · Inter (body)
 - **Build:** `layout.html`. **Self-hosted** local assets in `img/` (hero video + job photos).
@@ -59,14 +59,14 @@ Everything else — the template's rich content (reviews, pricing, FAQ, copy) �
 
 | Niche | Template | Images | Photo slots | Status |
 |---|---|---|---|---|
-| electrician | `11-electrical` | self-hosted | 4 | ✅ validated (KDM) |
+| electrician | `11-electrical` | self-hosted | 4 | ✅ validated (Northside) |
 | hvac | `03-hvac` | remote (Pexels) | 1 | ✅ validated |
 | plumber | `01-plumber` | self-hosted | 3 | ✅ validated |
 
 - These are **vendored copies** — re-sync from `VoltarisLabs/Web_Project` when the source
   templates change.
 - **Known template quirks** (handled by the manifests): the electrical `layout.html` shipped
-  with a leftover plumber phone `(562) 431-1960` (scrubbed); the plumber template has demo
+  with a leftover plumber phone `(555) 010-0199` (scrubbed); the plumber template has demo
   owner names (Josh/Mike/Rick) generalized to Founder/Co-owner until real owner data.
 - **15 more trades** exist in `Web_Project` (roofing, concrete, fencing, landscaping, junk
   removal, …). To add one: vendor the folder, author `../manifests/<niche>.json` against the
